@@ -1,0 +1,84 @@
+.upload-room {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+}
+
+.upload-room__image img {
+  width: 300px;
+  border-radius: 12px;
+}
+
+.upload-room__text {
+  max-width: 400px;
+  text-align: center;
+}
+
+.upload-room__text h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.upload-room__text p {
+  font-size: 1.1rem;
+}
+
+.upload-room__image--right .upload-box {
+  background-color: #ddd;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  width: 250px;
+}
+
+.upload-box button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #7ba58d;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+   .upload-room__text h2{
+    font-size: 1.5rem;
+   }
+
+   .upload-room__text p{
+    font-size: 0.9rem;
+   }
+
+   .upload-box p{
+    font-size: 0.8rem;
+   }
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+.upload-room__text h2{
+    font-size: 1.1rem;
+   }
+
+   .upload-room__text p{
+    font-size: 0.7rem;
+   }
+
+   .upload-box p{
+    font-size: 0.8rem;
+   }
+
+   .upload-room{
+    flex-wrap: nowrap;
+   }
+   
+   .mobile-hide-br {
+        display: none;
+  }
+}
+
+

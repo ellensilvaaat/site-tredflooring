@@ -1,0 +1,142 @@
+.sp-info {
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+.sp-info-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sp-info h2 {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.sp-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.sp-info-innerp {
+  margin-bottom: 4rem;
+}
+
+.sp-benefits {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sp-benefit-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 2.5rem 1.5rem;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  text-align: center;
+}
+
+.sp-benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.sp-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Telas até 500px */
+@media (max-width: 500px) {
+  .sp-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .sp-info p {
+    font-size: 0.95rem;
+  }
+
+  .sp-benefits {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sp-benefit-card {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/* Telas entre 501px e 767px */
+@media (min-width: 501px) and (max-width: 767px) {
+  .sp-info h2 {
+    font-size: 1.4rem;
+  }
+
+  .sp-info p {
+    font-size: 1rem;
+  }
+
+  .sp-benefits {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sp-benefit-card {
+    width: 45%;
+    max-width: 280px;
+  }
+}
+
+/* Telas entre 768px e 900px */
+@media (min-width: 768px) and (max-width: 900px) {
+  .sp-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .sp-info p {
+    font-size: 1.05rem;
+  }
+
+  .sp-benefit-card {
+    width: 200px;
+  }
+}
+
+/* Telas maiores que 1800px */
+@media (min-width: 1800px) {
+  .sp-info-inner {
+    max-width: 1100px;
+  }
+
+  .sp-info h2 {
+    font-size: 1.8rem;
+  }
+
+  .sp-info p {
+    font-size: 1.2rem;
+  }
+
+  .sp-benefit-card {
+    width: 260px;
+    padding: 3rem 2rem;
+  }
+
+  .sp-icon {
+    width: 56px;
+    height: 56px;
+  }
+}

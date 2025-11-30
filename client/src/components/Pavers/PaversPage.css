@@ -1,0 +1,126 @@
+.pavers-page {
+  font-family: 'Inter', sans-serif;
+  color: #222;
+  background: #fff;
+}
+
+.pavers-hero {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+}
+
+.pavers-hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.pavers-hero p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Grid de cards */
+.pavers-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CTA */
+.pavers-cta {
+  text-align: center;
+  padding: 3rem 1rem 5rem;
+}
+
+.pavers-cta-btn {
+  background-color: #7CAF8E;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.pavers-cta-btn:hover {
+  background-color: #5f9674;
+}
+
+/* ======= RESPONSIVO ======= */
+
+/* até 500px */
+@media (max-width: 500px) {
+  .pavers-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .pavers-hero p {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+  }
+
+  .pavers-list {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .pavers-cta-btn {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.8rem 1.2rem;
+  }
+}
+
+/* entre 501px e 767px */
+@media (min-width: 501px) and (max-width: 767px) {
+  .pavers-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem;
+  }
+}
+
+/* entre 768px e 900px */
+@media (min-width: 768px) and (max-width: 900px) {
+  .pavers-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .pavers-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .pavers-hero p {
+    font-size: 1rem;
+  }
+}
+
+/* acima de 1800px */
+@media (min-width: 1800px) {
+  .pavers-list {
+    max-width: 1600px;
+    gap: 2.5rem;
+  }
+
+  .pavers-hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .pavers-hero p {
+    font-size: 1.1rem;
+    max-width: 700px;
+  }
+
+  .pavers-cta-btn {
+    font-size: 1.2rem;
+    padding: 1.2rem 2.5rem;
+  }
+}

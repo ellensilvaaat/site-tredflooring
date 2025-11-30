@@ -1,0 +1,153 @@
+.call-to-action {
+  background: linear-gradient(180deg, #ffffff 0%, #d8ede4 100%);
+  padding: 3rem 1rem 0 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Wrapper do CTA */
+.cta-wrapper {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  height: 55vh; /* mantém proporção no desktop */
+  margin: 0 auto;
+}
+
+/* Imagem de fundo */
+.cta-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: block;
+  z-index: 0;
+}
+
+/* Overlay escuro sobre a imagem */
+.cta-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  z-index: 1;
+}
+
+/* Conteúdo sobreposto */
+.cta-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 0 2rem;
+  z-index: 2;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cta-overlay h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.cta-overlay p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.cta-overlay button {
+  background-color: #7DA98E;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.cta-overlay button:hover {
+  background-color: #689f7c;
+}
+
+/* ========= MEDIA QUERIES — ajustes para mobile/tablet ========= */
+
+/* === Correção apenas para telas até 900px === */
+@media (max-width: 900px) {
+  .cta-wrapper {
+    height: 420px; /* altura fixa razoável para o bloco no mobile/tablet */
+  }
+
+  .cta-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    z-index: 0;
+  }
+
+  .cta-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
+    z-index: 1;
+  }
+
+  .cta-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 0 1rem;
+    z-index: 2;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .cta-overlay h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .cta-overlay p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    max-width: 90%;
+    margin: 0 auto 1.2rem;
+  }
+
+  .cta-overlay button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .call-to-action {
+    padding: 0 1rem 3rem 1rem;
+  }
+}

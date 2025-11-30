@@ -1,0 +1,299 @@
+/* Estilo compartilhado para CartPreview + RequestForm + página */
+
+.sample-request-page {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom, #fff 25%, #E0F2E9 100%);
+}
+
+.sample-request-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+
+.sample-request-container h1{
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+
+.sample-cart {
+  margin-bottom: 2rem;
+  border: 1px solid #7CAF8E;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 60%;
+  margin: auto;
+}
+
+.sample-cart h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.sample-cart p {
+  padding: 1rem 0 1rem 0;
+  font-size: 1rem;
+}
+
+.sample-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.sample-item span {
+  font-size: 1rem;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.sample-form .form-group {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sample-form label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  width: 57%;
+}
+
+.sample-form input {
+  padding: 0.75rem;
+  border: 1px solid #7CAF8E;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 60%;
+  margin: auto;
+}
+
+.bnt-sub{
+  margin: auto;
+  width: 30%;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+
+.submit-btn {
+  background-color: #7CAF8E;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: auto;
+}
+
+.submit-btn:hover {
+  background-color: #689f7c;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #7CAF8E;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0 0 2rem 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+.extra-buttons{
+  margin: auto;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+@media (max-width: 500px) {
+  .sample-request-container {
+    padding: 20px 10px 0;
+    width: 90%;
+  }
+
+  .sample-request-container h1 {
+    font-size: 1.6rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .sample-cart {
+    width: 90%;
+    padding: 0.8rem;
+  }
+
+  .sample-cart h2 {
+    font-size: 1.1rem;
+  }
+
+  .sample-item span {
+    font-size: 0.9rem;
+  }
+
+  .sample-form .form-group label,
+  .sample-form .form-group input {
+    width: 100%;
+  }
+
+  .sample-form input {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .bnt-sub {
+    width: 60%;
+    text-align: center;
+  }
+
+  .submit-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .back-btn {
+    font-size: 0.9rem;
+  }
+
+  .extra-buttons {
+    padding-top: 0.5rem;
+  }
+}
+
+/* 📱 Mobile grande / Phablet (501px – 767px) */
+@media (min-width: 501px) and (max-width: 767px) {
+  .sample-request-container {
+    width: 95%;
+  }
+
+  .sample-cart {
+    width: 80%;
+  }
+
+  .sample-form .form-group label {
+    width: 80%;
+  }
+
+  .sample-form input {
+    width: 80%;
+  }
+
+  .bnt-sub {
+    width: 50%;
+  }
+
+  .submit-btn {
+    padding: 0.7rem 1.3rem;
+    font-size: 1rem;
+  }
+}
+
+/* 📖 Tablet / Desktop pequeno (768px – 1024px) */
+@media (min-width: 768px) and (max-width: 900px) {
+  .sample-request-container {
+    width: 80%;
+  }
+
+  .sample-cart {
+    width: 70%;
+  }
+
+  .sample-form .form-group label,
+  .sample-form .form-group input {
+    width: 70%;
+  }
+
+  .bnt-sub {
+    width: 40%;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+/* 💻 Desktop médio (1025px – 1799px) */
+@media (min-width: 1600px) and (max-width: 1799px) {
+  .sample-request-container {
+    max-width: 600px;
+  }
+
+  .sample-cart {
+    width: 60%;
+  }
+
+  .sample-form .form-group label,
+  .sample-form .form-group input {
+    width: 60%;
+  }
+
+  .bnt-sub {
+    width: 30%;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+/* 🖥️ Telas grandes (1800px+) */
+@media (min-width: 1800px) {
+  .sample-request-container {
+    padding-top: 120px;
+    margin: 0 auto;
+  }
+
+  .sample-request-container h1 {
+    font-size: 2rem;
+  }
+
+  .sample-cart {
+    width: 50%;
+    padding: 1.5rem;
+  }
+
+  .sample-cart h2 {
+    font-size: 1.3rem;
+  }
+
+  .sample-item span {
+    font-size: 1.1rem;
+  }
+
+  .sample-form .form-group label,
+  .sample-form .form-group input {
+    width: 50%;
+  }
+
+  .submit-btn {
+    font-size: 1.1rem;
+    padding: 0.9rem 1.8rem;
+  }
+
+  .bnt-sub {
+    width: 25%;
+  }
+
+  .back-btn {
+    font-size: 1.1rem;
+  }
+}

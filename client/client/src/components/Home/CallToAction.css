@@ -1,0 +1,182 @@
+.call-to-action {
+  background: linear-gradient(180deg, #ffffff 0%, #d8ede4 100%);
+  padding: 3rem 1rem 0 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-wrapper {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  height: 55vh; /* 👈 garante que tudo se ajuste à imagem */
+  margin: 0 auto;
+}
+
+.cta-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: -50px;
+  left: 0;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: block;
+}
+
+/* overlay escuro entre imagem e texto */
+.cta-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  z-index: 1;
+}
+
+/* conteúdo sobreposto */
+.cta-overlay {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 0 2rem;
+  z-index: 2;
+  width: 100%;
+}
+
+.cta-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  transform: translateY(0);
+  background: rgba(0, 0, 0, 0.4); /* overlay escuro sobre a imagem */
+  border-radius: 20px;            /* mesma curva da imagem */
+  z-index: 1;
+}
+
+.cta-overlay h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.cta-overlay p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  font-weight: 300;
+}
+
+.cta-overlay button {
+  background-color: #7DA98E;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  z-index: 2;
+}
+
+.cta-overlay button:hover {
+  background-color: #689f7c;
+}
+
+/* === MEDIA QUERIES === */
+
+/* max 320px */
+@media (max-width: 320px) {
+  .cta-image {
+    max-height: 220px;
+  }
+
+  .cta-overlay h2 {
+    font-size: 1.2rem;
+  }
+
+  .cta-overlay p {
+    font-size: 0.85rem;
+  }
+
+  .cta-overlay button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .call-to-action {
+    padding: 1rem 0;
+  }
+}
+
+/* 321px - 600px */
+@media (min-width: 321px) and (max-width: 600px) {
+  .cta-image {
+    max-height: 260px;
+  }
+
+  .cta-overlay h2 {
+    font-size: 1.2rem;
+    padding-top: 40px;
+  }
+
+  .cta-overlay p {
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .cta-overlay button {
+    font-size: 0.8rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .call-to-action {
+    padding: 1.5rem 0 2.5rem 0;
+  }
+}
+
+/* 601px - 767px */
+@media (min-width: 601px) and (max-width: 767px) {
+  .cta-image {
+    max-height: 300px;
+  }
+
+  .cta-overlay h2 {
+    font-size: 1.6rem;
+  }
+
+  .cta-overlay p {
+    font-size: 0.95rem;
+  }
+
+  .call-to-action {
+    padding: 2rem 1rem;
+  }
+}
+
+/* 768px - 900px */
+@media (min-width: 768px) and (max-width: 900px) {
+  .cta-image {
+    max-height: 350px;
+  }
+
+  .cta-overlay h2 {
+    font-size: 1.7rem;
+  }
+
+  .cta-overlay p {
+    font-size: 1rem;
+  }
+}
+

@@ -1,0 +1,81 @@
+.sp-cta {
+  padding: 3rem 1rem 6rem 1rem;
+  background-color: #F9FAF9;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.sp-cta h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.sp-cta-btn {
+  background-color: #7CAF8E;
+  color: white;
+  border: none;
+  padding: 0.9rem 1.8rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sp-cta-btn:hover {
+  background-color: #689f7c;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Telas até 500px */
+@media (max-width: 500px) {
+  .sp-cta h2 {
+    font-size: 1.4rem;
+  }
+
+  .sp-cta-btn {
+    font-size: 0.95rem;
+    padding: 0.8rem 1.6rem;
+  }
+}
+
+/* Telas entre 501px e 767px */
+@media (min-width: 501px) and (max-width: 767px) {
+  .sp-cta h2 {
+    font-size: 1.5rem;
+  }
+
+  .sp-cta-btn {
+    font-size: 1rem;
+    padding: 0.85rem 1.7rem;
+  }
+}
+
+/* Telas entre 768px e 900px */
+@media (min-width: 768px) and (max-width: 900px) {
+  .sp-cta h2 {
+    font-size: 1.6rem;
+  }
+
+  .sp-cta-btn {
+    font-size: 1.05rem;
+    padding: 0.9rem 1.8rem;
+  }
+}
+
+/* Telas maiores que 1800px */
+@media (min-width: 1800px) {
+  .sp-cta {
+    padding: 4rem 1rem 8rem 1rem;
+  }
+
+  .sp-cta h2 {
+    font-size: 2rem;
+  }
+
+  .sp-cta-btn {
+    font-size: 1.15rem;
+    padding: 1rem 2.2rem;
+  }
+}

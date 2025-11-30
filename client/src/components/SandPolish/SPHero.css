@@ -1,0 +1,33 @@
+.sp-hero {
+  background-image: url('/sandpolish/steps/step4.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sp-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: flex;              
+  justify-content: center;    
+  align-items: center;       
+}
+
+.sp-overlay h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 500px){
+  .sp-overlay h1 {
+    font-size: 2rem;
+  }
+}

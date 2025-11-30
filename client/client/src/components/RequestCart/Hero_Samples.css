@@ -1,0 +1,23 @@
+.sample-hero {
+  background-image: url('/cart-hero.jpg'); /* Substitua pela imagem correta */
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sample-overlay h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 500px){
+  .sample-overlay h1{
+    font-size: 2rem;
+  }
+}

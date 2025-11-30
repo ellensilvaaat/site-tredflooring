@@ -1,0 +1,125 @@
+.collections-section {
+  padding: 55px 20px;
+  background-color: var(--bg-light);
+  text-align: center;
+}
+
+.collections-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 60px 80px 60px;
+}
+
+.nav-arrow{
+  padding: 0 25px;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  position: relative;
+  color: var(--text-dark);
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 150px;
+  height: 2px;
+  background-color: var(--primary-green);
+  margin-top: 8px;
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--gray-dark);
+  max-width: 300px;
+  text-align: right;
+}
+
+.collections-gallery-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.collections-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+
+.collection-card {
+  position: relative;
+  background-color: transparent;
+  transition: transform 0.3s ease;
+  max-width: 220px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.collection-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  transition: transform 0.4s ease;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.collection-card:hover img {
+  transform: scale(1.05);
+}
+
+.collection-card .card-title {
+  margin-top: 12px;
+  font-family: var(--font-body);
+  color: var(--text-dark);
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .collections-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .collections-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .collections-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .title {
+    margin-bottom: 1.8rem;
+  }
+
+  .subtitle {
+    text-align: center;
+  }
+
+  .mobile-hide-br {
+    display: none;
+  }
+
+  .nav-arrow {
+    display: none;
+  }
+
+  .collections-section {
+    padding: 2rem 0 3rem 0;
+  }
+}

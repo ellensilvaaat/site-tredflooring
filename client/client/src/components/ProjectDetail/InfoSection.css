@@ -1,0 +1,44 @@
+.project-intro {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 4rem;
+  flex-wrap: wrap;
+}
+
+.intro-text {
+  flex: 1 1 400px;
+}
+
+.intro-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.intro-text p {
+  font-size: 1.8rem;
+}
+
+.intro-image {
+  flex: 1 1 300px;
+}
+
+.intro-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+@media (max-width: 500px){
+.project-intro {
+  padding: 4rem 1rem 0 ;
+}
+.intro-text h2{
+  font-size: 1.5rem;
+  text-align: center;
+}
+.intro-text p{
+  text-align: center;
+}
+}

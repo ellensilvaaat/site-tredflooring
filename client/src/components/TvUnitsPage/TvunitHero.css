@@ -1,0 +1,33 @@
+.tv-hero {
+  background-image: url('/5m.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.tv-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: flex-end; /* move para direita */
+  align-items: flex-end;     /* move para baixo */
+  padding: 2rem;
+  z-index: 1;
+}
+
+.tv-overlay h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+@media (max-width: 500px) {
+  .tv-overlay h1 {
+    font-size: 1.5rem;
+  }
+}
+

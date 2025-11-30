@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.proj-section {
+  padding: 5rem 2rem;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom, #ffffff 0%, #F4F9F6 100%);
+}
+
+
+.proj-filter-bar {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.proj-filter-bar p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.proj-filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+
+.proj-filter-btn {
+  border: 2px solid #7CAF8E;
+  background: white;
+  color: #333;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.proj-filter-btn.active {
+  background-color: #7CAF8E;
+  color: white;
+}
+
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.proj-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.proj-card:hover {
+  transform: scale(1.02);
+}
+
+.proj-bg {
+  width: 100%;
+  padding-top: 56.25%; /* proporção 16:9 */
+  background-size: cover;
+  background-position: center;
+}
+
+.proj-content {
+  padding: 1rem;
+  background: white;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.proj-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.proj-content p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.proj-btn {
+  align-self: flex-start;
+  background-color: #7CAF8E;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.proj-btn:hover {
+  background-color: #689f7c;
+}
+
+.proj-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.proj-pagination button {
+  border: none;
+  background: none;
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  color: #666;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.proj-pagination button.active {
+  background-color: #7CAF8E;
+  color: white;
+}
+
+.proj-pagination button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.proj-text {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.proj-text p {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.proj-text span {
+  color: #7CAF8E;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+@media (max-width: 500px){
+
+.proj-filter-buttons{
+  gap: 0.5rem;
+}
+
+.proj-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.proj-content h3{
+  font-size: 1.1rem;
+}
+
+.proj-content p{
+  font-size: 0.9rem;
+}
+}

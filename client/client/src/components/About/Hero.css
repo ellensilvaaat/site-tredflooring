@@ -1,0 +1,23 @@
+.about-hero {
+  background-image: url('/about-hero.png'); 
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .overlay h1{
+    font-size: 2rem;
+  }
+}

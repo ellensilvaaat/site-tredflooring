@@ -1,0 +1,17 @@
+:root {
+  /* --- Brand Colors --- */
+  --primary-green: #7DA98E;
+  --green-hover: #6c947b;
+
+  /* --- Neutros --- */
+  --white: #ffffff;
+  --black: #000000;
+  --text-dark: #1a1a1a;
+  --bg-light: #f9f9f9;
+  --gray-light: #eaeaea;
+  --gray-dark: #666;
+
+  /* --- Fontes (definidas em typography.css) --- */
+  --font-heading: 'Lora', serif;
+  --font-body: 'Inter', sans-serif;
+}

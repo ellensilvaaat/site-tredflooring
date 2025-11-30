@@ -1,0 +1,309 @@
+.site-footer {
+  position: relative;
+  width: 100%;
+}
+
+/* Fundo decorativo */
+.footer-bg-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.footer-bg-decor img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.footer-container {
+  position: relative;
+  z-index: 2;
+  background-color: #ffffff;
+  border-radius: 20px 20px 0 0;
+  padding: 4rem 3rem 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Topo do footer: esquerda e direita */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8rem;
+}
+
+/* Esquerda */
+.footer-left {
+  max-width: 400px;
+}
+
+.footer-logo {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.footer-quote {
+  font-family: var(--font-body);
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.footer-socials a {
+  color: #333;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: var(--primary-green);
+}
+
+/* Direita - grupo com menu + local */
+.footer-right-group {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+/* Menu */
+.footer-nav h4,
+.footer-location h4 {
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a.active {
+  color: var(--primary-green);
+}
+
+/* Localização */
+.footer-location p {
+  margin: 0.25rem 0;
+  font-family: var(--font-body);
+}
+
+/* Rodapé legal */
+.footer-bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.7rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--primary-green);
+}
+
+/* Responsivo */
+@media (max-width: 500px) {
+  .footer-nav {
+    display: none;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-right-group {
+    flex-direction: column;
+    gap: 2rem;
+    margin: auto;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+    font-size: 0.5rem;
+    padding-top: 10px;
+  }
+
+  .footer-logo {
+    padding: 40px 0 10px;
+    width: 60px;
+    margin: auto;
+  }
+
+  .footer-container {
+    padding: 0 1rem 1rem;
+  }
+
+  .footer-quote {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .footer-left {
+    width: 100%;
+  }
+
+  .footer-socials {
+    margin: auto;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .footer-socials a {
+    font-size: 1.2rem;
+  }
+
+  .footer-location h4 {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .footer-location p {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .footer-location {
+    margin: auto;
+  }
+
+  .footer-links{
+    font-size: 0.8rem;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-right-group {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .footer-logo {
+    width: 140px;
+  }
+}
+
+/* ------------------- MEDIA QUERIES ADICIONAIS PARA FOOTER ------------------- */
+
+/* 🎯 Tablets e telas médias: 769px – 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer-container {
+    padding: 3rem 2rem 2rem;
+  }
+  .footer-top {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer-right-group {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer-logo {
+    width: 120px;
+  }
+  .footer-location p,
+  .footer-nav li a {
+    font-size: 0. ninerem;
+  }
+}
+
+/* 🖥️ Telas grandes: 1800px+ */
+@media (min-width: 1800px) {
+  .footer-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 6rem 5rem 3rem;
+  }
+  .footer-top {
+    gap: 6rem;
+  }
+  .footer-left {
+    max-width: 40%;
+  }
+  .footer-right-group {
+    gap: 4rem;
+  }
+  .footer-logo {
+    width: 100px;
+  }
+  .footer-quote {
+    font-size: 1.1rem;
+  }
+  .footer-socials a {
+    font-size: 1.8rem;
+  }
+  .footer-nav h4,
+  .footer-location h4 {
+    font-size: 1.2rem;
+  }
+  .footer-nav a,
+  .footer-location p {
+    font-size: 1rem;
+  }
+  .footer-bottom {
+    font-size: 0.9rem;
+    padding-top: 2rem;
+  }
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+}
+
+
