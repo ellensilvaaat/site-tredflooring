@@ -4,7 +4,7 @@ export default function UploadRoom() {
   return (
     <section className="upload-room">
       <div className="upload-room__image">
-        <img src="/room-left.png" alt="Room left" />
+        <img src="https://site-tredflooring-assets.s3.amazonaws.com/room-left.png" alt="Room left" />
       </div>
 
       <div className="upload-room__text">

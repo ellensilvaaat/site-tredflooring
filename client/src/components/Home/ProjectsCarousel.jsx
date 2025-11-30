@@ -5,41 +5,41 @@ const projects = [
   {
     id: 1,
     title: 'Pyrmont',
-    image: '/projects/proj6.jpg',
+    image: "https://site-tredflooring-assets.s3.amazonaws.com/projects/proj6.jpg",
     scope: 'Surry Hills – open-plan design, new kitchen, timber finishes.',
   },
   {
     id: 2,
     title: 'Cremorne',
-    image: '/projects/proj2.jpg',
+    image: "https://site-tredflooring-assets.s3.amazonaws.com/projects/proj2.jpg",
     scope:
       'Palm Beach – luxury villa transform, indoor/outdoor flow, pool extension and smart home systems.',
   },
   {
     id: 3,
     title: 'Surry Hills',
-    image: '/projects/proj3.jpg',
+    image: "https://site-tredflooring-assets.s3.amazonaws.com/projects/proj3.jpg",
     scope:
       'Luxury Hybrid Sandy Beach delivers a matte EIR finish with crystal non-slip texture, creating a durable, stylish surface ideal for modern living',
   },
   {
     id: 4,
     title: 'Annandale',
-    image: '/projects/proj4.jpg',
+    image: "https://site-tredflooring-assets.s3.amazonaws.com/projects/proj4.jpg",
     scope:
       'Newtown – heritage compliance, bathroom rebuild, facade restoration.',
   },
   {
     id: 5,
     title: 'Liberty Grove',
-    image: '/projects/proj5.jpg',
+    image: "https://site-tredflooring-assets.s3.amazonaws.com/projects/proj5.jpg",
     scope:
       'Sydney CBD – full fit-out, acoustic upgrades, lighting automation.',
   },
   {
     id: 6,
     title: 'Cremorne',
-    image: '/projects/proj1.jpg',
+    image: "https://site-tredflooring-assets.s3.amazonaws.com/projects/proj1.jpg",
     scope:
       'Northcote Avenue, Caringbah South – kitchen + bathroom updates, joinery, approvals, scheduling.',
   },

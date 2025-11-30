@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="footer-bg-decor">
         {/* If you have a decorative background image for the footer, add it here */}
-        {/* Example: <img src="/footer-bg.jpg" alt="Footer background" /> */}
+        {/* Example: <img src="https://site-tredflooring-assets.s3.amazonaws.com/footer-bg.jpg"" alt="Footer background" /> */}
       </div>
 
       <div className="footer-container">
@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="footer-top">
           {/* Lado Esquerdo - Logo, frase, redes sociais */}
           <div className="footer-left">
-            <img src="/logofooter.svg" alt="TRED Logo" className="footer-logo" />
+            <img src="https://site-tredflooring-assets.s3.amazonaws.com/logofooter.svg"" alt="TRED Logo" className="footer-logo" />
             <p className="footer-quote">
               “Quality is remembered long after price is forgotten.”<br />– Aldo Gucci
             </p>

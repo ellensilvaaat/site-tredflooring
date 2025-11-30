@@ -7,35 +7,35 @@ const steps = [
     title: 'Initial assessment',
     description:
       'We inspect floor condition, checking for damage, moisture, and suitability for sanding/polishing.',
-    img: '/sandpolish/steps/step1.jpg',
+    img: "https://site-tredflooring-assets.s3.amazonaws.com/sandpolish/steps/step1.jpg",
   },
   {
     id: 2,
     title: 'Preparation & cleaning',
     description:
       'Furniture and debris are removed and floor is cleaned thoroughly to ensure dust‑free sanding.',
-    img: '/sandpolish/steps/step2.jpg',
+    img: "https://site-tredflooring-assets.s3.amazonaws.com/sandpolish/steps/step2.jpg",
   },
   {
     id: 3,
     title: 'Sanding',
     description:
       'We sand down old finish, scratches or stains using professional sanding equipment, revealing fresh wood surface.',
-    img: '/sandpolish/steps/step3.jpg',
+    img: "https://site-tredflooring-assets.s3.amazonaws.com/sandpolish/steps/step3.jpg",
   },
   {
     id: 4,
     title: 'Polish & sealing',
     description:
       'We apply premium sealant/coating for protection and shine, ensuring durability and easy maintenance.',
-    img: '/sandpolish/steps/step4.jpg',
+    img: "https://site-tredflooring-assets.s3.amazonaws.com/sandpolish/steps/step4.jpg",
   },
   {
     id: 5,
     title: 'Final inspection & cleanup',
     description:
       'We inspect the finished floor, clean up all dust and ensure your space is ready to use.',
-    img: '/sandpolish/steps/step5.jpg',
+    img: "https://site-tredflooring-assets.s3.amazonaws.com/sandpolish/steps/step5.jpg",
   },
 ];
 

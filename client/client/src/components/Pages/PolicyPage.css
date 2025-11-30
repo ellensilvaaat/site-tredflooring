@@ -1,5 +1,5 @@
 .aboutt-hero {
-  background: url('/pagess.jpg') no-repeat center center/cover;
+  background: url("https://site-tredflooring-assets.s3.amazonaws.com/pagess.jpg"') no-repeat center center/cover;
   padding: 250px 20px;
   position: relative;
   text-align: center;

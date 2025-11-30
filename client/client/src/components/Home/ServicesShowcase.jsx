@@ -1,11 +1,11 @@
 import './ServicesShowcase.css';
 
 const services = [
-  { id: 1, label: 'Custom Rugs', img: '/services/rug-icon.png' },
-  { id: 2, label: 'TV Units', img: '/services/tv-icon.png' },
-  { id: 3, label: 'Wall Panels', img: '/services/wall-icon.jpg' },
-  { id: 4, label: 'Sand & Polish', img: '/services/sand-icon.jpg' },
-  { id: 5, label: 'Pavers', img: '/services/pavers-icon.jpg' },
+  { id: 1, label: 'Custom Rugs', img: "https://site-tredflooring-assets.s3.amazonaws.com/services/rug-icon.png"' },
+  { id: 2, label: 'TV Units', img: "https://site-tredflooring-assets.s3.amazonaws.com/services/tv-icon.png"' },
+  { id: 3, label: 'Wall Panels', img: "https://site-tredflooring-assets.s3.amazonaws.com/services/wall-icon.jpg"' },
+  { id: 4, label: 'Sand & Polish', img: "https://site-tredflooring-assets.s3.amazonaws.com/services/sand-icon.jpg"' },
+  { id: 5, label: 'Pavers', img: "https://site-tredflooring-assets.s3.amazonaws.com/services/pavers-icon.jpg"' },
 ];
 
 export default function ServicesShowcase() {

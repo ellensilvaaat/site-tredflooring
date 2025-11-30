@@ -13,7 +13,7 @@ export default function InfoSection() {
         </p>
       </div>
       <div className="intro-image">
-        <img src="/placeholder.png" alt="Project intro placeholder" />
+        <img src="https://site-tredflooring-assets.s3.amazonaws.com/placeholder.png" alt="Project intro placeholder" />
       </div>
     </section>
   );

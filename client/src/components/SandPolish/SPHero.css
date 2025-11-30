@@ -1,5 +1,5 @@
 .sp-hero {
-  background-image: url('/sandpolish/steps/step4.jpg');
+  background-image: url("https://site-tredflooring-assets.s3.amazonaws.com/sandpolish/steps/step4.jpg");
   background-size: cover;
   background-position: center;
   height: 60vh;

@@ -1,5 +1,5 @@
 .booking-hero {
-  background-image: url('/contact-hero.png');
+  background-image: url("https://site-tredflooring-assets.s3.amazonaws.com/contact-hero.png");
   background-size: cover;
   background-position: center;
   height: 60vh;

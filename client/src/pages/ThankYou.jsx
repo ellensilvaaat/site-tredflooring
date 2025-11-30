@@ -6,7 +6,7 @@ export default function ThankYou() {
   return (
     <section className="thankyou-section">
       <div className="thankyou-container">
-        <img src="/logo.png" alt="Tred Flooring logo" className="thankyou-logo" />
+        <img src="https://site-tredflooring-assets.s3.amazonaws.com/logo.png" alt="Tred Flooring logo" className="thankyou-logo" />
         <h1>Thank you!</h1>
         <p>
           We appreciate you taking the time to reach out.<br />

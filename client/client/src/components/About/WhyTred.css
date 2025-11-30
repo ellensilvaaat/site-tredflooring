@@ -1,7 +1,7 @@
 .why-tred-section {
   padding: 4rem 2rem;
   background-color: #fff;
-  background-image: url('/bgChoose.png'); 
+  background-image: url("https://site-tredflooring-assets.s3.amazonaws.com/bgChoose.png"'); 
 }
 
 .why-tred-container {

@@ -1,5 +1,5 @@
 .pv-hero {
-  background-image: url('/pavers/hero.jpg');
+  background-image: url("https://site-tredflooring-assets.s3.amazonaws.com/pavers/hero.jpg");
   background-size: cover;
   background-position: center;
   height: 60vh;

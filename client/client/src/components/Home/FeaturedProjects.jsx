@@ -3,7 +3,7 @@ import './FeaturedProjects.css';
 export default function FeaturedProjects() {
   const projects = Array.from({ length: 6 }, (_, i) => ({
     id: i + 1,
-    img: '/bg.png',
+    img: "https://site-tredflooring-assets.s3.amazonaws.com/bg.png"',
     title: `Project ${i + 1}`,
   }));
 

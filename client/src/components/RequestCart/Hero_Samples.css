@@ -1,5 +1,5 @@
 .sample-hero {
-  background-image: url('/cart-hero.jpg'); /* Substitua pela imagem correta */
+  background-image: url("https://site-tredflooring-assets.s3.amazonaws.com/cart-hero.jpg"); /* Substitua pela imagem correta */
   background-size: cover;
   background-position: center;
   height: 40vh;

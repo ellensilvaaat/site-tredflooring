@@ -96,7 +96,7 @@ export default function ProductCollections() {
             Filters ▾
           </div>
           <button className="product-search-button">
-            <img src="/search-icon.png" alt="Search" style={{ width: '20px', height: '20px' }} />
+            <img src="https://site-tredflooring-assets.s3.amazonaws.com/search-icon.png" alt="Search" style={{ width: '20px', height: '20px' }} />
           </button>
         </div>
 

@@ -60,7 +60,7 @@ export default function Process() {
           </div>
 
           <div className="process-image">
-            <img src="/process-img.png" alt="Process illustration" />
+            <img src="https://site-tredflooring-assets.s3.amazonaws.com/process-img.png"" alt="Process illustration" />
           </div>
 
           <div className="process-steps">

@@ -3,12 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import './Collections.css';
 
 const collectionsData = [
-  { id: 1, title: 'Hardwood Collection',   img: '/collections/hardwood-collection.jpg', slug: 'hardwood-collection' },
-  { id: 2, title: 'Prestige Oak',         img: '/collections/Prestige-Oak.jpg',        slug: 'prestige-oak'       },
-  { id: 3, title: 'Herringbone',           img: '/collections/Herringbone.jpg',         slug: 'herringbone'         },
-  { id: 4, title: 'Chevron',               img: '/collections/Chevron.jpg',             slug: 'chevron'             },
-  { id: 5, title: 'Village Oak',           img: '/collections/Village-Oak.jpg',         slug: 'village-oak'         },
-  { id: 6, title: 'Australian Timber',     img: '/collections/Australian-Timber.jpg',   slug: 'australian-timber'   },
+  { id: 1, title: 'Hardwood Collection',   img: "https://site-tredflooring-assets.s3.amazonaws.com/collections/hardwood-collection.jpg"', slug: 'hardwood-collection' },
+  { id: 2, title: 'Prestige Oak',         img: "https://site-tredflooring-assets.s3.amazonaws.com/collections/Prestige-Oak.jpg"',        slug: 'prestige-oak'       },
+  { id: 3, title: 'Herringbone',           img: "https://site-tredflooring-assets.s3.amazonaws.com/collections/Herringbone.jpg"',         slug: 'herringbone'         },
+  { id: 4, title: 'Chevron',               img: "https://site-tredflooring-assets.s3.amazonaws.com/collections/Chevron.jpg"',             slug: 'chevron'             },
+  { id: 5, title: 'Village Oak',           img: "https://site-tredflooring-assets.s3.amazonaws.com/collections/Village-Oak.jpg"',         slug: 'village-oak'         },
+  { id: 6, title: 'Australian Timber',     img: "https://site-tredflooring-assets.s3.amazonaws.com/collections/Australian-Timber.jpg"',   slug: 'australian-timber'   },
 ];
 
 export default function Collections() {

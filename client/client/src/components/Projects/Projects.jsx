@@ -9,7 +9,7 @@ const allProjects = Array.from({ length: 15 }).map((_, i) => {
     id: i + 1,
     title: `Project ${i + 1}`,
     category: categories[i % categories.length],
-    image: '/project-placeholder.png',
+    image: "https://site-tredflooring-assets.s3.amazonaws.com/project-placeholder.png"',
     description: 'Short description here.'
   };
 });

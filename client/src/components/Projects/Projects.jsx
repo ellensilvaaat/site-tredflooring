@@ -7,9 +7,9 @@ const allProjects = [
     title: 'Surry Hills',
     category: 'Bedroom',
     images: [
-      '/projectspage/surryhills/living.jpg',
-      '/projectspage/surryhills/bedroom.jpg',
-      '/projectspage/surryhills/bedroom2.jpg',
+      "https://site-tredflooring-assets.s3.amazonaws.com/projectspage/surryhills/living.jpg",
+      "https://site-tredflooring-assets.s3.amazonaws.com/projectspage/surryhills/bedroom.jpg",
+      "https://site-tredflooring-assets.s3.amazonaws.com/projectspage/surryhills/bedroom2.jpg"
     ],
     description: 'Soft-toned timber flooring brings warmth and continuity to compact bedroom and living spaces.'
   },
@@ -18,9 +18,9 @@ const allProjects = [
     title: 'Pyrmont',
     category: 'Kitchen',
     images: [
-      '/projectspage/pyrmont/kitchen.jpg',
-      '/projectspage/pyrmont/hall.jpg',
-      '/projectspage/pyrmont/kitchen1.jpg'
+      "https://site-tredflooring-assets.s3.amazonaws.com/projectspage/pyrmont/kitchen.jpg",
+      "https://site-tredflooring-assets.s3.amazonaws.com/projectspage/pyrmont/hall.jpg",
+      "https://site-tredflooring-assets.s3.amazonaws.com/projectspage/pyrmont/kitchen1.jpg"
     ],
     description: 'Refined timber floors elevate both kitchen and hallway with a sleek, contemporary finish.'
   },
@@ -29,10 +29,10 @@ const allProjects = [
     title: 'Annandale',
     category: 'Bedroom',
     images: [
-      '/projectspage/annandale/bedroom.jpg',
-      '/projectspage/annandale/kitchen.jpg',
-      '/projectspage/annandale/living.jpg',
-      '/projectspage/annandale/stairs.jpg'
+      "https://site-tredflooring-assets.s3.amazonaws.com/projectspage/annandale/bedroom.jpg",
+      "https://site-tredflooring-assets.s3.amazonaws.com/projectspage/annandale/kitchen.jpg",
+      "https://site-tredflooring-assets.s3.amazonaws.com/projectspage/annandale/living.jpg",
+      "https://site-tredflooring-assets.s3.amazonaws.com/projectspage/annandale/stairs.jpg"
     ],
     description: 'Warm-toned bedroom flooring that enhances comfort and style.'
   },
@@ -41,8 +41,8 @@ const allProjects = [
   title: 'Cremorne',
   category: 'Living',
   images: [
-    '/projectspage/cremorne/kitchen.jpg',
-    '/projectspage/cremorne/living.jpg'
+    "https://site-tredflooring-assets.s3.amazonaws.com/projectspage/cremorne/kitchen.jpg",
+    "https://site-tredflooring-assets.s3.amazonaws.com/projectspage/cremorne/living.jpg"
   ],
   description: 'Elegant living room flooring combining warmth and timeless texture.'
 },
@@ -51,9 +51,9 @@ const allProjects = [
   title: 'Liberty Grove',
   category: 'Living',
   images: [
-    '/projectspage/libertygrove/living.jpg',
-    '/projectspage/libertygrove/living1.jpg',
-    '/projectspage/libertygrove/kitchen.jpg'
+    "https://site-tredflooring-assets.s3.amazonaws.com/projectspage/libertygrove/living.jpg",
+    "https://site-tredflooring-assets.s3.amazonaws.com/projectspage/libertygrove/living1.jpg",
+    "https://site-tredflooring-assets.s3.amazonaws.com/projectspage/libertygrove/kitchen.jpg"
   ],
   description: 'Warm timber floors extend seamlessly across open-plan living and kitchen areas.'
 }

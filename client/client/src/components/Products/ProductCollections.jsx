@@ -10,7 +10,7 @@ const allProductCollections = Array.from({ length: 16 }).map((_, i) => ({
   name: `Product ${i + 1}`,
   type: i % 2 === 0 ? 'Solid timber' : 'Hybrid',
   specs: ['Water', 'Scratch', 'Low‑VOC', 'Acoustic'].slice(0, 3),
-  image: '/collection-placeholder.png'
+  image: "https://site-tredflooring-assets.s3.amazonaws.com/collection-placeholder.png"'
 }));
 
 const ITEMS_PER_PAGE = 12;
@@ -99,7 +99,7 @@ export default function ProductCollections() {
             Filters ▾
           </div>
           <button className="product-search-button">
-            <img src="/search-icon.png" alt="Search" style={{ width: '20px', height: '20px' }} />
+            <img src="https://site-tredflooring-assets.s3.amazonaws.com/search-icon.png"" alt="Search" style={{ width: '20px', height: '20px' }} />
           </button>
         </div>
 

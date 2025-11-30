@@ -3,19 +3,19 @@ import './BenefitsSection.css';
 
 const benefits = [
   {
-    icon: '/wallpanels/icons/wood.png',
+    icon: "https://site-tredflooring-assets.s3.amazonaws.com/wallpanels/icons/wood.png",
     text: 'Elegant and natural finishes that elevate your interiors.',
   },
   {
-    icon: '/wallpanels/icons/sketch.png',
+    icon: "https://site-tredflooring-assets.s3.amazonaws.com/wallpanels/icons/sketch.png",
     text: 'Flexible design, slatted, grooved, smooth or textured styles.',
   },
   {
-    icon: '/wallpanels/icons/deadline.png',
+    icon: "https://site-tredflooring-assets.s3.amazonaws.com/wallpanels/icons/deadline.png",
     text: 'Fast installation with concealed joins and minimal disruption.',
   },
   {
-    icon: '/wallpanels/icons/security.png',
+    icon: "https://site-tredflooring-assets.s3.amazonaws.com/wallpanels/icons/security.png",
     text: 'Durable, low-maintenance surfaces built to last.',
   },
 ];

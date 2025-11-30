@@ -1,5 +1,5 @@
 .projectDetail-heroo {
-  background-image: url('/products-hero.png');
+  background-image: url("https://site-tredflooring-assets.s3.amazonaws.com/products-hero.png"');
   background-size: cover;
   background-position: center;
   height: 60vh;

@@ -4,7 +4,7 @@ import './Team.css';
 const teamMembers = new Array(8).fill({
   name: 'Mark',
   description: 'example example\nexample example',
-  image: '/placeholder2.png' // substituir depois pelas imagens reais
+  image: "https://site-tredflooring-assets.s3.amazonaws.com/placeholder2.png" // substituir depois pelas imagens reais
 });
 
 export default function Team() {

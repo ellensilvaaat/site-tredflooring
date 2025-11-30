@@ -1,5 +1,5 @@
 .tv-hero {
-  background-image: url('/5m.jpg');
+  background-image: url("https://site-tredflooring-assets.s3.amazonaws.com/5m.jpg"');
   background-size: cover;
   background-position: center;
   height: 80vh;

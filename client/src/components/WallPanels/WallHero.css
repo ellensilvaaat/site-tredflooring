@@ -1,5 +1,5 @@
 .wall-hero {
-  background-image: url('/wallpanels/examples/process-step4.jpg');
+  background-image: url("https://site-tredflooring-assets.s3.amazonaws.com/wallpanels/examples/process-step4.jpg");
   background-size: cover;
   background-position: center;
   height: 60vh;

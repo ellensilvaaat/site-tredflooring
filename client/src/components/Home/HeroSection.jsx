@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './HeroSection.css';
 
-const images = ['/hero1.jpg', '/hero2.jpg', '/hero3.jpg'];
+const images = ["https://site-tredflooring-assets.s3.amazonaws.com/hero1.jpg", "https://site-tredflooring-assets.s3.amazonaws.com/hero2.jpg", "https://site-tredflooring-assets.s3.amazonaws.com/hero3.jpg"];
 
 export default function HeroSection() {
   const [currentImage, setCurrentImage] = useState(0);

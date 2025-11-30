@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="logo">
-        <img src="/logo.svg" alt="TRED logo" />
+        <img src="https://site-tredflooring-assets.s3.amazonaws.com/logo.svg"" alt="TRED logo" />
       </div>
 
       {/* Botão Mobile */}

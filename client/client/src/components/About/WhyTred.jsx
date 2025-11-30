@@ -4,22 +4,22 @@ import './WhyTred.css';
 export default function WhyTred() {
   const items = [
     {
-      icon: '/icon1.png',
+      icon: "https://site-tredflooring-assets.s3.amazonaws.com/icon1.png"',
       title: (<><span>Design-led<br />guidance</span></>),
       description: 'Personalised consultations for every space.'
     },
     {
-      icon: '/icon2.png',
+      icon: "https://site-tredflooring-assets.s3.amazonaws.com/icon2.png"',
       title: (<><span>End-to-end<br />delivery</span></>),
       description: 'From quote to installation, we handle it.'
     },
     {
-      icon: '/icon3.png',
+      icon: "https://site-tredflooring-assets.s3.amazonaws.com/icon3.png"',
       title: (<><span>Certified,<br />durable ranges</span></>),
       description: 'Water- and scratch-resistant options.'
     },
     {
-      icon: '/icon4.png',
+      icon: "https://site-tredflooring-assets.s3.amazonaws.com/icon4.png"',
       title: (<><span>Clear<br />timelines</span></>),
       description: 'Installation scheduled within 1–2 weeks (project-dependent).'
     }

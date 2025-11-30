@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="logo">
-        <img src="/logo.svg" alt="TRED logo" />
+        <img src="https://site-tredflooring-assets.s3.amazonaws.com/logo.svg" alt="TRED logo" />
       </div>
 
       {/* Agrupa menu + carrinho no desktop */}
@@ -28,7 +28,7 @@ export default function Navbar() {
 
         {/* Carrinho (visível no desktop) */}
         <Link to="/cart" className="navbar-cart-icon" title="Cart">
-          <img src="/icons/cart.png" alt="Cart" className="navbar-cart-img" />
+          <img src="https://site-tredflooring-assets.s3.amazonaws.com/icons/cart.png" alt="Cart" className="navbar-cart-img" />
         </Link>
       </div>
 
@@ -52,7 +52,7 @@ export default function Navbar() {
           <li><NavLink to="/projects" onClick={closeMenu}>Projects</NavLink></li>
           <li><NavLink to="/contact" onClick={closeMenu}>Contact Us</NavLink></li>
           <li><NavLink to="/cart" onClick={closeMenu}>
-            <img src="/icons/cart.png" alt="Cart" className="navbar-cart-img" />
+            <img src="https://site-tredflooring-assets.s3.amazonaws.com/icons/cart.png" alt="Cart" className="navbar-cart-img" />
           </NavLink></li>
         </ul>
       </nav>

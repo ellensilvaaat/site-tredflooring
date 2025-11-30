@@ -11,45 +11,45 @@ const tvUnits = [
       {
         color: "Montblanc",
         size: "2m",
-        image: "/tvunits/theashton/Montblanc/2m.jpg",
+        image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Montblanc/2m.jpg",
         gallery: [
-          "/tvunits/theashton/Montblanc/2m.jpg",
-          "/tvunits/theashton/Montblanc/3m.jpg",
-          "/tvunits/theashton/Montblanc/4m.jpg",
-          "/tvunits/theashton/Montblanc/5m.jpg"
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Montblanc/2m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Montblanc/3m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Montblanc/4m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Montblanc/5m.jpg"
         ],
       },
       {
         color: "Montblanc",
         size: "3m",
-        image: "/tvunits/theashton/Montblanc/3m.jpg",
+        image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Montblanc/3m.jpg",
         gallery: [
-          "/tvunits/theashton/Montblanc/2m.jpg",
-          "/tvunits/theashton/Montblanc/3m.jpg",
-          "/tvunits/theashton/Montblanc/4m.jpg",
-          "/tvunits/theashton/Montblanc/5m.jpg"
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Montblanc/2m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Montblanc/3m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Montblanc/4m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Montblanc/5m.jpg"
         ],
       },
       {
         color: "Montblanc",
         size: "4m",
-        image: "/tvunits/theashton/Montblanc/4m.jpg",
+        image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Montblanc/4m.jpg",
         gallery: [
-          "/tvunits/theashton/Montblanc/2m.jpg",
-          "/tvunits/theashton/Montblanc/3m.jpg",
-          "/tvunits/theashton/Montblanc/4m.jpg",
-          "/tvunits/theashton/Montblanc/5m.jpg"
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Montblanc/2m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Montblanc/3m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Montblanc/4m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Montblanc/5m.jpg"
         ],
       },
       {
         color: "Montblanc",
         size: "5m",
-        image: "/tvunits/theashton/Montblanc/5m.jpg",
+        image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Montblanc/5m.jpg",
         gallery: [
-          "/tvunits/theashton/Montblanc/2m.jpg",
-          "/tvunits/theashton/Montblanc/3m.jpg",
-          "/tvunits/theashton/Montblanc/4m.jpg",
-          "/tvunits/theashton/Montblanc/5m.jpg"
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Montblanc/2m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Montblanc/3m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Montblanc/4m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Montblanc/5m.jpg"
         ],
       },
 
@@ -57,45 +57,45 @@ const tvUnits = [
       {
         color: "Sage",
         size: "2m",
-        image: "/tvunits/theashton/Sage/2m.jpg",
+        image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Sage/2m.jpg",
         gallery: [
-          "/tvunits/theashton/Sage/2m.jpg",
-          "/tvunits/theashton/Sage/3m.jpg",
-          "/tvunits/theashton/Sage/4m.jpg",
-          "/tvunits/theashton/Sage/5m.jpg"
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Sage/2m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Sage/3m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Sage/4m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Sage/5m.jpg"
         ],
       },
       {
         color: "Sage",
         size: "3m",
-        image: "/tvunits/theashton/Sage/3m.jpg",
+        image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Sage/3m.jpg",
         gallery: [
-          "/tvunits/theashton/Sage/2m.jpg",
-          "/tvunits/theashton/Sage/3m.jpg",
-          "/tvunits/theashton/Sage/4m.jpg",
-          "/tvunits/theashton/Sage/5m.jpg"
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Sage/2m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Sage/3m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Sage/4m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Sage/5m.jpg"
         ],
       },
       {
         color: "Sage",
         size: "4m",
-        image: "/tvunits/theashton/Sage/4m.jpg",
+        image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Sage/4m.jpg",
         gallery: [
-          "/tvunits/theashton/Sage/2m.jpg",
-          "/tvunits/theashton/Sage/3m.jpg",
-          "/tvunits/theashton/Sage/4m.jpg",
-          "/tvunits/theashton/Sage/5m.jpg"
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Sage/2m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Sage/3m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Sage/4m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Sage/5m.jpg"
         ],
       },
       {
         color: "Sage",
         size: "5m",
-        image: "/tvunits/theashton/Sage/5m.jpg",
+        image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Sage/5m.jpg",
         gallery: [
-          "/tvunits/theashton/Sage/2m.jpg",
-          "/tvunits/theashton/Sage/3m.jpg",
-          "/tvunits/theashton/Sage/4m.jpg",
-          "/tvunits/theashton/Sage/5m.jpg"
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Sage/2m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Sage/3m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Sage/4m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Sage/5m.jpg"
         ],
       },
 
@@ -103,45 +103,45 @@ const tvUnits = [
       {
         color: "Snow",
         size: "2m",
-        image: "/tvunits/theashton/Snow/2m.jpg",
+        image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Snow/2m.jpg",
         gallery: [
-          "/tvunits/theashton/Snow/2m.jpg",
-          "/tvunits/theashton/Snow/3m.jpg",
-          "/tvunits/theashton/Snow/4m.jpg",
-          "/tvunits/theashton/Snow/5m.jpg"
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Snow/2m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Snow/3m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Snow/4m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Snow/5m.jpg"
         ],
       },
       {
         color: "Snow",
         size: "3m",
-        image: "/tvunits/theashton/Snow/3m.jpg",
+        image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Snow/3m.jpg",
         gallery: [
-          "/tvunits/theashton/Snow/2m.jpg",
-          "/tvunits/theashton/Snow/3m.jpg",
-          "/tvunits/theashton/Snow/4m.jpg",
-          "/tvunits/theashton/Snow/5m.jpg"
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Snow/2m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Snow/3m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Snow/4m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Snow/5m.jpg"
         ],
       },
       {
         color: "Snow",
         size: "4m",
-        image: "/tvunits/theashton/Snow/4m.jpg",
+        image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Snow/4m.jpg",
         gallery: [
-          "/tvunits/theashton/Snow/2m.jpg",
-          "/tvunits/theashton/Snow/3m.jpg",
-          "/tvunits/theashton/Snow/4m.jpg",
-          "/tvunits/theashton/Snow/5m.jpg"
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Snow/2m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Snow/3m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Snow/4m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Snow/5m.jpg"
         ],
       },
       {
         color: "Snow",
         size: "5m",
-        image: "/tvunits/theashton/Snow/5m.jpg",
+        image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Snow/5m.jpg",
         gallery: [
-          "/tvunits/theashton/Snow/2m.jpg",
-          "/tvunits/theashton/Snow/3m.jpg",
-          "/tvunits/theashton/Snow/4m.jpg",
-          "/tvunits/theashton/Snow/5m.jpg"
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Snow/2m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Snow/3m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Snow/4m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Snow/5m.jpg"
         ],
       },
 
@@ -149,45 +149,45 @@ const tvUnits = [
       {
         color: "Terra",
         size: "2m",
-        image: "/tvunits/theashton/Terra/2m.jpg",
+        image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Terra/2m.jpg",
         gallery: [
-          "/tvunits/theashton/Terra/2m.jpg",
-          "/tvunits/theashton/Terra/3m.jpg",
-          "/tvunits/theashton/Terra/4m.jpg",
-          "/tvunits/theashton/Terra/5m.jpg"
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Terra/2m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Terra/3m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Terra/4m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Terra/5m.jpg"
         ],
       },
       {
         color: "Terra",
         size: "3m",
-        image: "/tvunits/theashton/Terra/3m.jpg",
+        image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Terra/3m.jpg",
         gallery: [
-          "/tvunits/theashton/Terra/2m.jpg",
-          "/tvunits/theashton/Terra/3m.jpg",
-          "/tvunits/theashton/Terra/4m.jpg",
-          "/tvunits/theashton/Terra/5m.jpg"
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Terra/2m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Terra/3m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Terra/4m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Terra/5m.jpg"
         ],
       },
       {
         color: "Terra",
         size: "4m",
-        image: "/tvunits/theashton/Terra/4m.jpg",
+        image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Terra/4m.jpg",
         gallery: [
-          "/tvunits/theashton/Terra/2m.jpg",
-          "/tvunits/theashton/Terra/3m.jpg",
-          "/tvunits/theashton/Terra/4m.jpg",
-          "/tvunits/theashton/Terra/5m.jpg"
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Terra/2m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Terra/3m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Terra/4m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Terra/5m.jpg"
         ],
       },
       {
         color: "Terra",
         size: "5m",
-        image: "/tvunits/theashton/Terra/5m.jpg",
+        image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Terra/5m.jpg",
         gallery: [
-          "/tvunits/theashton/Terra/2m.jpg",
-          "/tvunits/theashton/Terra/3m.jpg",
-          "/tvunits/theashton/Terra/4m.jpg",
-          "/tvunits/theashton/Terra/5m.jpg"
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Terra/2m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Terra/3m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Terra/4m.jpg",
+          "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theashton/Terra/5m.jpg"
         ],
       }
     ],
@@ -208,45 +208,45 @@ const tvUnits = [
     {
       color: "Black Pearl",
       size: "2m",
-      image: "/tvunits/theastor/BlackPearl/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/2m.jpg",
       gallery: [
-        "/tvunits/theastor/BlackPearl/2m.jpg",
-        "/tvunits/theastor/BlackPearl/3m.jpg",
-        "/tvunits/theastor/BlackPearl/4m.jpg",
-        "/tvunits/theastor/BlackPearl/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/5m.jpg"
       ]
     },
     {
       color: "Black Pearl",
       size: "3m",
-      image: "/tvunits/theastor/BlackPearl/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/3m.jpg",
       gallery: [
-        "/tvunits/theastor/BlackPearl/2m.jpg",
-        "/tvunits/theastor/BlackPearl/3m.jpg",
-        "/tvunits/theastor/BlackPearl/4m.jpg",
-        "/tvunits/theastor/BlackPearl/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/5m.jpg"
       ]
     },
     {
       color: "Black Pearl",
       size: "4m",
-      image: "/tvunits/theastor/BlackPearl/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/4m.jpg",
       gallery: [
-        "/tvunits/theastor/BlackPearl/2m.jpg",
-        "/tvunits/theastor/BlackPearl/3m.jpg",
-        "/tvunits/theastor/BlackPearl/4m.jpg",
-        "/tvunits/theastor/BlackPearl/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/5m.jpg"
       ]
     },
     {
       color: "Black Pearl",
       size: "5m",
-      image: "/tvunits/theastor/BlackPearl/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/5m.jpg",
       gallery: [
-        "/tvunits/theastor/BlackPearl/2m.jpg",
-        "/tvunits/theastor/BlackPearl/3m.jpg",
-        "/tvunits/theastor/BlackPearl/4m.jpg",
-        "/tvunits/theastor/BlackPearl/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/5m.jpg"
       ]
     },
 
@@ -254,45 +254,45 @@ const tvUnits = [
     {
       color: "Dark Crown",
       size: "2m",
-      image: "/tvunits/theastor/DarkCrown/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/2m.jpg",
       gallery: [
-        "/tvunits/theastor/DarkCrown/2m.jpg",
-        "/tvunits/theastor/DarkCrown/3m.jpg",
-        "/tvunits/theastor/DarkCrown/4m.jpg",
-        "/tvunits/theastor/DarkCrown/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/5m.jpg"
       ]
     },
     {
       color: "Dark Crown",
       size: "3m",
-      image: "/tvunits/theastor/DarkCrown/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/3m.jpg",
       gallery: [
-        "/tvunits/theastor/DarkCrown/2m.jpg",
-        "/tvunits/theastor/DarkCrown/3m.jpg",
-        "/tvunits/theastor/DarkCrown/4m.jpg",
-        "/tvunits/theastor/DarkCrown/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/5m.jpg"
       ]
     },
     {
       color: "Dark Crown",
       size: "4m",
-      image: "/tvunits/theastor/DarkCrown/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/4m.jpg",
       gallery: [
-        "/tvunits/theastor/DarkCrown/2m.jpg",
-        "/tvunits/theastor/DarkCrown/3m.jpg",
-        "/tvunits/theastor/DarkCrown/4m.jpg",
-        "/tvunits/theastor/DarkCrown/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/5m.jpg"
       ]
     },
     {
       color: "Dark Crown",
       size: "5m",
-      image: "/tvunits/theastor/DarkCrown/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/5m.jpg",
       gallery: [
-        "/tvunits/theastor/DarkCrown/2m.jpg",
-        "/tvunits/theastor/DarkCrown/3m.jpg",
-        "/tvunits/theastor/DarkCrown/4m.jpg",
-        "/tvunits/theastor/DarkCrown/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/5m.jpg"
       ]
     },
 
@@ -300,45 +300,45 @@ const tvUnits = [
     {
       color: "Pearl White",
       size: "2m",
-      image: "/tvunits/theastor/PearlWhite/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/2m.jpg",
       gallery: [
-        "/tvunits/theastor/PearlWhite/2m.jpg",
-        "/tvunits/theastor/PearlWhite/3m.jpg",
-        "/tvunits/theastor/PearlWhite/4m.jpg",
-        "/tvunits/theastor/PearlWhite/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/5m.jpg"
       ]
     },
     {
       color: "Pearl White",
       size: "3m",
-      image: "/tvunits/theastor/PearlWhite/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/3m.jpg",
       gallery: [
-        "/tvunits/theastor/PearlWhite/2m.jpg",
-        "/tvunits/theastor/PearlWhite/3m.jpg",
-        "/tvunits/theastor/PearlWhite/4m.jpg",
-        "/tvunits/theastor/PearlWhite/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/5m.jpg"
       ]
     },
     {
       color: "Pearl White",
       size: "4m",
-      image: "/tvunits/theastor/PearlWhite/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/4m.jpg",
       gallery: [
-        "/tvunits/theastor/PearlWhite/2m.jpg",
-        "/tvunits/theastor/PearlWhite/3m.jpg",
-        "/tvunits/theastor/PearlWhite/4m.jpg",
-        "/tvunits/theastor/PearlWhite/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/5m.jpg"
       ]
     },
     {
       color: "Pearl White",
       size: "5m",
-      image: "/tvunits/theastor/PearlWhite/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/5m.jpg",
       gallery: [
-        "/tvunits/theastor/PearlWhite/2m.jpg",
-        "/tvunits/theastor/PearlWhite/3m.jpg",
-        "/tvunits/theastor/PearlWhite/4m.jpg",
-        "/tvunits/theastor/PearlWhite/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/5m.jpg"
       ]
     },
 
@@ -346,45 +346,45 @@ const tvUnits = [
     {
       color: "Platinum",
       size: "2m",
-      image: "/tvunits/theastor/Platinum/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/2m.jpg",
       gallery: [
-        "/tvunits/theastor/Platinum/2m.jpg",
-        "/tvunits/theastor/Platinum/3m.jpg",
-        "/tvunits/theastor/Platinum/4m.jpg",
-        "/tvunits/theastor/Platinum/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/5m.jpg"
       ]
     },
     {
       color: "Platinum",
       size: "3m",
-      image: "/tvunits/theastor/Platinum/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/3m.jpg",
       gallery: [
-        "/tvunits/theastor/Platinum/2m.jpg",
-        "/tvunits/theastor/Platinum/3m.jpg",
-        "/tvunits/theastor/Platinum/4m.jpg",
-        "/tvunits/theastor/Platinum/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/5m.jpg"
       ]
     },
     {
       color: "Platinum",
       size: "4m",
-      image: "/tvunits/theastor/Platinum/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/4m.jpg",
       gallery: [
-        "/tvunits/theastor/Platinum/2m.jpg",
-        "/tvunits/theastor/Platinum/3m.jpg",
-        "/tvunits/theastor/Platinum/4m.jpg",
-        "/tvunits/theastor/Platinum/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/5m.jpg"
       ]
     },
     {
       color: "Platinum",
       size: "5m",
-      image: "/tvunits/theastor/Platinum/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/5m.jpg",
       gallery: [
-        "/tvunits/theastor/Platinum/2m.jpg",
-        "/tvunits/theastor/Platinum/3m.jpg",
-        "/tvunits/theastor/Platinum/4m.jpg",
-        "/tvunits/theastor/Platinum/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/5m.jpg"
       ]
     }
   ],
@@ -405,45 +405,45 @@ const tvUnits = [
     {
       color: "Markina Mist",
       size: "2m",
-      image: "/tvunits/thebolton/MarkinaMist/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/MarkinaMist/2m.jpg",
       gallery: [
-        "/tvunits/thebolton/MarkinaMist/2m.jpg",
-        "/tvunits/thebolton/MarkinaMist/3m.jpg",
-        "/tvunits/thebolton/MarkinaMist/4m.jpg",
-        "/tvunits/thebolton/MarkinaMist/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/MarkinaMist/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/MarkinaMist/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/MarkinaMist/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/MarkinaMist/5m.jpg"
       ]
     },
     {
       color: "Markina Mist",
       size: "3m",
-      image: "/tvunits/thebolton/MarkinaMist/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/MarkinaMist/3m.jpg",
       gallery: [
-        "/tvunits/thebolton/MarkinaMist/2m.jpg",
-        "/tvunits/thebolton/MarkinaMist/3m.jpg",
-        "/tvunits/thebolton/MarkinaMist/4m.jpg",
-        "/tvunits/thebolton/MarkinaMist/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/MarkinaMist/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/MarkinaMist/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/MarkinaMist/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/MarkinaMist/5m.jpg"
       ]
     },
     {
       color: "Markina Mist",
       size: "4m",
-      image: "/tvunits/thebolton/MarkinaMist/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/MarkinaMist/4m.jpg",
       gallery: [
-        "/tvunits/thebolton/MarkinaMist/2m.jpg",
-        "/tvunits/thebolton/MarkinaMist/3m.jpg",
-        "/tvunits/thebolton/MarkinaMist/4m.jpg",
-        "/tvunits/thebolton/MarkinaMist/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/MarkinaMist/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/MarkinaMist/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/MarkinaMist/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/MarkinaMist/5m.jpg"
       ]
     },
     {
       color: "Markina Mist",
       size: "5m",
-      image: "/tvunits/thebolton/MarkinaMist/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/MarkinaMist/5m.jpg",
       gallery: [
-        "/tvunits/thebolton/MarkinaMist/2m.jpg",
-        "/tvunits/thebolton/MarkinaMist/3m.jpg",
-        "/tvunits/thebolton/MarkinaMist/4m.jpg",
-        "/tvunits/thebolton/MarkinaMist/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/MarkinaMist/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/MarkinaMist/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/MarkinaMist/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/MarkinaMist/5m.jpg"
       ]
     },
 
@@ -451,45 +451,45 @@ const tvUnits = [
     {
       color: "Oak Mirage",
       size: "2m",
-      image: "/tvunits/thebolton/OakMirage/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/OakMirage/2m.jpg",
       gallery: [
-        "/tvunits/thebolton/OakMirage/2m.jpg",
-        "/tvunits/thebolton/OakMirage/3m.jpg",
-        "/tvunits/thebolton/OakMirage/4m.jpg",
-        "/tvunits/thebolton/OakMirage/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/OakMirage/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/OakMirage/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/OakMirage/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/OakMirage/5m.jpg"
       ]
     },
     {
       color: "Oak Mirage",
       size: "3m",
-      image: "/tvunits/thebolton/OakMirage/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/OakMirage/3m.jpg",
       gallery: [
-        "/tvunits/thebolton/OakMirage/2m.jpg",
-        "/tvunits/thebolton/OakMirage/3m.jpg",
-        "/tvunits/thebolton/OakMirage/4m.jpg",
-        "/tvunits/thebolton/OakMirage/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/OakMirage/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/OakMirage/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/OakMirage/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/OakMirage/5m.jpg"
       ]
     },
     {
       color: "Oak Mirage",
       size: "4m",
-      image: "/tvunits/thebolton/OakMirage/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/OakMirage/4m.jpg",
       gallery: [
-        "/tvunits/thebolton/OakMirage/2m.jpg",
-        "/tvunits/thebolton/OakMirage/3m.jpg",
-        "/tvunits/thebolton/OakMirage/4m.jpg",
-        "/tvunits/thebolton/OakMirage/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/OakMirage/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/OakMirage/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/OakMirage/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/OakMirage/5m.jpg"
       ]
     },
     {
       color: "Oak Mirage",
       size: "5m",
-      image: "/tvunits/thebolton/OakMirage/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/OakMirage/5m.jpg",
       gallery: [
-        "/tvunits/thebolton/OakMirage/2m.jpg",
-        "/tvunits/thebolton/OakMirage/3m.jpg",
-        "/tvunits/thebolton/OakMirage/4m.jpg",
-        "/tvunits/thebolton/OakMirage/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/OakMirage/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/OakMirage/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/OakMirage/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/OakMirage/5m.jpg"
       ]
     },
 
@@ -497,45 +497,45 @@ const tvUnits = [
     {
       color: "Polar Vein",
       size: "2m",
-      image: "/tvunits/thebolton/PolarVein/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/PolarVein/2m.jpg",
       gallery: [
-        "/tvunits/thebolton/PolarVein/2m.jpg",
-        "/tvunits/thebolton/PolarVein/3m.jpg",
-        "/tvunits/thebolton/PolarVein/4m.jpg",
-        "/tvunits/thebolton/PolarVein/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/PolarVein/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/PolarVein/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/PolarVein/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/PolarVein/5m.jpg"
       ]
     },
     {
       color: "Polar Vein",
       size: "3m",
-      image: "/tvunits/thebolton/PolarVein/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/PolarVein/3m.jpg",
       gallery: [
-        "/tvunits/thebolton/PolarVein/2m.jpg",
-        "/tvunits/thebolton/PolarVein/3m.jpg",
-        "/tvunits/thebolton/PolarVein/4m.jpg",
-        "/tvunits/thebolton/PolarVein/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/PolarVein/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/PolarVein/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/PolarVein/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/PolarVein/5m.jpg"
       ]
     },
     {
       color: "Polar Vein",
       size: "4m",
-      image: "/tvunits/thebolton/PolarVein/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/PolarVein/4m.jpg",
       gallery: [
-        "/tvunits/thebolton/PolarVein/2m.jpg",
-        "/tvunits/thebolton/PolarVein/3m.jpg",
-        "/tvunits/thebolton/PolarVein/4m.jpg",
-        "/tvunits/thebolton/PolarVein/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/PolarVein/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/PolarVein/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/PolarVein/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/PolarVein/5m.jpg"
       ]
     },
     {
       color: "Polar Vein",
       size: "5m",
-      image: "/tvunits/thebolton/PolarVein/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/PolarVein/5m.jpg",
       gallery: [
-        "/tvunits/thebolton/PolarVein/2m.jpg",
-        "/tvunits/thebolton/PolarVein/3m.jpg",
-        "/tvunits/thebolton/PolarVein/4m.jpg",
-        "/tvunits/thebolton/PolarVein/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/PolarVein/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/PolarVein/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/PolarVein/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/PolarVein/5m.jpg"
       ]
     },
 
@@ -543,45 +543,45 @@ const tvUnits = [
     {
       color: "Urban Drift",
       size: "2m",
-      image: "/tvunits/thebolton/UrbanDrift/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/UrbanDrift/2m.jpg",
       gallery: [
-        "/tvunits/thebolton/UrbanDrift/2m.jpg",
-        "/tvunits/thebolton/UrbanDrift/3m.jpg",
-        "/tvunits/thebolton/UrbanDrift/4m.jpg",
-        "/tvunits/thebolton/UrbanDrift/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/UrbanDrift/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/UrbanDrift/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/UrbanDrift/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/UrbanDrift/5m.jpg"
       ]
     },
     {
       color: "Urban Drift",
       size: "3m",
-      image: "/tvunits/thebolton/UrbanDrift/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/UrbanDrift/3m.jpg",
       gallery: [
-        "/tvunits/thebolton/UrbanDrift/2m.jpg",
-        "/tvunits/thebolton/UrbanDrift/3m.jpg",
-        "/tvunits/thebolton/UrbanDrift/4m.jpg",
-        "/tvunits/thebolton/UrbanDrift/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/UrbanDrift/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/UrbanDrift/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/UrbanDrift/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/UrbanDrift/5m.jpg"
       ]
     },
     {
       color: "Urban Drift",
       size: "4m",
-      image: "/tvunits/thebolton/UrbanDrift/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/UrbanDrift/4m.jpg",
       gallery: [
-        "/tvunits/thebolton/UrbanDrift/2m.jpg",
-        "/tvunits/thebolton/UrbanDrift/3m.jpg",
-        "/tvunits/thebolton/UrbanDrift/4m.jpg",
-        "/tvunits/thebolton/UrbanDrift/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/UrbanDrift/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/UrbanDrift/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/UrbanDrift/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/UrbanDrift/5m.jpg"
       ]
     },
     {
       color: "Urban Drift",
       size: "5m",
-      image: "/tvunits/thebolton/UrbanDrift/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/UrbanDrift/5m.jpg",
       gallery: [
-        "/tvunits/thebolton/UrbanDrift/2m.jpg",
-        "/tvunits/thebolton/UrbanDrift/3m.jpg",
-        "/tvunits/thebolton/UrbanDrift/4m.jpg",
-        "/tvunits/thebolton/UrbanDrift/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/UrbanDrift/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/UrbanDrift/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/UrbanDrift/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thebolton/UrbanDrift/5m.jpg"
       ]
     }
   ],
@@ -602,31 +602,31 @@ const tvUnits = [
     {
       color: "Fiora",
       size: "3m",
-      image: "/tvunits/thecamden/Fiora/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Fiora/3m.jpg",
       gallery: [
-        "/tvunits/thecamden/Fiora/3m.jpg",
-        "/tvunits/thecamden/Fiora/4m.jpg",
-        "/tvunits/thecamden/Fiora/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Fiora/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Fiora/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Fiora/5m.jpg"
       ]
     },
     {
       color: "Fiora",
       size: "4m",
-      image: "/tvunits/thecamden/Fiora/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Fiora/4m.jpg",
       gallery: [
-        "/tvunits/thecamden/Fiora/3m.jpg",
-        "/tvunits/thecamden/Fiora/4m.jpg",
-        "/tvunits/thecamden/Fiora/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Fiora/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Fiora/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Fiora/5m.jpg"
       ]
     },
     {
       color: "Fiora",
       size: "5m",
-      image: "/tvunits/thecamden/Fiora/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Fiora/5m.jpg",
       gallery: [
-        "/tvunits/thecamden/Fiora/3m.jpg",
-        "/tvunits/thecamden/Fiora/4m.jpg",
-        "/tvunits/thecamden/Fiora/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Fiora/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Fiora/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Fiora/5m.jpg"
       ]
     },
 
@@ -634,31 +634,31 @@ const tvUnits = [
     {
       color: "Puro",
       size: "3m",
-      image: "/tvunits/thecamden/Puro/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Puro/3m.jpg",
       gallery: [
-        "/tvunits/thecamden/Puro/3m.jpg",
-        "/tvunits/thecamden/Puro/4m.jpg",
-        "/tvunits/thecamden/Puro/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Puro/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Puro/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Puro/5m.jpg"
       ]
     },
     {
       color: "Puro",
       size: "4m",
-      image: "/tvunits/thecamden/Puro/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Puro/4m.jpg",
       gallery: [
-        "/tvunits/thecamden/Puro/3m.jpg",
-        "/tvunits/thecamden/Puro/4m.jpg",
-        "/tvunits/thecamden/Puro/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Puro/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Puro/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Puro/5m.jpg"
       ]
     },
     {
       color: "Puro",
       size: "5m",
-      image: "/tvunits/thecamden/Puro/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Puro/5m.jpg",
       gallery: [
-        "/tvunits/thecamden/Puro/3m.jpg",
-        "/tvunits/thecamden/Puro/4m.jpg",
-        "/tvunits/thecamden/Puro/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Puro/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Puro/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Puro/5m.jpg"
       ]
     },
 
@@ -666,31 +666,31 @@ const tvUnits = [
     {
       color: "Sombra",
       size: "3m",
-      image: "/tvunits/thecamden/Sombra/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Sombra/3m.jpg",
       gallery: [
-        "/tvunits/thecamden/Sombra/3m.jpg",
-        "/tvunits/thecamden/Sombra/4m.jpg",
-        "/tvunits/thecamden/Sombra/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Sombra/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Sombra/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Sombra/5m.jpg"
       ]
     },
     {
       color: "Sombra",
       size: "4m",
-      image: "/tvunits/thecamden/Sombra/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Sombra/4m.jpg",
       gallery: [
-        "/tvunits/thecamden/Sombra/3m.jpg",
-        "/tvunits/thecamden/Sombra/4m.jpg",
-        "/tvunits/thecamden/Sombra/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Sombra/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Sombra/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Sombra/5m.jpg"
       ]
     },
     {
       color: "Sombra",
       size: "5m",
-      image: "/tvunits/thecamden/Sombra/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Sombra/5m.jpg",
       gallery: [
-        "/tvunits/thecamden/Sombra/3m.jpg",
-        "/tvunits/thecamden/Sombra/4m.jpg",
-        "/tvunits/thecamden/Sombra/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Sombra/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Sombra/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thecamden/Sombra/5m.jpg"
       ]
     }
   ],
@@ -711,45 +711,45 @@ const tvUnits = [
     {
       color: "Dune",
       size: "2m",
-      image: "/tvunits/theellis/Dune/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Dune/2m.jpg",
       gallery: [
-        "/tvunits/theellis/Dune/2m.jpg",
-        "/tvunits/theellis/Dune/3m.jpg",
-        "/tvunits/theellis/Dune/4m.jpg",
-        "/tvunits/theellis/Dune/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Dune/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Dune/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Dune/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Dune/5m.jpg"
       ]
     },
     {
       color: "Dune",
       size: "3m",
-      image: "/tvunits/theellis/Dune/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Dune/3m.jpg",
       gallery: [
-        "/tvunits/theellis/Dune/2m.jpg",
-        "/tvunits/theellis/Dune/3m.jpg",
-        "/tvunits/theellis/Dune/4m.jpg",
-        "/tvunits/theellis/Dune/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Dune/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Dune/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Dune/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Dune/5m.jpg"
       ]
     },
     {
       color: "Dune",
       size: "4m",
-      image: "/tvunits/theellis/Dune/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Dune/4m.jpg",
       gallery: [
-        "/tvunits/theellis/Dune/2m.jpg",
-        "/tvunits/theellis/Dune/3m.jpg",
-        "/tvunits/theellis/Dune/4m.jpg",
-        "/tvunits/theellis/Dune/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Dune/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Dune/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Dune/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Dune/5m.jpg"
       ]
     },
     {
       color: "Dune",
       size: "5m",
-      image: "/tvunits/theellis/Dune/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Dune/5m.jpg",
       gallery: [
-        "/tvunits/theellis/Dune/2m.jpg",
-        "/tvunits/theellis/Dune/3m.jpg",
-        "/tvunits/theellis/Dune/4m.jpg",
-        "/tvunits/theellis/Dune/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Dune/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Dune/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Dune/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Dune/5m.jpg"
       ]
     },
 
@@ -757,45 +757,45 @@ const tvUnits = [
     {
       color: "Eclipse",
       size: "2m",
-      image: "/tvunits/theellis/Eclipse/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Eclipse/2m.jpg",
       gallery: [
-        "/tvunits/theellis/Eclipse/2m.jpg",
-        "/tvunits/theellis/Eclipse/3m.jpg",
-        "/tvunits/theellis/Eclipse/4m.jpg",
-        "/tvunits/theellis/Eclipse/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Eclipse/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Eclipse/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Eclipse/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Eclipse/5m.jpg"
       ]
     },
     {
       color: "Eclipse",
       size: "3m",
-      image: "/tvunits/theellis/Eclipse/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Eclipse/3m.jpg",
       gallery: [
-        "/tvunits/theellis/Eclipse/2m.jpg",
-        "/tvunits/theellis/Eclipse/3m.jpg",
-        "/tvunits/theellis/Eclipse/4m.jpg",
-        "/tvunits/theellis/Eclipse/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Eclipse/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Eclipse/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Eclipse/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Eclipse/5m.jpg"
       ]
     },
     {
       color: "Eclipse",
       size: "4m",
-      image: "/tvunits/theellis/Eclipse/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Eclipse/4m.jpg",
       gallery: [
-        "/tvunits/theellis/Eclipse/2m.jpg",
-        "/tvunits/theellis/Eclipse/3m.jpg",
-        "/tvunits/theellis/Eclipse/4m.jpg",
-        "/tvunits/theellis/Eclipse/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Eclipse/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Eclipse/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Eclipse/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Eclipse/5m.jpg"
       ]
     },
     {
       color: "Eclipse",
       size: "5m",
-      image: "/tvunits/theellis/Eclipse/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Eclipse/5m.jpg",
       gallery: [
-        "/tvunits/theellis/Eclipse/2m.jpg",
-        "/tvunits/theellis/Eclipse/3m.jpg",
-        "/tvunits/theellis/Eclipse/4m.jpg",
-        "/tvunits/theellis/Eclipse/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Eclipse/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Eclipse/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Eclipse/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Eclipse/5m.jpg"
       ]
     },
 
@@ -803,45 +803,45 @@ const tvUnits = [
     {
       color: "Olive",
       size: "2m",
-      image: "/tvunits/theellis/Olive/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Olive/2m.jpg",
       gallery: [
-        "/tvunits/theellis/Olive/2m.jpg",
-        "/tvunits/theellis/Olive/3m.jpg",
-        "/tvunits/theellis/Olive/4m.jpg",
-        "/tvunits/theellis/Olive/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Olive/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Olive/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Olive/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Olive/5m.jpg"
       ]
     },
     {
       color: "Olive",
       size: "3m",
-      image: "/tvunits/theellis/Olive/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Olive/3m.jpg",
       gallery: [
-        "/tvunits/theellis/Olive/2m.jpg",
-        "/tvunits/theellis/Olive/3m.jpg",
-        "/tvunits/theellis/Olive/4m.jpg",
-        "/tvunits/theellis/Olive/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Olive/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Olive/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Olive/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Olive/5m.jpg"
       ]
     },
     {
       color: "Olive",
       size: "4m",
-      image: "/tvunits/theellis/Olive/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Olive/4m.jpg",
       gallery: [
-        "/tvunits/theellis/Olive/2m.jpg",
-        "/tvunits/theellis/Olive/3m.jpg",
-        "/tvunits/theellis/Olive/4m.jpg",
-        "/tvunits/theellis/Olive/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Olive/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Olive/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Olive/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Olive/5m.jpg"
       ]
     },
     {
       color: "Olive",
       size: "5m",
-      image: "/tvunits/theellis/Olive/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Olive/5m.jpg",
       gallery: [
-        "/tvunits/theellis/Olive/2m.jpg",
-        "/tvunits/theellis/Olive/3m.jpg",
-        "/tvunits/theellis/Olive/4m.jpg",
-        "/tvunits/theellis/Olive/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Olive/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Olive/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Olive/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theellis/Olive/5m.jpg"
       ]
     }
   ],
@@ -862,45 +862,45 @@ const tvUnits = [
     {
       color: "Blanc Oak",
       size: "2m",
-      image: "/tvunits/thehudson/BlancOak/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/BlancOak/2m.jpg",
       gallery: [
-        "/tvunits/thehudson/BlancOak/2m.jpg",
-        "/tvunits/thehudson/BlancOak/3m.jpg",
-        "/tvunits/thehudson/BlancOak/4m.jpg",
-        "/tvunits/thehudson/BlancOak/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/BlancOak/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/BlancOak/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/BlancOak/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/BlancOak/5m.jpg"
       ]
     },
     {
       color: "Blanc Oak",
       size: "3m",
-      image: "/tvunits/thehudson/BlancOak/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/BlancOak/3m.jpg",
       gallery: [
-        "/tvunits/thehudson/BlancOak/2m.jpg",
-        "/tvunits/thehudson/BlancOak/3m.jpg",
-        "/tvunits/thehudson/BlancOak/4m.jpg",
-        "/tvunits/thehudson/BlancOak/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/BlancOak/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/BlancOak/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/BlancOak/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/BlancOak/5m.jpg"
       ]
     },
     {
       color: "Blanc Oak",
       size: "4m",
-      image: "/tvunits/thehudson/BlancOak/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/BlancOak/4m.jpg",
       gallery: [
-        "/tvunits/thehudson/BlancOak/2m.jpg",
-        "/tvunits/thehudson/BlancOak/3m.jpg",
-        "/tvunits/thehudson/BlancOak/4m.jpg",
-        "/tvunits/thehudson/BlancOak/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/BlancOak/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/BlancOak/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/BlancOak/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/BlancOak/5m.jpg"
       ]
     },
     {
       color: "Blanc Oak",
       size: "5m",
-      image: "/tvunits/thehudson/BlancOak/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/BlancOak/5m.jpg",
       gallery: [
-        "/tvunits/thehudson/BlancOak/2m.jpg",
-        "/tvunits/thehudson/BlancOak/3m.jpg",
-        "/tvunits/thehudson/BlancOak/4m.jpg",
-        "/tvunits/thehudson/BlancOak/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/BlancOak/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/BlancOak/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/BlancOak/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/BlancOak/5m.jpg"
       ]
     },
 
@@ -908,45 +908,45 @@ const tvUnits = [
     {
       color: "Ivory",
       size: "2m",
-      image: "/tvunits/thehudson/Ivory/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Ivory/2m.jpg",
       gallery: [
-        "/tvunits/thehudson/Ivory/2m.jpg",
-        "/tvunits/thehudson/Ivory/3m.jpg",
-        "/tvunits/thehudson/Ivory/4m.jpg",
-        "/tvunits/thehudson/Ivory/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Ivory/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Ivory/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Ivory/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Ivory/5m.jpg"
       ]
     },
     {
       color: "Ivory",
       size: "3m",
-      image: "/tvunits/thehudson/Ivory/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Ivory/3m.jpg",
       gallery: [
-        "/tvunits/thehudson/Ivory/2m.jpg",
-        "/tvunits/thehudson/Ivory/3m.jpg",
-        "/tvunits/thehudson/Ivory/4m.jpg",
-        "/tvunits/thehudson/Ivory/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Ivory/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Ivory/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Ivory/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Ivory/5m.jpg"
       ]
     },
     {
       color: "Ivory",
       size: "4m",
-      image: "/tvunits/thehudson/Ivory/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Ivory/4m.jpg",
       gallery: [
-        "/tvunits/thehudson/Ivory/2m.jpg",
-        "/tvunits/thehudson/Ivory/3m.jpg",
-        "/tvunits/thehudson/Ivory/4m.jpg",
-        "/tvunits/thehudson/Ivory/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Ivory/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Ivory/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Ivory/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Ivory/5m.jpg"
       ]
     },
     {
       color: "Ivory",
       size: "5m",
-      image: "/tvunits/thehudson/Ivory/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Ivory/5m.jpg",
       gallery: [
-        "/tvunits/thehudson/Ivory/2m.jpg",
-        "/tvunits/thehudson/Ivory/3m.jpg",
-        "/tvunits/thehudson/Ivory/4m.jpg",
-        "/tvunits/thehudson/Ivory/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Ivory/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Ivory/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Ivory/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Ivory/5m.jpg"
       ]
     },
 
@@ -954,45 +954,45 @@ const tvUnits = [
     {
       color: "Oak Noir",
       size: "2m",
-      image: "/tvunits/thehudson/OakNoir/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/OakNoir/2m.jpg",
       gallery: [
-        "/tvunits/thehudson/OakNoir/2m.jpg",
-        "/tvunits/thehudson/OakNoir/3m.jpg",
-        "/tvunits/thehudson/OakNoir/4m.jpg",
-        "/tvunits/thehudson/OakNoir/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/OakNoir/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/OakNoir/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/OakNoir/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/OakNoir/5m.jpg"
       ]
     },
     {
       color: "Oak Noir",
       size: "3m",
-      image: "/tvunits/thehudson/OakNoir/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/OakNoir/3m.jpg",
       gallery: [
-        "/tvunits/thehudson/OakNoir/2m.jpg",
-        "/tvunits/thehudson/OakNoir/3m.jpg",
-        "/tvunits/thehudson/OakNoir/4m.jpg",
-        "/tvunits/thehudson/OakNoir/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/OakNoir/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/OakNoir/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/OakNoir/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/OakNoir/5m.jpg"
       ]
     },
     {
       color: "Oak Noir",
       size: "4m",
-      image: "/tvunits/thehudson/OakNoir/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/OakNoir/4m.jpg",
       gallery: [
-        "/tvunits/thehudson/OakNoir/2m.jpg",
-        "/tvunits/thehudson/OakNoir/3m.jpg",
-        "/tvunits/thehudson/OakNoir/4m.jpg",
-        "/tvunits/thehudson/OakNoir/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/OakNoir/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/OakNoir/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/OakNoir/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/OakNoir/5m.jpg"
       ]
     },
     {
       color: "Oak Noir",
       size: "5m",
-      image: "/tvunits/thehudson/OakNoir/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/OakNoir/5m.jpg",
       gallery: [
-        "/tvunits/thehudson/OakNoir/2m.jpg",
-        "/tvunits/thehudson/OakNoir/3m.jpg",
-        "/tvunits/thehudson/OakNoir/4m.jpg",
-        "/tvunits/thehudson/OakNoir/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/OakNoir/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/OakNoir/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/OakNoir/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/OakNoir/5m.jpg"
       ]
     },
 
@@ -1000,45 +1000,45 @@ const tvUnits = [
     {
       color: "Slate",
       size: "2m",
-      image: "/tvunits/thehudson/Slate/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Slate/2m.jpg",
       gallery: [
-        "/tvunits/thehudson/Slate/2m.jpg",
-        "/tvunits/thehudson/Slate/3m.jpg",
-        "/tvunits/thehudson/Slate/4m.jpg",
-        "/tvunits/thehudson/Slate/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Slate/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Slate/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Slate/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Slate/5m.jpg"
       ]
     },
     {
       color: "Slate",
       size: "3m",
-      image: "/tvunits/thehudson/Slate/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Slate/3m.jpg",
       gallery: [
-        "/tvunits/thehudson/Slate/2m.jpg",
-        "/tvunits/thehudson/Slate/3m.jpg",
-        "/tvunits/thehudson/Slate/4m.jpg",
-        "/tvunits/thehudson/Slate/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Slate/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Slate/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Slate/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Slate/5m.jpg"
       ]
     },
     {
       color: "Slate",
       size: "4m",
-      image: "/tvunits/thehudson/Slate/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Slate/4m.jpg",
       gallery: [
-        "/tvunits/thehudson/Slate/2m.jpg",
-        "/tvunits/thehudson/Slate/3m.jpg",
-        "/tvunits/thehudson/Slate/4m.jpg",
-        "/tvunits/thehudson/Slate/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Slate/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Slate/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Slate/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Slate/5m.jpg"
       ]
     },
     {
       color: "Slate",
       size: "5m",
-      image: "/tvunits/thehudson/Slate/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Slate/5m.jpg",
       gallery: [
-        "/tvunits/thehudson/Slate/2m.jpg",
-        "/tvunits/thehudson/Slate/3m.jpg",
-        "/tvunits/thehudson/Slate/4m.jpg",
-        "/tvunits/thehudson/Slate/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Slate/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Slate/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Slate/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thehudson/Slate/5m.jpg"
       ]
     }
   ],
@@ -1059,45 +1059,45 @@ const tvUnits = [
     {
       color: "Alabaster",
       size: "2m",
-      image: "/tvunits/themayfair/Alabaster/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Alabaster/2m.jpg",
       gallery: [
-        "/tvunits/themayfair/Alabaster/2m.jpg",
-        "/tvunits/themayfair/Alabaster/3m.jpg",
-        "/tvunits/themayfair/Alabaster/4m.jpg",
-        "/tvunits/themayfair/Alabaster/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Alabaster/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Alabaster/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Alabaster/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Alabaster/5m.jpg"
       ]
     },
     {
       color: "Alabaster",
       size: "3m",
-      image: "/tvunits/themayfair/Alabaster/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Alabaster/3m.jpg",
       gallery: [
-        "/tvunits/themayfair/Alabaster/2m.jpg",
-        "/tvunits/themayfair/Alabaster/3m.jpg",
-        "/tvunits/themayfair/Alabaster/4m.jpg",
-        "/tvunits/themayfair/Alabaster/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Alabaster/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Alabaster/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Alabaster/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Alabaster/5m.jpg"
       ]
     },
     {
       color: "Alabaster",
       size: "4m",
-      image: "/tvunits/themayfair/Alabaster/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Alabaster/4m.jpg",
       gallery: [
-        "/tvunits/themayfair/Alabaster/2m.jpg",
-        "/tvunits/themayfair/Alabaster/3m.jpg",
-        "/tvunits/themayfair/Alabaster/4m.jpg",
-        "/tvunits/themayfair/Alabaster/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Alabaster/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Alabaster/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Alabaster/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Alabaster/5m.jpg"
       ]
     },
     {
       color: "Alabaster",
       size: "5m",
-      image: "/tvunits/themayfair/Alabaster/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Alabaster/5m.jpg",
       gallery: [
-        "/tvunits/themayfair/Alabaster/2m.jpg",
-        "/tvunits/themayfair/Alabaster/3m.jpg",
-        "/tvunits/themayfair/Alabaster/4m.jpg",
-        "/tvunits/themayfair/Alabaster/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Alabaster/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Alabaster/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Alabaster/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Alabaster/5m.jpg"
       ]
     },
 
@@ -1105,45 +1105,45 @@ const tvUnits = [
     {
       color: "Dark Forest",
       size: "2m",
-      image: "/tvunits/themayfair/DarkForest/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/DarkForest/2m.jpg",
       gallery: [
-        "/tvunits/themayfair/DarkForest/2m.jpg",
-        "/tvunits/themayfair/DarkForest/3m.jpg",
-        "/tvunits/themayfair/DarkForest/4m.jpg",
-        "/tvunits/themayfair/DarkForest/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/DarkForest/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/DarkForest/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/DarkForest/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/DarkForest/5m.jpg"
       ]
     },
     {
       color: "Dark Forest",
       size: "3m",
-      image: "/tvunits/themayfair/DarkForest/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/DarkForest/3m.jpg",
       gallery: [
-        "/tvunits/themayfair/DarkForest/2m.jpg",
-        "/tvunits/themayfair/DarkForest/3m.jpg",
-        "/tvunits/themayfair/DarkForest/4m.jpg",
-        "/tvunits/themayfair/DarkForest/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/DarkForest/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/DarkForest/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/DarkForest/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/DarkForest/5m.jpg"
       ]
     },
     {
       color: "Dark Forest",
       size: "4m",
-      image: "/tvunits/themayfair/DarkForest/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/DarkForest/4m.jpg",
       gallery: [
-        "/tvunits/themayfair/DarkForest/2m.jpg",
-        "/tvunits/themayfair/DarkForest/3m.jpg",
-        "/tvunits/themayfair/DarkForest/4m.jpg",
-        "/tvunits/themayfair/DarkForest/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/DarkForest/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/DarkForest/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/DarkForest/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/DarkForest/5m.jpg"
       ]
     },
     {
       color: "Dark Forest",
       size: "5m",
-      image: "/tvunits/themayfair/DarkForest/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/DarkForest/5m.jpg",
       gallery: [
-        "/tvunits/themayfair/DarkForest/2m.jpg",
-        "/tvunits/themayfair/DarkForest/3m.jpg",
-        "/tvunits/themayfair/DarkForest/4m.jpg",
-        "/tvunits/themayfair/DarkForest/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/DarkForest/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/DarkForest/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/DarkForest/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/DarkForest/5m.jpg"
       ]
     },
 
@@ -1151,45 +1151,45 @@ const tvUnits = [
     {
       color: "Nautica",
       size: "2m",
-      image: "/tvunits/themayfair/Nautica/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Nautica/2m.jpg",
       gallery: [
-        "/tvunits/themayfair/Nautica/2m.jpg",
-        "/tvunits/themayfair/Nautica/3m.jpg",
-        "/tvunits/themayfair/Nautica/4m.jpg",
-        "/tvunits/themayfair/Nautica/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Nautica/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Nautica/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Nautica/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Nautica/5m.jpg"
       ]
     },
     {
       color: "Nautica",
       size: "3m",
-      image: "/tvunits/themayfair/Nautica/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Nautica/3m.jpg",
       gallery: [
-        "/tvunits/themayfair/Nautica/2m.jpg",
-        "/tvunits/themayfair/Nautica/3m.jpg",
-        "/tvunits/themayfair/Nautica/4m.jpg",
-        "/tvunits/themayfair/Nautica/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Nautica/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Nautica/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Nautica/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Nautica/5m.jpg"
       ]
     },
     {
       color: "Nautica",
       size: "4m",
-      image: "/tvunits/themayfair/Nautica/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Nautica/4m.jpg",
       gallery: [
-        "/tvunits/themayfair/Nautica/2m.jpg",
-        "/tvunits/themayfair/Nautica/3m.jpg",
-        "/tvunits/themayfair/Nautica/4m.jpg",
-        "/tvunits/themayfair/Nautica/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Nautica/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Nautica/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Nautica/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Nautica/5m.jpg"
       ]
     },
     {
       color: "Nautica",
       size: "5m",
-      image: "/tvunits/themayfair/Nautica/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Nautica/5m.jpg",
       gallery: [
-        "/tvunits/themayfair/Nautica/2m.jpg",
-        "/tvunits/themayfair/Nautica/3m.jpg",
-        "/tvunits/themayfair/Nautica/4m.jpg",
-        "/tvunits/themayfair/Nautica/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Nautica/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Nautica/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Nautica/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Nautica/5m.jpg"
       ]
     },
 
@@ -1197,45 +1197,45 @@ const tvUnits = [
     {
       color: "Noir",
       size: "2m",
-      image: "/tvunits/themayfair/Noir/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Noir/2m.jpg",
       gallery: [
-        "/tvunits/themayfair/Noir/2m.jpg",
-        "/tvunits/themayfair/Noir/3m.jpg",
-        "/tvunits/themayfair/Noir/4m.jpg",
-        "/tvunits/themayfair/Noir/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Noir/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Noir/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Noir/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Noir/5m.jpg"
       ]
     },
     {
       color: "Noir",
       size: "3m",
-      image: "/tvunits/themayfair/Noir/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Noir/3m.jpg",
       gallery: [
-        "/tvunits/themayfair/Noir/2m.jpg",
-        "/tvunits/themayfair/Noir/3m.jpg",
-        "/tvunits/themayfair/Noir/4m.jpg",
-        "/tvunits/themayfair/Noir/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Noir/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Noir/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Noir/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Noir/5m.jpg"
       ]
     },
     {
       color: "Noir",
       size: "4m",
-      image: "/tvunits/themayfair/Noir/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Noir/4m.jpg",
       gallery: [
-        "/tvunits/themayfair/Noir/2m.jpg",
-        "/tvunits/themayfair/Noir/3m.jpg",
-        "/tvunits/themayfair/Noir/4m.jpg",
-        "/tvunits/themayfair/Noir/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Noir/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Noir/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Noir/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Noir/5m.jpg"
       ]
     },
     {
       color: "Noir",
       size: "5m",
-      image: "/tvunits/themayfair/Noir/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Noir/5m.jpg",
       gallery: [
-        "/tvunits/themayfair/Noir/2m.jpg",
-        "/tvunits/themayfair/Noir/3m.jpg",
-        "/tvunits/themayfair/Noir/4m.jpg",
-        "/tvunits/themayfair/Noir/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Noir/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Noir/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Noir/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/themayfair/Noir/5m.jpg"
       ]
     }
   ],
@@ -1258,45 +1258,45 @@ const tvUnits = [
     {
       color: "Charcoal Aura",
       size: "2m",
-      image: "/tvunits/thesolace/CharcoalAura/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/CharcoalAura/2m.jpg",
       gallery: [
-        "/tvunits/thesolace/CharcoalAura/2m.jpg",
-        "/tvunits/thesolace/CharcoalAura/3m.jpg",
-        "/tvunits/thesolace/CharcoalAura/4m.jpg",
-        "/tvunits/thesolace/CharcoalAura/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/CharcoalAura/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/CharcoalAura/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/CharcoalAura/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/CharcoalAura/5m.jpg"
       ]
     },
     {
       color: "Charcoal Aura",
       size: "3m",
-      image: "/tvunits/thesolace/CharcoalAura/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/CharcoalAura/3m.jpg",
       gallery: [
-        "/tvunits/thesolace/CharcoalAura/2m.jpg",
-        "/tvunits/thesolace/CharcoalAura/3m.jpg",
-        "/tvunits/thesolace/CharcoalAura/4m.jpg",
-        "/tvunits/thesolace/CharcoalAura/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/CharcoalAura/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/CharcoalAura/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/CharcoalAura/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/CharcoalAura/5m.jpg"
       ]
     },
     {
       color: "Charcoal Aura",
       size: "4m",
-      image: "/tvunits/thesolace/CharcoalAura/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/CharcoalAura/4m.jpg",
       gallery: [
-        "/tvunits/thesolace/CharcoalAura/2m.jpg",
-        "/tvunits/thesolace/CharcoalAura/3m.jpg",
-        "/tvunits/thesolace/CharcoalAura/4m.jpg",
-        "/tvunits/thesolace/CharcoalAura/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/CharcoalAura/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/CharcoalAura/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/CharcoalAura/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/CharcoalAura/5m.jpg"
       ]
     },
     {
       color: "Charcoal Aura",
       size: "5m",
-      image: "/tvunits/thesolace/CharcoalAura/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/CharcoalAura/5m.jpg",
       gallery: [
-        "/tvunits/thesolace/CharcoalAura/2m.jpg",
-        "/tvunits/thesolace/CharcoalAura/3m.jpg",
-        "/tvunits/thesolace/CharcoalAura/4m.jpg",
-        "/tvunits/thesolace/CharcoalAura/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/CharcoalAura/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/CharcoalAura/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/CharcoalAura/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/CharcoalAura/5m.jpg"
       ]
     },
 
@@ -1304,45 +1304,45 @@ const tvUnits = [
     {
       color: "Linen Frost",
       size: "2m",
-      image: "/tvunits/thesolace/LinenFrost/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/LinenFrost/2m.jpg",
       gallery: [
-        "/tvunits/thesolace/LinenFrost/2m.jpg",
-        "/tvunits/thesolace/LinenFrost/3m.jpg",
-        "/tvunits/thesolace/LinenFrost/4m.jpg",
-        "/tvunits/thesolace/LinenFrost/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/LinenFrost/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/LinenFrost/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/LinenFrost/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/LinenFrost/5m.jpg"
       ]
     },
     {
       color: "Linen Frost",
       size: "3m",
-      image: "/tvunits/thesolace/LinenFrost/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/LinenFrost/3m.jpg",
       gallery: [
-        "/tvunits/thesolace/LinenFrost/2m.jpg",
-        "/tvunits/thesolace/LinenFrost/3m.jpg",
-        "/tvunits/thesolace/LinenFrost/4m.jpg",
-        "/tvunits/thesolace/LinenFrost/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/LinenFrost/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/LinenFrost/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/LinenFrost/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/LinenFrost/5m.jpg"
       ]
     },
     {
       color: "Linen Frost",
       size: "4m",
-      image: "/tvunits/thesolace/LinenFrost/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/LinenFrost/4m.jpg",
       gallery: [
-        "/tvunits/thesolace/LinenFrost/2m.jpg",
-        "/tvunits/thesolace/LinenFrost/3m.jpg",
-        "/tvunits/thesolace/LinenFrost/4m.jpg",
-        "/tvunits/thesolace/LinenFrost/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/LinenFrost/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/LinenFrost/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/LinenFrost/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/LinenFrost/5m.jpg"
       ]
     },
     {
       color: "Linen Frost",
       size: "5m",
-      image: "/tvunits/thesolace/LinenFrost/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/LinenFrost/5m.jpg",
       gallery: [
-        "/tvunits/thesolace/LinenFrost/2m.jpg",
-        "/tvunits/thesolace/LinenFrost/3m.jpg",
-        "/tvunits/thesolace/LinenFrost/4m.jpg",
-        "/tvunits/thesolace/LinenFrost/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/LinenFrost/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/LinenFrost/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/LinenFrost/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/LinenFrost/5m.jpg"
       ]
     },
 
@@ -1350,45 +1350,45 @@ const tvUnits = [
     {
       color: "Oak Haven",
       size: "2m",
-      image: "/tvunits/thesolace/OakHaven/2m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/OakHaven/2m.jpg",
       gallery: [
-        "/tvunits/thesolace/OakHaven/2m.jpg",
-        "/tvunits/thesolace/OakHaven/3m.jpg",
-        "/tvunits/thesolace/OakHaven/4m.jpg",
-        "/tvunits/thesolace/OakHaven/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/OakHaven/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/OakHaven/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/OakHaven/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/OakHaven/5m.jpg"
       ]
     },
     {
       color: "Oak Haven",
       size: "3m",
-      image: "/tvunits/thesolace/OakHaven/3m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/OakHaven/3m.jpg",
       gallery: [
-        "/tvunits/thesolace/OakHaven/2m.jpg",
-        "/tvunits/thesolace/OakHaven/3m.jpg",
-        "/tvunits/thesolace/OakHaven/4m.jpg",
-        "/tvunits/thesolace/OakHaven/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/OakHaven/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/OakHaven/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/OakHaven/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/OakHaven/5m.jpg"
       ]
     },
     {
       color: "Oak Haven",
       size: "4m",
-      image: "/tvunits/thesolace/OakHaven/4m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/OakHaven/4m.jpg",
       gallery: [
-        "/tvunits/thesolace/OakHaven/2m.jpg",
-        "/tvunits/thesolace/OakHaven/3m.jpg",
-        "/tvunits/thesolace/OakHaven/4m.jpg",
-        "/tvunits/thesolace/OakHaven/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/OakHaven/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/OakHaven/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/OakHaven/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/OakHaven/5m.jpg"
       ]
     },
     {
       color: "Oak Haven",
       size: "5m",
-      image: "/tvunits/thesolace/OakHaven/5m.jpg",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/OakHaven/5m.jpg",
       gallery: [
-        "/tvunits/thesolace/OakHaven/2m.jpg",
-        "/tvunits/thesolace/OakHaven/3m.jpg",
-        "/tvunits/thesolace/OakHaven/4m.jpg",
-        "/tvunits/thesolace/OakHaven/5m.jpg"
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/OakHaven/2m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/OakHaven/3m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/OakHaven/4m.jpg",
+        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/thesolace/OakHaven/5m.jpg"
       ]
     }
   ]

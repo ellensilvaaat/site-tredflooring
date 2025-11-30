@@ -4,8 +4,8 @@ import './Difference.css';
 export default function Difference() {
   return (
     <section className="difference-section">
-      <img src="/bg.png" alt="Background" className="difference-bg desktop-bg" />
-      <img src="/bg-mobile.jpg" alt="Background mobile" className="difference-bg mobile-bg" />
+      <img src="https://site-tredflooring-assets.s3.amazonaws.com/bg.png"" alt="Background" className="difference-bg desktop-bg" />
+      <img src="https://site-tredflooring-assets.s3.amazonaws.com/bg-mobile.jpg"" alt="Background mobile" className="difference-bg mobile-bg" />
       <div className="difference-overlay" />
       <div className="difference-inner">
         <h2 className="difference-title">
