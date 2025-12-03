@@ -14,6 +14,13 @@
   gap: 3rem;
 }
 
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+}
+
+
 .booking-left {
   flex: 1 1 400px;
 }
@@ -50,6 +57,7 @@
   font-size: 0.95rem;
 }
 
+/* Estilização dos checkboxes + reset de aparência para mobile / iOS */
 .checkbox-group {
   display: flex;
   flex-wrap: wrap;
@@ -65,11 +73,62 @@
   cursor: pointer;
 }
 
+/* Reset para estilos nativos / iOS para inputs, selects, checkboxes, buttons */
+input,
+select,
+textarea,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0; /* ou use seu border-radius se quiser bordas arredondadas */
+  font-family: inherit;
+}
+
+/* Estilo customizado para checkboxes */
 .checkbox-label input[type="checkbox"] {
-  accent-color: #7CAF8E;
   width: 18px;
   height: 18px;
+  accent-color: #7CAF8E;
+  margin: 0;
+  /* Para garantir que o estilo nativo não interfira */
+  background-color: white;
+  border: 2px solid #7CAF8E;
+  border-radius: 4px;
+  appearance: none;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
 }
+
+input[type="checkbox"] {
+  accent-color: #7CAF8E;
+  padding: 0.5rem 0.5rem 0.5rem;
+}
+
+.checkbox-label input[type="checkbox"]:checked {
+  background-color: #7CAF8E;
+}
+
+.checkbox-label input[type="checkbox"]::after {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  position: absolute;
+  top: 1px;
+  left: 4px;
+}
+
+.checkbox-label input[type="checkbox"]:checked::after {
+  opacity: 1;
+}
+
+/* Estilo para o formulário */
 
 .booking-form {
   flex: 1 1 500px;
@@ -97,7 +156,8 @@
 }
 
 input,
-textarea, select {
+textarea,
+select {
   border: 2px solid #7CAF8E;
   border-radius: 8px;
   padding: 0.75rem 1rem;
@@ -105,11 +165,23 @@ textarea, select {
   font-family: inherit;
   outline: none;
   resize: vertical;
+  background-color: white;
+  color: #333;
 }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
   border-color: #5e9b7d;
+}
+
+/* Estilos para scrollbars, seleções etc, se necessário */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .full-width {
@@ -130,22 +202,41 @@ textarea:focus {
   transition: background-color 0.3s ease;
 }
 
+select {
+  border: 2px solid #7CAF8E;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 140 140' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='30,50 70,90 110,50' fill='none' stroke='%237CAF8E' stroke-width='10'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 12px;
+  padding-right: 2.5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
+
 .submit-btn:hover {
   background-color: #689f7c;
 }
 
 /* Responsivo */
 @media (max-width: 500px) {
-.booking-left h2{
-  font-size: 1.8rem;
-  text-align: center;
-}
-.booking-left p{
-  text-align: center;
-}
-.booking-section{
-  padding: 5rem 1.5rem;
-}
+  .booking-left h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .booking-left p {
+    text-align: center;
+  }
+  .booking-section {
+    padding: 5rem 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {

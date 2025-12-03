@@ -4,7 +4,7 @@ import './SampleRequestPage.css';
 
 export default function RequestForm({ form, onChange, onSubmit }) {
   const [errors, setErrors] = useState({ name: '', email: '', phone: '' });
-  const navigate = useNavigate(); // ← Aqui está o hook do React Router
+  const navigate = useNavigate();
 
   const validate = () => {
     const newErrors = { name: '', email: '', phone: '' };
@@ -34,7 +34,7 @@ export default function RequestForm({ form, onChange, onSubmit }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      navigate('/thank-you'); // ← Redirecionamento simples após validação
+      navigate('/thank-you');
     }
   };
 
@@ -50,7 +50,7 @@ export default function RequestForm({ form, onChange, onSubmit }) {
           onChange={onChange}
           style={errors.name ? { borderColor: 'red' } : {}}
         />
-        {errors.name && <small style={{ color: 'red' }}>{errors.name}</small>}
+        {errors.name && <span className="error">{errors.name}</span>}
       </div>
 
       <div className="form-group">
@@ -63,7 +63,7 @@ export default function RequestForm({ form, onChange, onSubmit }) {
           onChange={onChange}
           style={errors.email ? { borderColor: 'red' } : {}}
         />
-        {errors.email && <small style={{ color: 'red' }}>{errors.email}</small>}
+        {errors.email && <span className="error">{errors.email}</span>}
       </div>
 
       <div className="form-group">
@@ -76,7 +76,7 @@ export default function RequestForm({ form, onChange, onSubmit }) {
           onChange={onChange}
           style={errors.phone ? { borderColor: 'red' } : {}}
         />
-        {errors.phone && <small style={{ color: 'red' }}>{errors.phone}</small>}
+        {errors.phone && <span className="error">{errors.phone}</span>}
       </div>
 
       <div className="bnt-sub">
@@ -87,4 +87,5 @@ export default function RequestForm({ form, onChange, onSubmit }) {
     </form>
   );
 }
+
 

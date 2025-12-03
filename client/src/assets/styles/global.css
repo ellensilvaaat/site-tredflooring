@@ -14,6 +14,9 @@ html, body {
   font-family: var(--font-body);
   color: var(--text-dark);
   margin: 0;
+  overscroll-behavior: none;
+  scrollbar-width: none;       /* Firefox padrão */
+  -ms-overflow-style: none; 
 }
 
 /* Remove underline dos links */
@@ -43,4 +46,14 @@ button {
 input, button, textarea {
   font-family: inherit;
   outline: none;
+}
+
+/* Esconde scrollbar vertical para todos os navegadores */
+html, body {
+  overscroll-behavior: none;
+}
+
+/* Para navegadores WebKit (Chrome, Safari, iOS Safari, etc.) */
+body::-webkit-scrollbar {
+  display: none;
 }

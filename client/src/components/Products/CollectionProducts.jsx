@@ -29,7 +29,7 @@ export default function CollectionProducts() {
     <section className="product-collections-section">
       <div className="product-collections-container">
         <h2 className="product-collections-title">{slug.replace(/-/g, ' ')}</h2>
-        <button className="return-home-btn" onClick={() => navigate('/')}>
+        <button className="return-home-btnn" onClick={() => navigate('/')}>
         ← Return to Home
         </button>
 

@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './WhyTred.css';
 
 export default function WhyTred() {
+  const navigate = useNavigate();
+
   const items = [
     {
       icon: "https://site-tredflooring-assets.s3.amazonaws.com/icon1.png",
@@ -51,7 +54,9 @@ export default function WhyTred() {
           ))}
         </div>
 
-        <button className="why-tred-cta">Book your consultation</button>
+        <button className="why-tred-cta" onClick={() => navigate('/contact')}>
+          Book your consultation
+        </button>
       </div>
     </section>
   );

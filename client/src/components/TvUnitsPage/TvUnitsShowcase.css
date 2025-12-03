@@ -205,7 +205,6 @@ body.no-scroll {
   font-size: 1rem;
   font-weight: 500;
   transition: background-color 0.2s ease;
-  margin-top: 2rem;
   align-self: start;
 }
 

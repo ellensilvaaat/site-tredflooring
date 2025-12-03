@@ -78,10 +78,10 @@ const extraProducts = [
   },
   {
     id: 112,
-    name: 'Valley Oak',
+    name: 'Ancient Stone',
     type: 'Engineered Timber',
     specs: ['2400 x 240 x 15 mm', 'UV Lacquered', 'Oak Veneer'],
-    image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank//OD-ValleyOak.jpg"
+    image: "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/products/village-oak/AncientStone.jpg"
   },
   {
   id: 113,

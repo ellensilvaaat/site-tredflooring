@@ -1,26 +1,21 @@
-/* ================================
-   BASE SECTION
-================================ */
 .difference-section {
   position: relative;
-  width: 100%;
-  padding: 60px 20px;
+  background-color: var(--bg-light);
+  padding: 30px 20px;
   overflow: hidden;
 }
 
-/* Background fixo (usando uma única imagem agora) */
+/* Imagem de fundo */
 .difference-bg {
   position: absolute;
-  top: 0;
+  top: -900px;
   left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   z-index: 0;
 }
 
-/* Overlay escuro */
+/* Overlay escuro sobre a imagem */
 .difference-overlay {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -30,23 +25,18 @@
   z-index: 1;
 }
 
-/* Conteúdo */
+/* Conteúdo por cima */
 .difference-inner {
   position: relative;
   z-index: 2;
-  max-width: 1200px;
-  margin: auto;
 }
 
-/* ================================
-   TITLE
-================================ */
 .difference-title {
   font-family: var(--font-heading);
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: white;
   padding-left: 120px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   line-height: 1.2;
 }
 
@@ -54,9 +44,6 @@
   color: var(--primary-green);
 }
 
-/* ================================
-   STEPS WRAPPER
-================================ */
 .steps {
   display: flex;
   justify-content: space-between;
@@ -75,9 +62,10 @@
 .step-number {
   font-family: var(--font-body);
   font-size: 1.2rem;
-  color: var(--primary-green);
+  color: white;
   margin-bottom: 12px;
   font-weight: 700;
+  color: var(--primary-green);
 }
 
 .step-content {
@@ -99,9 +87,6 @@
   font-size: 0.8rem;
 }
 
-/* ================================
-   CTA BUTTON
-================================ */
 .difference-cta {
   background-color: var(--primary-green);
   color: white;
@@ -112,37 +97,31 @@
   font-size: 0.9rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin: auto;
   display: block;
-  margin: 80px auto 0 auto;
 }
 
 .difference-cta:hover {
   background-color: var(--green-hover);
 }
 
-/* ================================
-   MEDIA QUERIES — APENAS AJUSTES MOBILE/TABLET
-================================ */
-
-/* ----- MOBILE (até 500px) ----- */
+/* Responsividade */
 @media (max-width: 500px) {
   .difference-title {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     padding-left: 20px;
     margin-bottom: 40px;
-    text-align: center;
   }
 
   .steps {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
     padding-left: 0;
+    gap: 20px;
+    justify-content: center;
   }
 
   .step {
+    max-width: 60%;
     text-align: center;
-    max-width: 90%;
   }
 
   .step-number,
@@ -151,62 +130,146 @@
   }
 
   .difference-cta {
-    width: 70%;
+    width: 50%;
     font-size: 1rem;
     padding: 14px 0;
   }
+
+  /* esconder a imagem desktop */
+  .desktop-bg {
+    display: none;
+  }
+
+  /* mostrar a imagem mobile */
+  .mobile-bg {
+    display: block;
+    height: 100%;
+  }
+
+   .difference-section {
+    min-height: 100vh;
+    position: relative;
+  }
+
+  .mobile-bg {
+    display: block;
+    height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  .desktop-bg {
+    display: none;
+  }
+
+  .difference-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* overlay escuro */
+    z-index: 1;
+  }
+
+  .difference-inner {
+    position: relative;
+    z-index: 2; /* Fica acima do overlay */
+  }
 }
 
-/* ----- TABLET PEQUENO (501px–767px) ----- */
 @media (min-width: 501px) and (max-width: 767px) {
   .difference-title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     padding-left: 40px;
     margin-bottom: 50px;
-    text-align: center;
   }
 
   .steps {
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    padding-left: 0;
+    padding-left: 20px;
+    gap: 25px;
   }
 
   .step {
-    text-align: center;
-    max-width: 80%;
+    flex: 1 1 45%;
+    max-width: 100%;
   }
 
   .difference-cta {
-    width: 60%;
+    width: 80%;
   }
+
+  /* garantir esconder a mobile-bg e mostrar desktop */
+  .mobile-bg {
+    display: none;
+  }
+  .desktop-bg {
+    display: block;
+  }
+
 }
 
-/* ----- TABLET MÉDIO (768px–900px) ----- */
 @media (min-width: 768px) and (max-width: 900px) {
   .difference-title {
     font-size: 1.9rem;
     padding-left: 60px;
     margin-bottom: 60px;
-    text-align: center;
   }
 
   .steps {
+    padding-left: 30px;
+    gap: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px 40px;
-    justify-items: center;
-    padding-left: 0;
+    margin-bottom: 50px;
   }
 
   .step {
+    flex: 1 1 30%;
     text-align: center;
-    max-width: 400px;
   }
 
   .difference-cta {
-    width: 40%;
+    width: 30%;
+  }
+
+
+  .mobile-bg {
+    display: block;
+    height: 100%;
+  }
+
+   .difference-section {
+    min-height: 100vh;
+    position: relative;
+  }
+
+  .mobile-bg {
+    display: block;
+    height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  .desktop-bg {
+    display: none;
+  }
+
+  .difference-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* overlay escuro */
+    z-index: 1;
+  }
+
+  .difference-inner {
+    position: relative;
+    z-index: 2; /* Fica acima do overlay */
   }
 }
 
