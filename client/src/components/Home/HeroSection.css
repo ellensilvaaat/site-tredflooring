@@ -79,6 +79,10 @@
 
 /* ===== MOBILE: até 500px ===== */
 @media (max-width: 500px) {
+  .hero-section {
+  height: 80vh;
+}
+
   .hero-content {
     left: 50%;
     transform: translateX(-50%);
