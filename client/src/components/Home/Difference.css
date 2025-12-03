@@ -135,17 +135,6 @@
     padding: 14px 0;
   }
 
-  /* esconder a imagem desktop */
-  .desktop-bg {
-    display: none;
-  }
-
-  /* mostrar a imagem mobile */
-  .mobile-bg {
-    display: block;
-    height: 100%;
-  }
-
    .difference-section {
     min-height: 100vh;
     position: relative;
