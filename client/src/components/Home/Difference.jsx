@@ -1,17 +1,12 @@
 import React from 'react';
 import './Difference.css';
-import { useNavigate } from 'react-router-dom'; // 👈 importa o hook
+import { useNavigate } from 'react-router-dom';
 
 export default function Difference() {
-  const navigate = useNavigate(); // 👈 inicializa o hook
+  const navigate = useNavigate();
 
   return (
     <section className="difference-section">
-      <img
-        src="https://site-tredflooring-assets.s3.amazonaws.com/bg-mobile.jpg"
-        alt="Background"
-        className="difference-bg"
-      />
       <div className="difference-overlay" />
       <div className="difference-inner">
         <h2 className="difference-title">
@@ -76,4 +71,5 @@ export default function Difference() {
     </section>
   );
 }
+
 

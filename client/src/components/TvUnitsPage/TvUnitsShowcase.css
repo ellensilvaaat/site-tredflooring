@@ -376,10 +376,10 @@ body.no-scroll {
         padding-top: 12px;
   }
 
-  .return-home-btn {
-    width: 50%;
-    font-size: 1rem;
-  }
+
+  .image-zoomed {
+  transform: scale(1.11);
+}
 }
 
 

@@ -1,19 +1,14 @@
 .difference-section {
   position: relative;
-  background-color: var(--bg-light);
+  background-image: url("https://site-tredflooring-assets.s3.amazonaws.com/bg-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 30px 20px;
   overflow: hidden;
+  min-height: 20vh;
 }
 
-/* Imagem de fundo */
-.difference-bg {
-  position: absolute;
-  top: -900px;
-  left: 0;
-  z-index: 0;
-}
-
-/* Overlay escuro sobre a imagem */
 .difference-overlay {
   content: '';
   position: absolute;
@@ -25,7 +20,6 @@
   z-index: 1;
 }
 
-/* Conteúdo por cima */
 .difference-inner {
   position: relative;
   z-index: 2;
@@ -35,8 +29,8 @@
   font-family: var(--font-heading);
   font-size: 1.8rem;
   color: white;
-  padding-left: 120px;
   margin-bottom: 60px;
+  padding-left: 120px;
   line-height: 1.2;
 }
 
@@ -62,10 +56,9 @@
 .step-number {
   font-family: var(--font-body);
   font-size: 1.2rem;
-  color: white;
-  margin-bottom: 12px;
   font-weight: 700;
   color: var(--primary-green);
+  margin-bottom: 12px;
 }
 
 .step-content {
@@ -105,12 +98,13 @@
   background-color: var(--green-hover);
 }
 
-/* Responsividade */
+/* ======= MOBILE STYLES ======= */
 @media (max-width: 500px) {
   .difference-title {
     font-size: 1.5rem;
-    padding-left: 20px;
+    padding-left: 0;
     margin-bottom: 40px;
+    text-align: center;
   }
 
   .steps {
@@ -134,40 +128,9 @@
     font-size: 1rem;
     padding: 14px 0;
   }
-
-   .difference-section {
-    min-height: 100vh;
-    position: relative;
-  }
-
-  .mobile-bg {
-    display: block;
-    height: 100%;
-    min-height: 100%;
-    object-fit: cover;
-  }
-
-  .desktop-bg {
-    display: none;
-  }
-
-  .difference-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* overlay escuro */
-    z-index: 1;
-  }
-
-  .difference-inner {
-    position: relative;
-    z-index: 2; /* Fica acima do overlay */
-  }
 }
 
+/* Tablet */
 @media (min-width: 501px) and (max-width: 767px) {
   .difference-title {
     font-size: 1.7rem;
@@ -188,10 +151,9 @@
   .difference-cta {
     width: 80%;
   }
-
-
 }
 
+/* Small Desktop */
 @media (min-width: 768px) and (max-width: 900px) {
   .difference-title {
     font-size: 1.9rem;
@@ -215,44 +177,5 @@
   .difference-cta {
     width: 30%;
   }
-
-
-  .mobile-bg {
-    display: block;
-    height: 100%;
-  }
-
-   .difference-section {
-    min-height: 100vh;
-    position: relative;
-  }
-
-  .mobile-bg {
-    display: block;
-    height: 100%;
-    min-height: 100%;
-    object-fit: cover;
-  }
-
-  .desktop-bg {
-    display: none;
-  }
-
-  .difference-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* overlay escuro */
-    z-index: 1;
-  }
-
-  .difference-inner {
-    position: relative;
-    z-index: 2; /* Fica acima do overlay */
-  }
 }
-
 
