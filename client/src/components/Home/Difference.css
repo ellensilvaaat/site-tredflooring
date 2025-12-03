@@ -189,13 +189,6 @@
     width: 80%;
   }
 
-  /* garantir esconder a mobile-bg e mostrar desktop */
-  .mobile-bg {
-    display: none;
-  }
-  .desktop-bg {
-    display: block;
-  }
 
 }
 

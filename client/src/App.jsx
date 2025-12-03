@@ -17,11 +17,13 @@ import TvUnit from './pages/TvUnit';
 import WallPanelsPage from './pages/WallPanelsPage.jsx';
 import SandPolishPage from './pages/SandPolishPage';
 import Pavers from './pages/Pavers';
+import ScrollToTop from './ScrollToTop';
 
 
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <SampleCartProvider>
         <Navbar />
         <Routes>
