@@ -66,11 +66,13 @@ export default function SampleRequestPage() {
           </button>
         </div>
 
-        <RequestForm
-          form={form}
-          onChange={handleFormChange}
-          onSubmit={handleSubmit}
-        />
+       <RequestForm
+  form={form}
+  onChange={handleFormChange}
+  sampleCart={sampleCart}
+  quoteCart={quoteCart}
+  onSubmit={handleSubmit}
+/>
       </div>
       <Footer />
     </div>

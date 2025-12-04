@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './SampleRequestPage.css';
+import axios from 'axios';
 
-export default function RequestForm({ form, onChange, onSubmit }) {
+export default function RequestForm({ form, onChange, sampleCart, quoteCart }) {
   const [errors, setErrors] = useState({ name: '', email: '', phone: '' });
   const navigate = useNavigate();
 
@@ -31,10 +32,27 @@ export default function RequestForm({ form, onChange, onSubmit }) {
     return valid;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (validate()) {
+    if (!validate()) return;
+
+    try {
+      const payload = {
+        name: form.name,
+        email: form.email,
+        phone: form.phone,
+        samples: sampleCart,
+        quotes: quoteCart
+      };
+
+      console.log("📦 Enviando payload:", payload);
+
+      await axios.post('http://localhost:4000/api/request', payload);
+
       navigate('/thank-you');
+    } catch (error) {
+      console.error("❌ Failed to submit request:", error);
+      alert('There was an error submitting your request. Please try again.');
     }
   };
 
@@ -87,5 +105,7 @@ export default function RequestForm({ form, onChange, onSubmit }) {
     </form>
   );
 }
+
+
 
 

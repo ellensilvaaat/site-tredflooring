@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import './Booking.css';
 
 export default function Booking() {
@@ -68,13 +69,20 @@ export default function Booking() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!validate()) return;
+    try {
+      await axios.post("http://localhost:4000/api/contact", form);
 
-    // Redirecionamento direto
-    navigate('/thank-you');
+      // Se salvou com sucesso → redireciona
+      navigate('/thank-you');
+
+    } catch (err) {
+      console.error(err);
+      alert("There was an error submitting your message. Please try again.");
+    }
   };
 
   return (
@@ -150,8 +158,6 @@ export default function Booking() {
                 <option value="Vinyl">Vinyl</option>
                 <option value="Laminate">Laminate</option>
                 <option value="Hybrid">Hybrid</option>
-                <option value="Custom Rugs">Custom Rugs</option>
-                <option value="Tile / Stone">Tile / Stone</option>
                 <option value="Other">Other</option>
               </select>
             </div>
@@ -161,13 +167,7 @@ export default function Booking() {
           <div className="form-group full-width">
             <label>Other products / services you’re interested in</label>
             <div className="checkbox-group">
-              {[
-                'Custom Rugs',
-                'TV Unit',
-                'Wall Panels',
-                'Sand & Polish',
-                'Pavers'
-              ].map(service => (
+              {['Custom Rugs','TV Unit','Wall Panels','Sand & Polish','Pavers'].map(service => (
                 <label key={service} className="checkbox-label">
                   <input
                     type="checkbox"
@@ -200,6 +200,7 @@ export default function Booking() {
     </section>
   );
 }
+
 
 
 
