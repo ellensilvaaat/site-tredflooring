@@ -7,29 +7,25 @@ export const submitContactForm = async (req, res) => {
     const newMessage = new ContactMessage(req.body);
     await newMessage.save();
 
-    // 2. Preparar os dados para o HubSpot com os nomes internos corretos
+    // 2. Preparar os dados para o HubSpot
     const hubspotProperties = {
       properties: {
-        email: req.body.email,                     // ok
-        firstname: req.body.name,                 // ok
-        phone: req.body.phone,                    // ok
-        address_custom: req.body.address,         // custom field ✅
-        area: req.body.area,                      // dropdown ✅
-        flooring: req.body.flooring,              // dropdown ✅
-        
-        // ⚠️ Use o *internal name* exato que aparece no HubSpot, incluindo casing
-        Other_Services: Array.isArray(req.body.otherServices)
-          ? req.body.otherServices.join(';')      // transforma array em string separada por ;
+        email: req.body.email,
+        firstname: req.body.name,
+        phone: req.body.phone,
+        adress_custom: req.body.address,               // ✅ corrigido (mesmo com o typo)
+        area: req.body.area,
+        flooring: req.body.flooring,
+        other_services: Array.isArray(req.body.otherServices)
+          ? req.body.otherServices.join(';')
           : req.body.otherServices || '',
-
-        message_custom: req.body.message          // custom field ✅
+        message_custom: req.body.message
       }
     };
 
-    // Debug opcional:
-    console.log("🔎 Enviando para HubSpot:", JSON.stringify(hubspotProperties, null, 2));
+    console.log("📤 Enviando dados para HubSpot:", JSON.stringify(hubspotProperties, null, 2));
 
-    // 3. Enviar ao HubSpot via API
+    // 3. Enviar para HubSpot
     const hubspotResponse = await fetch('https://api.hubapi.com/crm/v3/objects/contacts', {
       method: 'POST',
       headers: {
@@ -41,7 +37,6 @@ export const submitContactForm = async (req, res) => {
 
     const hubspotData = await hubspotResponse.json();
 
-    // 4. Tratar erros da HubSpot com mais informações no log
     if (!hubspotResponse.ok) {
       console.error("❌ Erro na integração com HubSpot:", hubspotData);
       return res.status(500).json({
@@ -50,7 +45,7 @@ export const submitContactForm = async (req, res) => {
       });
     }
 
-    // 5. Sucesso
+    // 4. Sucesso
     res.status(201).json({
       message: 'Mensagem salva no MongoDB e enviada ao HubSpot!',
       hubspotId: hubspotData.id
