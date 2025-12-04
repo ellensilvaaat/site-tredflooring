@@ -16,12 +16,18 @@ export const submitContactForm = async (req, res) => {
         address_custom: req.body.address,         // custom field ✅
         area: req.body.area,                      // dropdown ✅
         flooring: req.body.flooring,              // dropdown ✅
-        other_services: Array.isArray(req.body.otherServices)
-          ? req.body.otherServices.join(';')      // transforma em string
+        
+        // ⚠️ Use o *internal name* exato que aparece no HubSpot, incluindo casing
+        Other_Services: Array.isArray(req.body.otherServices)
+          ? req.body.otherServices.join(';')      // transforma array em string separada por ;
           : req.body.otherServices || '',
+
         message_custom: req.body.message          // custom field ✅
       }
     };
+
+    // Debug opcional:
+    console.log("🔎 Enviando para HubSpot:", JSON.stringify(hubspotProperties, null, 2));
 
     // 3. Enviar ao HubSpot via API
     const hubspotResponse = await fetch('https://api.hubapi.com/crm/v3/objects/contacts', {
@@ -58,6 +64,7 @@ export const submitContactForm = async (req, res) => {
     });
   }
 };
+
 
 
 
