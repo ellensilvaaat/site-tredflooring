@@ -74,7 +74,7 @@ export default function Booking() {
 
     if (!validate()) return;
     try {
-      await axios.post("http://localhost:4000/api/contact", form);
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/contact`, form);
 
       // Se salvou com sucesso → redireciona
       navigate('/thank-you');

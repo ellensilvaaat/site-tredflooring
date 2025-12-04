@@ -47,7 +47,7 @@ export default function RequestForm({ form, onChange, sampleCart, quoteCart }) {
 
       console.log("📦 Enviando payload:", payload);
 
-      await axios.post('http://localhost:4000/api/request', payload);
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/request`, payload);
 
       navigate('/thank-you');
     } catch (error) {
