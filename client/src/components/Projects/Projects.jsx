@@ -7,8 +7,7 @@ const allProjects = [
     title: 'Wollstonecraft',
     category: 'Stairs',
     images: [
-      "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/imgwo.jpeg",
-      "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/imgwoo.jpeg"
+      "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/imgwo.jpeg"
     ],
     description: 'Elegant wooden staircase featuring warm-toned planks that highlight natural grain and refined craftsmanship.'
   },
