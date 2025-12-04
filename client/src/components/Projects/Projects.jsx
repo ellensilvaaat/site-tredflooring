@@ -4,6 +4,16 @@ import './Projects.css';
 const allProjects = [
   {
     id: 1,
+    title: 'Wollstonecraft',
+    category: 'Stairs',
+    images: [
+      "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/imgwo.jpeg",
+      "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/imgwoo.jpeg"
+    ],
+    description: 'Elegant wooden staircase featuring warm-toned planks that highlight natural grain and refined craftsmanship.'
+  },
+  {
+    id: 2,
     title: 'Surry Hills',
     category: 'Bedroom',
     images: [
@@ -14,7 +24,7 @@ const allProjects = [
     description: 'Soft-toned timber flooring brings warmth and continuity to compact bedroom and living spaces.'
   },
    {
-    id: 2,
+    id: 3,
     title: 'Pyrmont',
     category: 'Kitchen',
     images: [
@@ -25,7 +35,7 @@ const allProjects = [
     description: 'Refined timber floors elevate both kitchen and hallway with a sleek, contemporary finish.'
   },
   {
-    id: 3,
+    id: 4,
     title: 'Annandale',
     category: 'Bedroom',
     images: [
@@ -37,7 +47,7 @@ const allProjects = [
     description: 'Warm-toned bedroom flooring that enhances comfort and style.'
   },
   {
-  id: 4,
+  id: 5,
   title: 'Cremorne',
   category: 'Living',
   images: [
@@ -47,7 +57,7 @@ const allProjects = [
   description: 'Elegant living room flooring combining warmth and timeless texture.'
 },
 {
-  id: 5,
+  id: 6,
   title: 'Liberty Grove',
   category: 'Living',
   images: [
@@ -79,7 +89,7 @@ export default function Projects() {
     page * ITEMS_PER_PAGE
   );
 
-  const categories = ['All', 'Kitchen', 'Living', 'Bedroom', 'Stairs', 'Wet areas'];
+  const categories = ['All', 'Kitchen', 'Living', 'Bedroom', 'Stairs'];
 
   return (
     <section className="proj-section">

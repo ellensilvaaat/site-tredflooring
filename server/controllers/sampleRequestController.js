@@ -3,17 +3,38 @@ import fetch from 'node-fetch';
 
 export const submitSampleRequest = async (req, res) => {
   try {
-    const { name, email, phone, samples, quotes } = req.body;
-
     // 1. Salvar no MongoDB
     const newRequest = new SampleRequest(req.body);
     await newRequest.save();
 
-    // 2. Preparar dados para o HubSpot
+    // 2. Responder imediatamente (sem payload, sem atrasar o usuário)
+    res.status(201).end();
+
+    // 3. Processar envio ao HubSpot em background
+    processSampleRequestInBackground(req.body);
+
+  } catch (err) {
+    console.error("❌ Erro ao salvar no MongoDB:", err);
+    res.status(500).json({
+      error: 'Erro ao processar o request.',
+      detail: err.message || err
+    });
+  }
+};
+
+
+// ------------------------------
+// FUNÇÃO DE BACKGROUND
+// ------------------------------
+
+const processSampleRequestInBackground = async (data) => {
+  try {
+    const { name, email, phone, samples, quotes } = data;
+
     const sampleText = samples.map(s => `${s.name} (${s.type})`).join('; ');
     const quoteText = quotes.map(q => `${q.name} - ${q.color} - ${q.size}`).join('; ');
 
-    // 3. Verificar se o contato já existe pelo e-mail
+    // 1. Procurar contato existente
     const searchResponse = await fetch(`https://api.hubapi.com/crm/v3/objects/contacts/search`, {
       method: 'POST',
       headers: {
@@ -34,17 +55,21 @@ export const submitSampleRequest = async (req, res) => {
 
     const searchData = await searchResponse.json();
 
-    // 4. Atualizar se já existe
+    // ------------------------------
+    // SE CONTATO EXISTE → ATUALIZA
+    // ------------------------------
     if (searchData.total > 0 && searchData.results?.[0]) {
       const contactId = searchData.results[0].id;
 
-      // Buscar dados existentes
-      const existingContact = await fetch(`https://api.hubapi.com/crm/v3/objects/contacts/${contactId}?properties=samples_requested,quote_request`, {
-        method: 'GET',
-        headers: {
-          'Authorization': `Bearer ${process.env.HUBSPOT_ACCESS_TOKEN}`
+      const existingContact = await fetch(
+        `https://api.hubapi.com/crm/v3/objects/contacts/${contactId}?properties=samples_requested,quote_request`,
+        {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${process.env.HUBSPOT_ACCESS_TOKEN}`
+          }
         }
-      });
+      );
 
       const existingData = await existingContact.json();
 
@@ -54,63 +79,66 @@ export const submitSampleRequest = async (req, res) => {
       const updatedSamples = [existingSamples, sampleText].filter(Boolean).join('; ');
       const updatedQuotes = [existingQuotes, quoteText].filter(Boolean).join('; ');
 
-      // Atualizar o contato
-      const updateResponse = await fetch(`https://api.hubapi.com/crm/v3/objects/contacts/${contactId}`, {
-        method: 'PATCH',
+      const updateResponse = await fetch(
+        `https://api.hubapi.com/crm/v3/objects/contacts/${contactId}`,
+        {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${process.env.HUBSPOT_ACCESS_TOKEN}`
+          },
+          body: JSON.stringify({
+            properties: {
+              samples_requested: updatedSamples,
+              quote_request: updatedQuotes
+            }
+          })
+        }
+      );
+
+      if (!updateResponse.ok) {
+        console.error("❌ Erro ao atualizar contato HubSpot:", await updateResponse.text());
+      } else {
+        console.log("⚡ HubSpot atualizado para contato existente:", contactId);
+      }
+
+      return;
+    }
+
+    // ------------------------------
+    // SENÃO → CRIA NOVO CONTATO
+    // ------------------------------
+
+    const createResponse = await fetch(
+      `https://api.hubapi.com/crm/v3/objects/contacts`,
+      {
+        method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${process.env.HUBSPOT_ACCESS_TOKEN}`
         },
         body: JSON.stringify({
           properties: {
-            samples_requested: updatedSamples,
-            quote_request: updatedQuotes
+            email,
+            firstname: name,
+            phone,
+            samples_requested: sampleText,
+            quote_request: quoteText
           }
         })
-      });
-
-      if (!updateResponse.ok) {
-        const updateError = await updateResponse.text();
-        throw new Error(`Erro ao atualizar: ${updateError}`);
       }
-
-      return res.status(201).json({
-        message: 'Sample/Quote request salva no MongoDB e atualizada no HubSpot!'
-      });
-    }
-
-    // 5. Criar novo contato
-    const createResponse = await fetch(`https://api.hubapi.com/crm/v3/objects/contacts`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${process.env.HUBSPOT_ACCESS_TOKEN}`
-      },
-      body: JSON.stringify({
-        properties: {
-          email,
-          firstname: name,
-          phone,
-          samples_requested: sampleText,
-          quote_request: quoteText
-        }
-      })
-    });
+    );
 
     const createData = await createResponse.json();
 
     if (!createResponse.ok) {
-      throw new Error(`Erro ao criar contato: ${JSON.stringify(createData)}`);
+      console.error("❌ Erro ao criar contato HubSpot:", createData);
+    } else {
+      console.log("⚡ Novo contato criado no HubSpot:", createData.id);
     }
 
-    return res.status(201).json({
-      message: 'Sample/Quote request salva no MongoDB e enviada ao HubSpot!'
-    });
-
   } catch (err) {
-    res.status(500).json({
-      error: 'Erro ao processar o request.',
-      detail: err.message || err
-    });
+    console.error("❌ Erro inesperado ao processar HubSpot em background:", err);
   }
 };
+
