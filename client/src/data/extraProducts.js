@@ -1,558 +1,832 @@
-const extraProducts = [
-  {
-    id: 101,
-    name: 'Alfredo',
-    type: 'Engineered Timber',
-    specs: ['2200 x 220 x 15 mm', 'UV Lacquered', 'Oak Veneer'],
-    image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/Alfredo.jpg"
-  },
-  {
-    id: 102,
-    name: 'Ash Grey',
-    type: 'Engineered Timber',
-    specs: ['2200 x 220 x 15 mm', 'UV Lacquered', 'Oak Veneer'],
-    image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/AshGrey.jpg"
-  },
-  {
-    id: 103,
-    name: 'Glaucous',
-    type: 'Engineered Timber',
-    specs: ['2200 x 220 x 15 mm', 'UV Lacquered', 'Oak Veneer'],
-    image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/Glaucous.jpg"
-  },
-  {
-    id: 104,
-    name: 'Latte',
-    type: 'Engineered Timber',
-    specs: ['2200 x 220 x 15 mm', 'UV Lacquered', 'Oak Veneer'],
-    image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/Latte.jpg"
-  },
-  {
-    id: 105,
-    name: 'Muscat',
-    type: 'Engineered Timber',
-    specs: ['2200 x 220 x 15 mm', 'UV Lacquered', 'Oak Veneer'],
-    image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/Muscat.jpg"
-  },
-  {
-    id: 106,
-    name: 'Parana',
-    type: 'Engineered Timber',
-    specs: ['2200 x 220 x 15 mm', 'UV Lacquered', 'Oak Veneer'],
-    image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/Parana.jpg"
-  },
-  {
-    id: 107,
-    name: 'Copper Brown',
-    type: 'Engineered Timber',
-    specs: ['2400 x 240 x 15 mm', 'UV Lacquered', 'Oak Veneer'],
-    image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/OD-CopperBrown.jpg"
-  },
-  {
-    id: 108,
-    name: 'Dusk Grey',
-    type: 'Engineered Timber',
-    specs: ['2400 x 240 x 15 mm', 'UV Lacquered', 'Oak Veneer'],
-    image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/OD-DuskGrey.jpg"
-  },
-  {
-    id: 109,
-    name: 'French Lace',
-    type: 'Engineered Timber',
-    specs: ['2400 x 240 x 15 mm', 'UV Lacquered', 'Oak Veneer'],
-    image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/OD-FrenchLace.jpg"
-  },
-  {
-    id: 110,
-    name: 'Matterhorn',
-    type: 'Engineered Timber',
-    specs: ['2400 x 240 x 15 mm', 'UV Lacquered', 'Oak Veneer'],
-    image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/OD-Matterhorn.jpg"
-  },
-  {
-    id: 111,
-    name: 'Polar Ice',
-    type: 'Engineered Timber',
-    specs: ['2400 x 240 x 15 mm', 'UV Lacquered', 'Oak Veneer'],
-    image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/OD-PolarIce.jpg"
-  },
-  {
-    id: 112,
-    name: 'Ancient Stone',
-    type: 'Engineered Timber',
-    specs: ['2400 x 240 x 15 mm', 'UV Lacquered', 'Oak Veneer'],
-    image: "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/products/village-oak/AncientStone.jpg"
-  },
-  {
-  id: 113,
-  name: 'Black Magic',
-  type: 'Engineered Timber',
-  specs: ['1900 x 190 x 15 mm', 'Brushed Matt', 'Oak Veneer'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/BlackMagic.jpg"
-},
-{
-  id: 114,
-  name: 'Bottlebrush',
-  type: 'Engineered Timber',
-  specs: ['1900 x 190 x 15 mm', 'Brushed Matt', 'Oak Veneer'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Bottlebrush.jpg"
-},
-{
-  id: 115,
-  name: 'Double Black',
-  type: 'Engineered Timber',
-  specs: ['1900 x 190 x 15 mm', 'Brushed Matt', 'Oak Veneer'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/DoubleBlack.jpg"
-},
-{
-  id: 116,
-  name: 'Earl Grey',
-  type: 'Engineered Timber',
-  specs: ['1900 x 190 x 15 mm', 'Brushed Matt', 'Oak Veneer'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/EarlGrey.jpg"
-},
-{
-  id: 117,
-  name: 'Forest',
-  type: 'Engineered Timber',
-  specs: ['1900 x 190 x 15 mm', 'Brushed Matt', 'Oak Veneer'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Forest.jpg"
-},
-{
-  id: 118,
-  name: 'Honey Myrtle',
-  type: 'Engineered Timber',
-  specs: ['1900 x 190 x 15 mm', 'Brushed Matt', 'Oak Veneer'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/HoneyMyrtle.jpg"
-},
-{
-  id: 119,
-  name: 'Lily White',
-  type: 'Engineered Timber',
-  specs: ['1900 x 190 x 15 mm', 'Brushed Matt', 'Oak Veneer'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/LilyWhite.jpg"
-},
-{
-  id: 120,
-  name: 'Loft',
-  type: 'Engineered Timber',
-  specs: ['1900 x 190 x 15 mm', 'Brushed Matt', 'Oak Veneer'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Loft.jpg"
-},
-{
-  id: 121,
-  name: 'Midlands',
-  type: 'Engineered Timber',
-  specs: ['1900 x 190 x 15 mm', 'Brushed Matt', 'Oak Veneer'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Midlands.jpg"
-},
-{
-  id: 122,
-  name: 'Moon Dust',
-  type: 'Engineered Timber',
-  specs: ['1900 x 190 x 15 mm', 'Brushed Matt', 'Oak Veneer'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/MoonDust.jpg"
-},
-{
-  id: 123,
-  name: 'Saltbush',
-  type: 'Engineered Timber',
-  specs: ['1900 x 190 x 15 mm', 'Brushed Matt', 'Oak Veneer'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Saltbush.jpg"
-},
-{
-  id: 124,
-  name: 'Silver Holly',
-  type: 'Engineered Timber',
-  specs: ['1900 x 190 x 15 mm', 'Brushed Matt', 'Oak Veneer'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/SilverHolly.jpg"
-},
-{
-  id: 125,
-  name: 'Swissbrown',
-  type: 'Engineered Timber',
-  specs: ['1900 x 190 x 15 mm', 'Brushed Matt', 'Oak Veneer'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Swissbrown.jpg"
-},
-{
-  id: 126,
-  name: 'Trinity',
-  type: 'Engineered Timber',
-  specs: ['1900 x 190 x 15 mm', 'Brushed Matt', 'Oak Veneer'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Trinity.jpg"
-},
-{
-  id: 127,
-  name: 'Antique',
-  type: 'Hybrid',
-  specs: ['1520 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Antique.jpg"
-},
-{
-  id: 128,
-  name: 'Barnside',
-  type: 'Hybrid',
-  specs: ['1520 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Barnside.jpg"
-},
-{
-  id: 129,
-  name: 'Deep Brown',
-  type: 'Hybrid',
-  specs: ['1520 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/DeepBrown.jpg"
-},
-{
-  id: 130,
-  name: 'Doeskin',
-  type: 'Hybrid',
-  specs: ['1520 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Doeskin.jpg"
-},
-{
-  id: 131,
-  name: 'Flint Grey',
-  type: 'Hybrid',
-  specs: ['1520 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/FlintGrey.jpg"
-},
-{
-  id: 132,
-  name: 'Grey Stone',
-  type: 'Hybrid',
-  specs: ['1520 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/GreyStone.jpg"
-},
-{
-  id: 133,
-  name: 'Linen',
-  type: 'Hybrid',
-  specs: ['1520 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Linen.jpg"
-},
-{
-  id: 134,
-  name: 'Magnolia',
-  type: 'Hybrid',
-  specs: ['1520 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Magnolia.jpg"
-},
-{
-  id: 135,
-  name: 'Maize',
-  type: 'Hybrid',
-  specs: ['1520 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Maize.jpg"
-},
-{
-  id: 136,
-  name: 'Oak Natural',
-  type: 'Hybrid',
-  specs: ['1520 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/OakNatural.jpg"
-},
-{
-  id: 137,
-  name: 'Pewter',
-  type: 'Hybrid',
-  specs: ['1520 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Pewter.jpg"
-},
-{
-  id: 138,
-  name: 'Porcelain',
-  type: 'Hybrid',
-  specs: ['1520 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Porcelain.jpg"
-},
-{
-  id: 139,
-  name: 'Red Stone',
-  type: 'Hybrid',
-  specs: ['1520 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/RedStone.jpg"
-},
-{
-  id: 140,
-  name: 'Silver Grey',
-  type: 'Hybrid',
-  specs: ['1520 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/SilverGrey.jpg"
-},
-{
-  id: 141,
-  name: 'Washed Coral',
-  type: 'Hybrid',
-  specs: ['1520 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/WashedCoral.jpg"
-},
-{
-  id: 142,
-  name: 'Wheat',
-  type: 'Hybrid',
-  specs: ['1520 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Wheat.jpg"
-},
-{
-  id: 143,
-  name: 'Chicory',
-  type: 'Hybrid',
-  specs: ['1800 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/ChicoryAspire.jpeg"
-},
-{
-  id: 144,
-  name: 'Coastal Blackbutt',
-  type: 'Hybrid',
-  specs: ['1800 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/CoastalBlackbutt.jpg"
-},
-{
-  id: 145,
-  name: 'Crystal Lake',
-  type: 'Hybrid',
-  specs: ['1800 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/CrystalLake.jpg"
-},
-{
-  id: 146,
-  name: 'Dolomite',
-  type: 'Hybrid',
-  specs: ['1800 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/DolomiteAspire.jpg"
-},
-{
-  id: 147,
-  name: 'Homestead',
-  type: 'Hybrid',
-  specs: ['1800 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/Homestead.jpg"
-},
-{
-  id: 148,
-  name: 'Iron Ridge',
-  type: 'Hybrid',
-  specs: ['1800 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/IronRidge.jpg"
-},
-{
-  id: 149,
-  name: 'Mountain Oak',
-  type: 'Hybrid',
-  specs: ['1800 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/MountainOak.jpg"
-},
-{
-  id: 150,
-  name: 'New England Blackbutt',
-  type: 'Hybrid',
-  specs: ['1800 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/NewEnglandBlackbutt.jpg"
-},
-{
-  id: 151,
-  name: 'NSW Spotted Gum',
-  type: 'Hybrid',
-  specs: ['1800 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/NSWSpottedGum.jpg"
-},
-{
-  id: 152,
-  name: 'Pebble Beach',
-  type: 'Hybrid',
-  specs: ['1800 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/PebbleBeach.jpg"
-},
-{
-  id: 153,
-  name: 'QLD Spotted Gum',
-  type: 'Hybrid',
-  specs: ['1800 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/QLDSpottedGum.jpg"
-},
-{
-  id: 154,
-  name: 'Sandy Bluff',
-  type: 'Hybrid',
-  specs: ['1800 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/SandyBluff.jpg"
-},
-{
-  id: 155,
-  name: 'Silver Moon',
-  type: 'Hybrid',
-  specs: ['1800 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/SilverMoon.jpg"
-},
-{
-  id: 156,
-  name: 'Warm Springs',
-  type: 'Hybrid',
-  specs: ['1800 x 228 x 6.5 mm', '0.5 mm wear layer', 'AC4', 'IXPE backing'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/WarmSprings.jpg"
-},
-{
-  id: 157,
-  name: 'Aged Natural Oakleaf',
-  type: 'Laminate',
-  specs: ['2200 x 196 x 12 mm', 'AC4', 'Embossed matte finish'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/AgedNaturalOakleaf.jpg"
-},
-{
-  id: 158,
-  name: 'Alpine Mist',
-  type: 'Laminate',
-  specs: ['2200 x 196 x 12 mm', 'AC4', 'Embossed matte finish'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/AlpineMist.jpg"
-},
-{
-  id: 159,
-  name: 'Arctic Fox',
-  type: 'Laminate',
-  specs: ['2200 x 196 x 12 mm', 'AC4', 'Embossed matte finish'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/ArcticFox.jpg"
-},
-{
-  id: 160,
-  name: 'Bedrock',
-  type: 'Laminate',
-  specs: ['2200 x 196 x 12 mm', 'AC4', 'Embossed matte finish'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/Bedrock.jpg"
-},
-{
-  id: 161,
-  name: 'Blackbutt',
-  type: 'Laminate',
-  specs: ['2200 x 196 x 12 mm', 'AC4', 'Embossed matte finish'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/Blackbutt.jpg"
-},
-{
-  id: 162,
-  name: 'Clove',
-  type: 'Laminate',
-  specs: ['2200 x 196 x 12 mm', 'AC4', 'Embossed matte finish'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/Clove.jpg"
-},
-{
-  id: 163,
-  name: 'Delta Sand',
-  type: 'Laminate',
-  specs: ['2200 x 196 x 12 mm', 'AC4', 'Embossed matte finish'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/DeltaSand.jpg"
-},
-{
-  id: 164,
-  name: 'Hickory',
-  type: 'Laminate',
-  specs: ['2200 x 196 x 12 mm', 'AC4', 'Embossed matte finish'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/Hickory.jpg"
-},
-{
-  id: 165,
-  name: 'Natural',
-  type: 'Laminate',
-  specs: ['2200 x 196 x 12 mm', 'AC4', 'Embossed matte finish'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/Natural.jpg"
-},
-{
-  id: 166,
-  name: 'Sierra Oak',
-  type: 'Laminate',
-  specs: ['2200 x 196 x 12 mm', 'AC4', 'Embossed matte finish'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/SierraOak.jpg"
-},
-{
-  id: 167,
-  name: 'Silk Grey',
-  type: 'Laminate',
-  specs: ['2200 x 196 x 12 mm', 'AC4', 'Embossed matte finish'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/SilkGrey.jpg"
-},
-{
-  id: 168,
-  name: 'Spotted Gum',
-  type: 'Laminate',
-  specs: ['2200 x 196 x 12 mm', 'AC4', 'Embossed matte finish'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/SpottedGum.jpg"
-},
-{
-  id: 169,
-  name: 'Wolf Grey',
-  type: 'Laminate',
-  specs: ['2200 x 196 x 12 mm', 'AC4', 'Embossed matte finish'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/WolfGrey.jpg"
-},
-{
-  id: 170,
-  name: 'Kulak Clay 120',
-  type: 'Vinyl',
-  specs: ['305 x 610 mm', 'Textured stone finish', 'Indoor use'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakClay120.jpg"
-},
-{
-  id: 171,
-  name: 'Kulak Pearl 120',
-  type: 'Vinyl',
-  specs: ['305 x 610 mm', 'Textured stone finish', 'Indoor use'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakPearl120.jpg"
-},
-{
-  id: 172,
-  name: 'Kulak Smoke 120',
-  type: 'Vinyl',
-  specs: ['305 x 610 mm', 'Textured stone finish', 'Indoor use'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakSmoke120.jpg"
-},
-{
-  id: 173,
-  name: 'Kulak Sand 120',
-  type: 'Vinyl',
-  specs: ['305 x 610 mm', 'Textured stone finish', 'Indoor use'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakSand120.jpg"
-},
-{
-  id: 174,
-  name: 'Kulak Clay 60',
-  type: 'Vinyl',
-  specs: ['305 x 305 mm', 'Textured stone finish', 'Indoor use'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakClay60.jpg"
-},
-{
-  id: 175,
-  name: 'Kulak Pearl 60',
-  type: 'Vinyl',
-  specs: ['305 x 305 mm', 'Textured stone finish', 'Indoor use'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakPearl60.jpg"
-},
-{
-  id: 176,
-  name: 'Kulak Smoke 60',
-  type: 'Vinyl',
-  specs: ['305 x 305 mm', 'Textured stone finish', 'Indoor use'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakSmoke60.jpg"
-},
-{
-  id: 177,
-  name: 'Kulak Sand 60',
-  type: 'Vinyl',
-  specs: ['305 x 305 mm', 'Textured stone finish', 'Indoor use'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakSand60.jpg"
-},
-{
-  id: 181,
-  name: 'Mayastone Pearl',
-  type: 'Vinyl',
-  specs: ['Matte stone look', 'Indoor use'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/mayastone/MayaStonePearl.jpg"
-},
-{
-  id: 182,
-  name: 'Mayastone White',
-  type: 'Vinyl',
-  specs: ['Matte stone look', 'Indoor use'],
-  image: "https://site-tredflooring-assets.s3.amazonaws.com/products/mayastone/MayaStoneSilk.jpg"
-}
-];
+export const deMarqueOakWidePlank2200 = {
+  id: "de-marque-oak-wide-plank-2200",
+  collectionName: "De Marque Oak",
+  type: "Engineered Timber",
+  specs: ["2200 × 220 × 15 mm", "UV Lacquered", "Oak Veneer"],
+  variants: [
+    {
+      colorName: "Alfredo",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/Alfredo.jpg"
+    },
+    {
+      colorName: "Ash Grey",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/AshGrey.jpg"
+    },
+    {
+      colorName: "Glaucous",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/Glaucous.jpg"
+    },
+    {
+      colorName: "Latte",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/Latte.jpg"
+    },
+    {
+      colorName: "Muscat",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/Muscat.jpg"
+    },
+    {
+      colorName: "Parana",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/Parana.jpg"
+    }
+  ]
+};
 
-export default extraProducts;
+export const deMarqueOakWidePlank2400 = {
+  id: "de-marque-oak-wide-plank-2400",
+  collectionName: "De Marque Oak",
+  type: "Engineered Timber",
+  specs: ["2400 × 240 × 15 mm", "UV Lacquered", "Oak Veneer"],
+  variants: [
+    {
+      colorName: "Copper Brown",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/OD-CopperBrown.jpg"
+    },
+    {
+      colorName: "Dusk Grey",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/OD-DuskGrey.jpg"
+    },
+    {
+      colorName: "French Lace",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/OD-FrenchLace.jpg"
+    },
+    {
+      colorName: "Matterhorn",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/OD-Matterhorn.jpg"
+    },
+    {
+      colorName: "Polar Ice",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/OD-PolarIce.jpg"
+    },
+  ]
+};
+
+export const villageOak = {
+  id: "village-oak",
+  collectionName: "Village Oak",
+  type: "Engineered Timber",
+  specs: ["2400 × 240 × 15 mm", "UV Lacquered", "Oak Veneer"],
+  variants: [
+    {
+      colorName: "Ancient Stone",
+      image: "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/products/village-oak/AncientStone.jpg"
+    },
+    {
+      colorName: "Black Magic",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/BlackMagic.jpg"
+    },
+    {
+      colorName: "Bottlebrush",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Bottlebrush.jpg"
+    },
+    {
+      colorName: "Brown Sugar",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/BrownSugar.jpg"
+    },
+    {
+      colorName: "Double Black",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/DoubleBlack.jpg"
+    },
+    {
+      colorName: "Earl Grey",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/EarlGrey.jpg"
+    },
+    {
+      colorName: "First Snow",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/FirstSnow.jpg"
+    },
+    {
+      colorName: "Forest",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Forest.jpg"
+    },
+    {
+      colorName: "Honey Myrtle",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/HoneyMyrtle.jpg"
+    },
+    {
+      colorName: "Lily White",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/LilyWhite.jpg"
+    },
+    {
+      colorName: "Loft",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Loft.jpg"
+    },
+    {
+      colorName: "Midlands",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Midlands.jpg"
+    },
+    {
+      colorName: "Moon Dust",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/MoonDust.jpg"
+    },
+    {
+      colorName: "New Dawn",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/NewDawn.jpg"
+    },
+    {
+      colorName: "Oyster Grey",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/OysterGrey.jpg"
+    },
+    {
+      colorName: "Pearly Shore",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/PearlyShore.jpg"
+    },
+    {
+      colorName: "Raffia",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Raffia.jpg"
+    },
+    {
+      colorName: "Ranchwood",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Ranchwood.jpg"
+    },
+    {
+      colorName: "Saltbush",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Saltbush.jpg"
+    },
+    {
+      colorName: "Silver Holly",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/SilverHolly.jpg"
+    },
+    {
+      colorName: "Swissbrown",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Swissbrown.jpg"
+    },
+    {
+      colorName: "Trinity",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Trinity.jpg"
+    }
+  ]
+};
+
+export const easiPlank = {
+  id: "easi-plank",
+  collectionName: "Easi Plank",
+  type: "Hybrid",
+  specs: ["1520 × 228 × 6.5 mm", "AC4", "IXPE backing"],
+  variants: [
+    {
+      colorName: "Antique",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Antique.jpg"
+    },
+    {
+      colorName: "Barnside",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Barnside.jpg"
+    },
+    {
+      colorName: "Deep Brown",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/DeepBrown.jpg"
+    },
+    {
+      colorName: "Doeskin",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Doeskin.jpg"
+    },
+    {
+      colorName: "Flint Grey",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/FlintGrey.jpg"
+    },
+    {
+      colorName: "Grey Stone",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/GreyStone.jpg"
+    },
+    {
+      colorName: "Linen",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Linen.jpg"
+    },
+    {
+      colorName: "Magnolia",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Magnolia.jpg"
+    },
+    {
+      colorName: "Maize",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Maize.jpg"
+    },
+    {
+      colorName: "Oak Natural",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/OakNatural.jpg"
+    },
+    {
+      colorName: "Pewter",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Pewter.jpg"
+    },
+    {
+      colorName: "Porcelain",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Porcelain.jpg"
+    },
+    {
+      colorName: "Red Stone",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/RedStone.jpg"
+    },
+    {
+      colorName: "Silver Grey",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/SilverGrey.jpg"
+    },
+    {
+      colorName: "Washed Coral",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/WashedCoral.jpg"
+    },
+    {
+      colorName: "Wheat",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Wheat.jpg"
+    }
+  ]
+};
+
+export const aspire = {
+  id: "aspire",
+  collectionName: "Aspire",
+  type: "Hybrid",
+  specs: ["1800 × 228 × 6.5 mm", "AC4", "IXPE backing"],
+  variants: [
+    {
+      colorName: "Chicory",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/ChicoryAspire.jpeg"
+    },
+    {
+      colorName: "Coastal Blackbutt",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/CoastalBlackbutt.jpg"
+    },
+    {
+      colorName: "Crystal Lake",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/CrystalLake.jpg"
+    },
+    {
+      colorName: "Dolomite",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/DolomiteAspire.jpg"
+    },
+    {
+      colorName: "Homestead",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/Homestead.jpg"
+    },
+    {
+      colorName: "Iron Ridge",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/IronRidge.jpg"
+    },
+    {
+      colorName: "Mountain Oak",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/MountainOakAspire.jpg"
+    },
+    {
+      colorName: "New England Blackbutt",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/NewEnglandBlackbutt.jpg"
+    },
+    {
+      colorName: "NSW Spotted Gum",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/NSWSpottedGum.jpg"
+    },
+    {
+      colorName: "Pebble Beach",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/PebbleBeachAspire.jpg"
+    },
+    {
+      colorName: "QLD Spotted Gum",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/QLDSpottedGum.jpg"
+    },
+    {
+      colorName: "Sandy Bluff",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/SandyBluffAspire.jpg"
+    },
+    {
+      colorName: "Silver Moon",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/SilverMoon.jpg"
+    },
+    {
+      colorName: "Warm Springs",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/WarmSprings.jpg"
+    }
+  ]
+};
+
+export const oakleaf = {
+  id: "oakleaf",
+  collectionName: "Oakleaf",
+  type: "Laminate",
+  specs: ["2200 × 196 × 12 mm", "AC4", "Embossed matte finish"],
+  variants: [
+    {
+      colorName: "Aged Natural Oakleaf",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/AgedNaturalOakleafHD.jpg"
+    },
+    {
+      colorName: "Alpine Mist",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/AlpineMist.jpg"
+    },
+    {
+      colorName: "Arctic Fox",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/ArcticFox.jpg"
+    },
+    {
+      colorName: "Bedrock",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/Bedrock.jpg"
+    },
+    {
+      colorName: "Blackbutt",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/Blackbutt.jpg"
+    },
+    {
+      colorName: "Clove",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/Clove.jpg"
+    },
+    {
+      colorName: "Delta Sand",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/DeltaSand.jpg"
+    },
+    {
+      colorName: "Hickory",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/Hickory.jpg"
+    },
+    {
+      colorName: "Natural",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/Natural.jpg"
+    },
+    {
+      colorName: "Sierra Oak",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/SierraOak.jpg"
+    },
+    {
+      colorName: "Silk Grey",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/SilkGrey.jpg"
+    },
+    {
+      colorName: "Spotted Gum",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/SpottedGum.jpg"
+    },
+    {
+      colorName: "Wolf Grey",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/WolfGrey.jpg"
+    }
+  ]
+};
+
+export const kulak60 = {
+  id: "kulak-60",
+  collectionName: "Kulak 60",
+  type: "Vinyl",
+  variants: [
+    {
+      colorName: "Clay",
+      specs: ["305 × 305 mm", "Textured stone finish", "Indoor use"],
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakClay60.jpg"
+    },
+    {
+      colorName: "Pearl",
+      specs: ["305 × 305 mm", "Textured stone finish", "Indoor use"],
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakPearl60.jpg"
+    },
+    {
+      colorName: "Sand",
+      specs: ["305 × 305 mm", "Textured stone finish", "Indoor use"],
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakSand60.jpg"
+    },
+    {
+      colorName: "Smoke",
+      specs: ["305 × 305 mm", "Textured stone finish", "Indoor use"],
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakSmoke60.jpg"
+    }
+  ]
+};
+
+export const kulak120 = {
+  id: "kulak-120",
+  collectionName: "Kulak 120",
+  type: "Vinyl",
+  variants: [
+    {
+      colorName: "Clay",
+      specs: ["305 × 610 mm", "Textured stone finish", "Indoor use"],
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakClay120.jpg"
+    },
+    {
+      colorName: "Pearl",
+      specs: ["305 × 610 mm", "Textured stone finish", "Indoor use"],
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakPearl120.jpg"
+    },
+    {
+      colorName: "Sand",
+      specs: ["305 × 610 mm", "Textured stone finish", "Indoor use"],
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakSand120.jpg"
+    },
+    {
+      colorName: "Smoke",
+      specs: ["305 × 610 mm", "Textured stone finish", "Indoor use"],
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakSmoke120.jpg"
+    }
+  ]
+};
+
+export const mayastone = {
+  id: "mayastone",
+  collectionName: "Mayastone",
+  type: "Vinyl",
+  variants: [
+    {
+      colorName: "Pearl",
+      specs: ["Matte stone look", "Indoor use"],
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/mayastone/MayaStonePearl.jpg"
+    },
+    {
+      colorName: "White",
+      specs: ["Matte stone look", "Indoor use"],
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/mayastone/MayaStoneSilk.jpg"
+    }
+  ]
+};
+
+export const hardwoodCollectionHA = {
+  id: "hardwood-collection-ha",
+  collectionName: "Hardwood Collection",
+  type: "Hardwood",
+  specs: ["14/3 mm", "Hi‑Spec", "Grade", "AB"],
+
+  variants: [
+    {
+      colorName: "Autumn Leaves",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/hardwood-collection/HA-AutumnLeaves.jpg"
+    },
+    {
+      colorName: "Spring Moon",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/hardwood-collection/HA-SpringMoon.jpg"
+    },
+    {
+      colorName: "Winter Frost",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/hardwood-collection/HA-WinterFrost.jpg"
+    },
+    {
+      colorName: "Summer Haze",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/hardwood-collection/HA-SummerHaze.jpg"
+    }
+  ]
+};
+export const hardwoodCollectionHR = {
+  id: "hardwood-collection-hr",
+  collectionName: "Hard‑Rock Flooring",
+  type: "Hard‑Rock Flooring",
+  specs: ["14/3 mm", "Hi‑Spec", "Grade", "AB"],
+
+  variants: [
+    {
+      colorName: "Forest Oak",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/hardwood-collection/HR-ForestOak.jpg"
+    },
+    {
+      colorName: "Frosty Snap",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/hardwood-collection/HR-FrostySnap.jpg"
+    },
+    {
+      colorName: "Golden Bloom",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/hardwood-collection/HR-GoldenBloom.jpg"
+    },
+    {
+      colorName: "Liberty Grey",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/hardwood-collection/HR-LibertyGrey.jpg"
+    },
+    {
+      colorName: "Maple Falls",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/hardwood-collection/HR-MapleFalls.jpg"
+    },
+    {
+      colorName: "Nubuck",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/hardwood-collection/HR-Nubuck.jpg"
+    },
+    {
+      colorName: "Nutshell",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/hardwood-collection/HR-Nutshell.jpg"
+    },
+    {
+      colorName: "Polar Fleece",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/hardwood-collection/HR-PolarFleece.jpg"
+    }
+  ]
+};
+
+export const prestigeOakCollection = {
+  id: "prestige-oak",
+  collectionName: "Prestige Oak",
+  type: "Engineered",
+  specs: ["14/2 mm", "AB or ABCD", "eco‑friendly"],
+
+  variants: [
+    {
+      colorName: "Abbey Grey",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/prestige-oak/AbbeyGrey.jpg"
+    },
+    {
+      colorName: "Bondi Beach",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/prestige-oak/BondiBeach.jpg"
+    },
+    {
+      colorName: "Brownstone",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/prestige-oak/Brownstone.jpg"
+    },
+    {
+      colorName: "Buck Natural",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/prestige-oak/BuckNatural.jpg"
+    },
+    {
+      colorName: "Cobblestone",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/prestige-oak/Cobblestone.jpg"
+    },
+    {
+      colorName: "Coco Husk",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/prestige-oak/CocoHusk.jpg"
+    },
+    {
+      colorName: "Gunmetal",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/prestige-oak/Gunmetal.jpg"
+    },
+    {
+      colorName: "Iceberg",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/prestige-oak/Iceberg.jpg"
+    },
+    {
+      colorName: "Ocean Mist",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/prestige-oak/OceanMist.jpg"
+    },
+    {
+      colorName: "Royal Grey",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/prestige-oak/RoyalGrey.jpg"
+    },
+    {
+      colorName: "Smoked White",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/prestige-oak/SmokedWhite.jpg"
+    }
+  ]
+};
+
+export const herringboneCollection = {
+  id: "herringbone",
+  collectionName: "Herringbone",
+  type: "Engineered Timber",
+  specs: ["Scratch", "Acoustic", "Low‑VOC"],
+
+  variants: [
+    {
+      colorName: "Ash Grey",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/herringbone/ash-grey.jpg"
+    },
+    {
+      colorName: "Chateau Grey",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/herringbone/chateau-grey.jpg"
+    },
+    {
+      colorName: "Cognac",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/herringbone/cognac.jpg"
+    },
+    {
+      colorName: "Colonial Grey",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/herringbone/colonial-grey.jpg"
+    },
+    {
+      colorName: "Dark Brown",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/herringbone/dark-brown.jpg"
+    },
+    {
+      colorName: "Latte",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/herringbone/latte.jpg"
+    },
+    {
+      colorName: "Parana",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/herringbone/parana.jpg"
+    },
+    {
+      colorName: "Pure Natural",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/herringbone/pure-natural.jpg"
+    },
+    {
+      colorName: "RAW",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/herringbone/raw.jpg"
+    },
+    {
+      colorName: "Riesling",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/herringbone/riesling.jpg"
+    },
+    {
+      colorName: "Sauvignon",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/herringbone/sauvignon.jpg"
+    },
+    {
+      colorName: "Storm",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/herringbone/storm.jpg"
+    },
+    {
+      colorName: "Vintage",
+      image:
+        "https://site-tredflooring-assets.s3.amazonaws.com/products/herringbone/vintage.jpg"
+    }
+  ]
+};
+
+export const chevronCollection = {
+  id: "chevron",
+  collectionName: "Chevron",
+  type: "Engineered Timber",
+  specs: ["Water", "Scratch", "Acoustic", "Low‑VOC"],
+
+  variants: [
+    {
+      colorName: "Chateau Grey",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/ChateauGrey.jpg"
+    },
+    {
+      colorName: "Cognac Chevron",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/CognacChevron.jpg"
+    },
+    {
+      colorName: "Colonial Grey",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/ColonialGrey.jpg"
+    },
+    {
+      colorName: "Dark Brown",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/DarkBrown.jpg"
+    },
+    {
+      colorName: "Latte",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/Latte.jpg"
+    },
+    {
+      colorName: "Parana",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/Parana.jpg"
+    },
+    {
+      colorName: "Pure Natural",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/PureNatural.jpg"
+    },
+    {
+      colorName: "RAW",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/RAW.jpg"
+    },
+    {
+      colorName: "Riesling",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/Riesling.jpg"
+    },
+    {
+      colorName: "Sauvignon",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/Sauvignon.jpg"
+    },
+    {
+      colorName: "Storm",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/Storm.jpg"
+    },
+    {
+      colorName: "Vintage",
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/Vintage.jpg"
+    }
+  ]
+};
+
+export const australianTimberCollection = {
+  id: "australian-timber",
+  collectionName: "Australian Timber",
+  type: "Engineered Timber",
+
+  variants: [
+    {
+      colorName: "Classic Spotted Gum",
+      specs: ['Durable', 'Low‑VOC', 'Textured Finish'],
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/australian-timber/ClassicSpottedGumSwatch.jpg"
+    },
+    {
+      colorName: "Jarrah",
+      specs: ['Scratch Resistant', 'Acoustic', 'Low‑VOC'],
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/australian-timber/Jarrah.jpg"
+    },
+    {
+      colorName: "Natural Blackbutt",
+      specs: ['Water Resistant', 'Low‑VOC', 'Acoustic'],
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/australian-timber/NaturalBlackbutt.jpg"
+    },
+    {
+      colorName: "Natural Spotted Gum",
+      specs: ['Durable', 'Low‑VOC', 'Textured Finish'],
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/australian-timber/NaturalSpottedGum.jpg"
+    },
+    {
+      colorName: "Smoked Spotted Gum",
+      specs: ['Scratch Resistant', 'Low‑VOC', 'Matte Finish'],
+      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/australian-timber/SmokedSpottedGum.jpg"
+    }
+  ]
+};
+
+export const everstone = {
+  id: "everstone",
+  collectionName: "Everstone (SPC / Hybrid)",
+  type: "SPC Hybrid Flooring",
+  specs: ["1524 × 183 × 6.5 mm", "Urethane + Ceramic‑Bead finish"],
+
+  variants: [
+    {
+      colorName: "Everest Clay",
+      image: "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/products/everstone/EverestClay.jpg"
+    },
+    {
+      colorName: "Everest Cloud",
+      image: "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/products/everstone/EverestCould.jpg"
+    },
+    {
+      colorName: "Everest Ice",
+      image: "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/products/everstone/EverestIce.jpg"
+    }
+  ]
+};
+
+export const woodlandCollection = {
+  id: "woodland",
+  collectionName: "Woodland",
+  type: "Timber Tiles",
+  specs: [
+    "2000 × 1200 mm (20 × 120 cm)",
+    "10 mm thickness",
+    "Matte / Natural finish",
+    "Wood‑look porcelain tile"
+  ],
+  variants: [
+    {
+      colorName: "Almond",
+      image:
+        "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/products/Woodland-20x120-Almond.jpg"
+    },
+    {
+      colorName: "Cherry",
+      image:
+        "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/products/Woodland-20x120-Cherry.jpg"
+    },
+    {
+      colorName: "Maple",
+      image:
+        "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/products/Woodland-20x120-Maple.jpg"
+    }
+  ]
+};
+
+export const mywoodCollection = {
+  id: "mywood",
+  collectionName: "My Wood",
+  type: "Timber Tiles",
+  specs: [
+    "1205 × 196 mm",
+    "Porcelain timber‑look tile",
+    "Matte finish"
+  ],
+  variants: [
+    {
+      colorName: "Oak",
+      image:
+        "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/products/OAK.jpg"
+    },
+    {
+      colorName: "Ciliegio",
+      image:
+        "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/products/PF00015572_Mywood+20x121+Ciliegio+Ret__7.jpg"
+    },
+    {
+      colorName: "Grigio",
+      image:
+        "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/products/PF00015573_Mywood+20X121+Grigio+Ret__13.jpg"
+    },
+    {
+      colorName: "Miele",
+      image:
+        "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/products/PF00015574_Mywood+Miele+Ret+20x121_+10.jpg"
+    },
+    {
+      colorName: "Beige",
+      image:
+        "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/products/PF00015576_Mywood+20x121+Beige+Ret_10.jpg"
+    }
+  ]
+};
 

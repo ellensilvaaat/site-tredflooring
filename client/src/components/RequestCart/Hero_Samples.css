@@ -1,12 +1,25 @@
 .sample-hero {
-  background-image: url("https://site-tredflooring-assets.s3.amazonaws.com/cart-hero.jpg"); /* Substitua pela imagem correta */
-  background-size: cover;
-  background-position: center;
-  height: 40vh;
   position: relative;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+.sample-hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.sample-overlay {
+  position: relative;
+  z-index: 2;
 }
 
 .sample-overlay h1 {
@@ -16,8 +29,8 @@
   text-align: center;
 }
 
-@media (max-width: 500px){
-  .sample-overlay h1{
+@media (max-width: 500px) {
+  .sample-overlay h1 {
     font-size: 2rem;
   }
 }

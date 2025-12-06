@@ -1,64 +1,311 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext, memo, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './ProductCollections.css';
+import './ProductCollectionsClean.css';
+
 import { SampleCartContext } from '../../contexts/SampleCartContext';
 
-import collectionsProducts from '../../data/collectionsProducts';
-import extraProducts from '../../data/extraProducts';
+import {
+  deMarqueOakWidePlank2200,
+  deMarqueOakWidePlank2400,
+  villageOak,
+  easiPlank,
+  aspire,
+  oakleaf,
+  kulak60,
+  kulak120,
+  mayastone,
+  hardwoodCollectionHA,
+  hardwoodCollectionHR,
+  prestigeOakCollection,
+  herringboneCollection,
+  chevronCollection,
+  australianTimberCollection,
+  everstone,
+  woodlandCollection,
+  mywoodCollection
+} from '../../data/extraProducts';
 
-// Junta todos os produtos (coleções + extras)
 const allProducts = [
-  ...Object.values(collectionsProducts).flat(),
-  ...extraProducts
+  ...deMarqueOakWidePlank2200.variants.map(v => ({
+    ...v,
+    collectionName: deMarqueOakWidePlank2200.collectionName,
+    type: deMarqueOakWidePlank2200.type,
+    specs: deMarqueOakWidePlank2200.specs
+  })),
+  ...deMarqueOakWidePlank2400.variants.map(v => ({
+    ...v,
+    collectionName: deMarqueOakWidePlank2400.collectionName,
+    type: deMarqueOakWidePlank2400.type,
+    specs: deMarqueOakWidePlank2400.specs
+  })),
+  ...villageOak.variants.map(v => ({
+    ...v,
+    collectionName: villageOak.collectionName,
+    type: villageOak.type,
+    specs: villageOak.specs
+  })),
+  ...easiPlank.variants.map(v => ({
+    ...v,
+    collectionName: easiPlank.collectionName,
+    type: easiPlank.type,
+    specs: easiPlank.specs
+  })),
+  ...aspire.variants.map(v => ({
+    ...v,
+    collectionName: aspire.collectionName,
+    type: aspire.type,
+    specs: aspire.specs
+  })),
+  ...oakleaf.variants.map(v => ({
+    ...v,
+    collectionName: oakleaf.collectionName,
+    type: oakleaf.type,
+    specs: oakleaf.specs
+  })),
+  ...hardwoodCollectionHA.variants.map(v => ({
+    ...v,
+    collectionName: hardwoodCollectionHA.collectionName,
+    type: hardwoodCollectionHA.type,
+    specs: hardwoodCollectionHA.specs
+  })),
+  ...hardwoodCollectionHR.variants.map(v => ({
+    ...v,
+    collectionName: hardwoodCollectionHR.collectionName,
+    type: hardwoodCollectionHR.type,
+    specs: hardwoodCollectionHR.specs
+  })),
+  ...prestigeOakCollection.variants.map(v => ({
+    ...v,
+    collectionName: prestigeOakCollection.collectionName,
+    type: prestigeOakCollection.type,
+    specs: prestigeOakCollection.specs
+  })),
+  ...herringboneCollection.variants.map(v => ({
+    ...v,
+    collectionName: herringboneCollection.collectionName,
+    type: herringboneCollection.type,
+    specs: herringboneCollection.specs
+  })),
+  ...chevronCollection.variants.map(v => ({
+    ...v,
+    collectionName: chevronCollection.collectionName,
+    type: chevronCollection.type,
+    specs: chevronCollection.specs
+  })),
+  ...australianTimberCollection.variants.map(v => ({
+    ...v,
+    collectionName: australianTimberCollection.collectionName,
+    type: australianTimberCollection.type,
+    specs: australianTimberCollection.specs
+  })),
+  ...everstone.variants.map(v => ({
+    ...v,
+    collectionName: everstone.collectionName,
+    type: everstone.type,
+    specs: everstone.specs
+  })),
+  ...woodlandCollection.variants.map(v => ({
+    ...v,
+    collectionName: woodlandCollection.collectionName,
+    type: woodlandCollection.type,
+    specs: woodlandCollection.specs
+  })),
+  ...mywoodCollection.variants.map(v => ({
+    ...v,
+    collectionName: mywoodCollection.collectionName,
+    type: mywoodCollection.type,
+    specs: mywoodCollection.specs
+  })),
+  // últimos coleções
+  ...kulak60.variants.map(v => ({
+    ...v,
+    collectionName: kulak60.collectionName,
+    type: kulak60.type,
+    specs: kulak60.specs
+  })),
+  ...kulak120.variants.map(v => ({
+    ...v,
+    collectionName: kulak120.collectionName,
+    type: kulak120.type,
+    specs: kulak120.specs
+  })),
+  ...mayastone.variants.map(v => ({
+    ...v,
+    collectionName: mayastone.collectionName,
+    type: mayastone.type,
+    specs: mayastone.specs
+  }))
 ];
 
-const ITEMS_PER_PAGE = 12;
+const THUMBS_LIMIT = 5;
+
+const ProductCard = memo(({ group, onImageClick }) => {
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [thumbsExpanded, setThumbsExpanded] = useState(false);
+  const selected = group[selectedIndex];
+  const { addSample } = useContext(SampleCartContext);
+  const navigate = useNavigate();
+
+  const hasMoreThumbs = group.length > THUMBS_LIMIT;
+  const thumbsToShow = thumbsExpanded ? group : group.slice(0, THUMBS_LIMIT);
+
+  return (
+    <div className="pc-card">
+      <div
+        className="pc-card-img"
+        style={{ backgroundImage: `url(${selected.image})` }}
+        onClick={() => onImageClick(selected.image)}
+      />
+      <div className="pc-card-info">
+        <div className="pc-card-header">
+          <h3 className="pc-collection-name">{selected.collectionName}</h3>
+          <p className="pc-collection-specs">
+            {(selected.specs || []).join(' / ')}
+          </p>
+        </div>
+
+        <div className="pc-color-row">
+          <p className="pc-color-label">
+            Color: <span className="pc-color-name">{selected.colorName}</span>
+          </p>
+          <div className="pc-color-thumbs">
+            {thumbsToShow.map((variant, vIdx) => (
+              <img
+                key={vIdx}
+                src={variant.image}
+                alt={variant.colorName}
+                className={`pc-thumb ${
+                  vIdx === selectedIndex ? 'active' : ''
+                }`}
+                loading="lazy"
+                onClick={() => setSelectedIndex(vIdx)}
+              />
+            ))}
+
+            {hasMoreThumbs && (
+              <button
+                className="pc-thumbs-toggle-btn"
+                onClick={() => setThumbsExpanded(prev => !prev)}
+              >
+                {thumbsExpanded ? '▲' : '▼'}
+              </button>
+            )}
+          </div>
+        </div>
+
+        <div className="pc-card-actions">
+          <button
+            className="pc-request-button"
+            onClick={() => {
+              addSample({
+                id:
+                  selected.id ??
+                  `${selected.collectionName}-${selected.colorName}`,
+                name: `${selected.collectionName} — ${selected.colorName}`,
+                type: selected.type,
+                specs: selected.specs,
+                image: selected.image
+              });
+              navigate('/request-samples');
+            }}
+          >
+            Request sample
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+});
 
 export default function ProductCollections() {
   const [searchTerm, setSearchTerm] = useState('');
   const [filtersOpen, setFiltersOpen] = useState(false);
-  const [activeFilters, setActiveFilters] = useState({
-    type: '',
-    specs: []
-  });
+
+const [activeFilters, setActiveFilters] = useState({ 
+  type: '', 
+  specs: [] 
+});
+
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
+
+  const desktopItemsPerPage = 8;
+  const mobileItemsPerPage = 3;
+
   const [page, setPage] = useState(1);
+  const [visibleCount, setVisibleCount] = useState(
+    isMobile ? mobileItemsPerPage : desktopItemsPerPage
+  );
+
+  const [modalImage, setModalImage] = useState(null);
 
   const navigate = useNavigate();
   const { addSample } = useContext(SampleCartContext);
 
-  // Sempre volta à página 1 quando busca/filtros mudam
+  useEffect(() => {
+    const onResize = () => {
+      const mobile = window.innerWidth <= 900;
+      setIsMobile(mobile);
+      setPage(1);
+      setVisibleCount(mobile ? mobileItemsPerPage : desktopItemsPerPage);
+    };
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
+
   useEffect(() => {
     setPage(1);
-  }, [searchTerm, activeFilters.type, activeFilters.specs.length]);
+    setVisibleCount(isMobile ? mobileItemsPerPage : desktopItemsPerPage);
+  }, [searchTerm, activeFilters.type, activeFilters.specs.length, isMobile]);
 
   const normalize = (str = '') => str.toLowerCase().trim();
 
-  const filtered = allProducts.filter(product => {
-    const name = product.name || '';
-    const type = product.type || '';
-    const specs = product.specs || [];
+  const grouped = allProducts.reduce((acc, product) => {
+    const key = `${product.collectionName}_${product.type}_${(
+      product.specs || []
+    ).join('|')}`;
+    if (!acc[key]) acc[key] = [];
+    acc[key].push(product);
+    return acc;
+  }, {});
 
-    const matchesSearch = normalize(name).includes(normalize(searchTerm));
+  const allGroups = Object.values(grouped);
+
+  const filtered = allGroups.filter(group => {
+    const product = group[0];
+    const matchesSearch =
+      normalize(product.collectionName).includes(normalize(searchTerm)) ||
+      group.some(v =>
+        normalize(v.colorName || '').includes(normalize(searchTerm))
+      );
 
     const matchesType = activeFilters.type
-      ? normalize(type).includes(normalize(activeFilters.type))
+      ? normalize(product.type).includes(normalize(activeFilters.type))
       : true;
 
-    const matchesSpecs = activeFilters.specs.length > 0
-      ? activeFilters.specs.every(spec => specs.includes(spec))
-      : true;
+    const matchesSpecs =
+      activeFilters.specs.length > 0
+        ? activeFilters.specs.every(spec => product.specs.includes(spec))
+        : true;
 
     return matchesSearch && matchesType && matchesSpecs;
   });
 
-  const pageCount = Math.max(1, Math.ceil(filtered.length / ITEMS_PER_PAGE));
-
-  const paginated = filtered.slice(
-    (page - 1) * ITEMS_PER_PAGE,
-    page * ITEMS_PER_PAGE
+  const pageCount = Math.max(
+    1,
+    Math.ceil(filtered.length / desktopItemsPerPage)
   );
 
-  const toggleFilterSpec = (spec) => {
+  const paginated = filtered.slice(
+    (page - 1) * desktopItemsPerPage,
+    page * desktopItemsPerPage
+  );
+
+  const displayGroups = isMobile
+    ? filtered.slice(0, visibleCount)
+    : paginated;
+
+  const toggleFilterSpec = spec => {
     setActiveFilters(prev => {
       const exists = prev.specs.includes(spec);
       return {
@@ -73,26 +320,20 @@ export default function ProductCollections() {
   const clearFilters = () => {
     setSearchTerm('');
     setActiveFilters({ type: '', specs: [] });
+    setFiltersOpen(false);
   };
 
-  useEffect(() => {
-    const onKey = (e) => {
-      if (e.key === 'Escape') setFiltersOpen(false);
-    };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, []);
-
   return (
-    <section className="product-collections-section">
-      <div className="product-collections-container">
-        <p className="product-collections-intro">
-          Design‑led ranges in carpet, engineered and solid timber, hybrid and laminate.<br/>
+    <section className="pc-section">
+      <div className="pc-container">
+        <p className="pc-intro">
+          Design‑led ranges in carpet, engineered and solid timber, hybrid and
+          laminate.
+          <br />
           Built to last, specified with care.
         </p>
 
-        {/* Barra de busca + filtros */}
-        <div className="product-collections-filter-bar">
+        <div className="pc-filter-bar">
           <input
             type="text"
             placeholder="Search product..."
@@ -100,63 +341,43 @@ export default function ProductCollections() {
             onChange={e => setSearchTerm(e.target.value)}
           />
           <div className="product-filters-button" onClick={() => setFiltersOpen(true)}>
-            Filters ▾
-          </div>
-          <button className="product-search-button" type="button">
-            <img
-              src="https://site-tredflooring-assets.s3.amazonaws.com/search-icon.png"
-              alt="Search"
-              style={{ width: '20px', height: '20px' }}
-            />
-          </button>
+  Filters ▾
+</div>
+
+<button className="product-search-button" type="button">
+  <img
+    src="https://site-tredflooring-assets.s3.amazonaws.com/search-icon.png"
+    alt="Search"
+    style={{ width: '20px', height: '20px' }}
+  />
+</button>
         </div>
 
-        {/* Grade de produtos */}
-        <div className="product-collections-grid">
-          {paginated.map(col => (
-            <div key={col.id} className="product-collection-card">
-              <div
-                className={`product-collection-bg ${
-                  /kulak/i.test(col.image) ? 'kulak-product' : ''
-                }`}
-                style={{ backgroundImage: `url(${col.image})` }}
+        <div className="pc-grid">
+          {displayGroups.map(group => {
+            const groupKey = `${group[0].collectionName}_${group[0].type}_${(
+              group[0].specs || []
+            ).join('|')}`;
+            return (
+              <ProductCard
+                key={groupKey}
+                group={group}
+                onImageClick={setModalImage}
               />
-              <div className="product-collection-overlay">
-                <h3>{col.name}</h3>
-                <p>{col.type}</p>
-                <p>{col.specs.join(' / ')}</p>
-                <button
-                  className="product-request-button"
-                  onClick={() => {
-                    addSample({
-                      id: col.id,
-                      name: col.name,
-                      type: col.type,
-                      specs: col.specs,
-                      image: col.image
-                    });
-                    navigate('/request-samples');
-                  }}
-                >
-                  Request samples
-                </button>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
-        {/* “No results” — aparece somente se nenhum produto corresponder */}
         {filtered.length === 0 && (
-          <div className="no-results">
+          <div className="pc-no-results">
             <p>No products found matching your search/filters.</p>
           </div>
         )}
 
-        {/* Paginação — aparece somente se houver resultados */}
-        {filtered.length > 0 && (
-          <div className="product-pagination">
+        {!isMobile && filtered.length > 0 && (
+          <div className="pc-pagination">
             <button
-              className="page-arrow"
+              className="pc-page-arrow"
               onClick={() => setPage(p => Math.max(p - 1, 1))}
               disabled={page === 1}
             >
@@ -167,7 +388,7 @@ export default function ProductCollections() {
               return (
                 <button
                   key={pageNum}
-                  className={`page-num ${ page === pageNum ? 'active' : '' }`}
+                  className={`pc-page-num ${page === pageNum ? 'active' : ''}`}
                   onClick={() => setPage(pageNum)}
                 >
                   {pageNum}
@@ -175,7 +396,7 @@ export default function ProductCollections() {
               );
             })}
             <button
-              className="page-arrow"
+              className="pc-page-arrow"
               onClick={() => setPage(p => Math.min(p + 1, pageCount))}
               disabled={page === pageCount}
             >
@@ -184,73 +405,113 @@ export default function ProductCollections() {
           </div>
         )}
 
+        {isMobile && visibleCount < filtered.length && (
+          <button
+            className="pc-load-more-button"
+            onClick={() => setVisibleCount(prev => prev + mobileItemsPerPage)}
+          >
+            Load more
+          </button>
+        )}
+
       </div>
 
-      {/* Modal de filtros */}
-      {filtersOpen && (
-        <div
-          className="product-filters-modal-backdrop"
-          onClick={() => setFiltersOpen(false)}
-        >
-          <div className="product-filters-modal" onClick={e => e.stopPropagation()}>
+      {modalImage && (
+        <div className="pc-modal-overlay" onClick={() => setModalImage(null)}>
+          <div
+            className="pc-modal-content"
+            onClick={e => e.stopPropagation()}
+          >
             <button
-              className="product-filters-close-btn"
-              onClick={() => setFiltersOpen(false)}
+              className="pc-modal-close-btn"
+              onClick={() => setModalImage(null)}
             >
               ×
             </button>
-            <h3>Filters</h3>
-
-            <div className="product-filter-group">
-              <label className="product-filter-type">Type:</label>
-              <select
-                value={activeFilters.type}
-                onChange={e => setActiveFilters(prev => ({
-                  ...prev,
-                  type: e.target.value
-                }))}
-              >
-                <option value="">All</option>
-                <option value="Engineered Timber">Engineered Timber</option>
-                <option value="Hybrid">Hybrid</option>
-                <option value="Laminate">Laminate</option>
-                <option value="Vinyl">Vinyl</option>
-              </select>
-            </div>
-
-            <div className="product-filter-group">
-              <label className="product-filter-gp">Specifications:</label>
-              {[
-                'Indoor use',
-                'Brushed Matt',
-                'AC4',
-                'Oak Veneer',
-                'UV Lacquered'
-              ].map(spec => (
-                <div key={spec} className="product-filter-checkbox-row">
-                  <input
-                    type="checkbox"
-                    id={`spec-${spec}`}
-                    checked={activeFilters.specs.includes(spec)}
-                    onChange={() => toggleFilterSpec(spec)}
-                  />
-                  <label htmlFor={`spec-${spec}`}>{spec}</label>
-                </div>
-              ))}
-            </div>
-
-            <div className="product-filter-actions">
-              <button className="product-clear-filters-btn" onClick={clearFilters}>
-                Clear
-              </button>
-              <button className="product-apply-filters-btn" onClick={() => setFiltersOpen(false)}>
-                Apply
-              </button>
-            </div>
+            <img
+              src={modalImage}
+              alt="Preview"
+              className="pc-modal-image"
+            />
           </div>
         </div>
       )}
 
+      {filtersOpen && (
+  <div className="product-filters-modal-backdrop" onClick={() => setFiltersOpen(false)}>
+    <div className="product-filters-modal" onClick={e => e.stopPropagation()}>
+      
+      <button className="product-filters-close-btn" onClick={() => setFiltersOpen(false)}>
+        ×
+      </button>
+
+      <h3>Filters</h3>
+
+      <div className="product-filter-group">
+        <label className="product-filter-type">Type:</label>
+        <select
+          value={activeFilters.type}
+          onChange={e => setActiveFilters(prev => ({
+            ...prev,
+            type: e.target.value
+          }))}
+        >
+          <option value="">All</option>
+          <option value="Engineered Timber">Engineered Timber</option>
+          <option value="Hybrid">Hybrid</option>
+          <option value="Laminate">Laminate</option>
+          <option value="Vinyl">Vinyl</option>
+          <option value="Timber Tiles">Timber Tiles</option>
+        </select>
+      </div>
+
+      <div className="product-filter-group">
+        <label className="product-filter-gp">Specifications:</label>
+
+        {[
+          'Indoor use',
+          'Brushed Matt',
+          'AC4',
+          'Oak Veneer',
+          'UV Lacquered'
+        ].map(spec => (
+          <div key={spec} className="product-filter-checkbox-row">
+            <input
+              type="checkbox"
+              id={`spec-${spec}`}
+              checked={activeFilters.specs.includes(spec)}
+              onChange={() => toggleFilterSpec(spec)}
+            />
+            <label htmlFor={`spec-${spec}`}>{spec}</label>
+          </div>
+        ))}
+      </div>
+
+      <div className="product-filter-actions">
+        <button className="product-clear-filters-btn" onClick={clearFilters}>
+          Clear
+        </button>
+        <button className="product-apply-filters-btn" onClick={() => setFiltersOpen(false)}>
+          Apply
+        </button>
+      </div>
+
+    </div>
+  </div>
+)}
+{/* Botão flutuante para topo */}
+{isMobile && visibleCount > mobileItemsPerPage && (
+  <button
+    className="scroll-to-top-button"
+    onClick={() => {
+      const section = document.querySelector('.pc-section');
+      if (section) section.scrollIntoView({ behavior: 'smooth' });
+    }}
+  >
+    ↑ Top
+  </button>
+)}
     </section>
   );
 }
+
