@@ -53,7 +53,7 @@
   background-color: #7CAF8E;
   color: white;
   border: none;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 0.75rem;
   border-radius: 999px;
   cursor: pointer;
 }
@@ -299,6 +299,7 @@
     position: absolute;
     top: -30px;
     right: -25px;
+    color: black;
   }
   .pc-thumbs-toggle-btn{
     padding: 0.5rem;
@@ -339,6 +340,10 @@
     background-color: #699f7e;
   }
 
+.pc-filter-barr {
+  max-width: 300px !important;
+  flex: none !important;
+}
 }
 
 .product-filters-modal-backdrop {
@@ -485,7 +490,7 @@
   background-color: #7CAF8E;
   color: white;
   border: none;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 0.75rem;
   border-radius: 999px;
   cursor: pointer;
 }
@@ -499,7 +504,7 @@
   font-size: 1rem;
 }
 
-.product-collections-filter-bar input[type="text"] {
+.pc-filter-barr {
   padding: 0.75rem 1rem;
   font-size: 1rem;
   border: 2px solid #7CAF8E;
@@ -518,3 +523,4 @@
   position: static;
   opacity: 1;
 }
+

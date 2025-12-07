@@ -358,6 +358,7 @@ useEffect(() => {
             placeholder="Search product..."
             value={searchTerm}
             onChange={e => setSearchTerm(e.target.value)}
+            className="pc-filter-barr"
           />
           <div className="product-filters-button" onClick={() => setFiltersOpen(true)}>
   Filters ▾

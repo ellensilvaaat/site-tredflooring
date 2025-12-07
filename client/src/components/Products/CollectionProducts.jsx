@@ -24,6 +24,17 @@ export default function CollectionProducts() {
   useEffect(() => {
     setPage(1); // reset na troca de coleção
   }, [slug]);
+const [isMobile, setIsMobile] = useState(false);
+
+useEffect(() => {
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 900);
+  };
+
+  handleResize(); // Chama na montagem
+  window.addEventListener('resize', handleResize);
+  return () => window.removeEventListener('resize', handleResize);
+}, []);
 
   const [showScrollTop, setShowScrollTop] = useState(false);
 
@@ -107,7 +118,7 @@ useEffect(() => {
           </button>
         </div>
       </div>
-      {showScrollTop && (
+      {isMobile && showScrollTop && (
   <button
     className="scroll-to-top-button"
     onClick={() => {
