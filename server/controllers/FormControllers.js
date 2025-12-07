@@ -1,5 +1,6 @@
 import ContactMessage from '../models/ContactMessage.js';
 import fetch from 'node-fetch';
+//import { sendLeadEmail } from '../utils/sendEmail.js';
 
 export const submitContactForm = async (req, res) => {
   try {
@@ -9,7 +10,7 @@ export const submitContactForm = async (req, res) => {
 
     // 2. Responder imediatamente ao front-end (sem mensagem, sem delay)
     res.status(201).end(); // <-- direto, sem payload
-
+    //sendLeadEmail(req.body);
     // 3. Enviar para HubSpot em background
     sendToHubspot(req.body);
 
@@ -60,8 +61,6 @@ const sendToHubspot = async (data) => {
     console.error("❌ Erro inesperado ao enviar para HubSpot:", err);
   }
 };
-
-
 
 
 

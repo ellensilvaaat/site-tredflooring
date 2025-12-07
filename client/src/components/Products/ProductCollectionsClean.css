@@ -2,7 +2,7 @@
 
 /* GLOBAL e estrutura do container */
 .pc-section {
-  padding: 5rem 0;
+  padding: 5rem 0 3rem 0;
   font-family: 'Inter', sans-serif;
   background: linear-gradient(to bottom, #fff 0%, #E0F2E9 100%);
 }
@@ -269,7 +269,7 @@
 /* Responsividade mobile / tablet */
 @media (max-width: 900px) {
   .pc-section{
-    padding: 3rem 0 0 0;
+    padding: 3rem 0 1rem 0;
   }
   .pc-card-img {
     padding-bottom: 60%;
@@ -292,8 +292,8 @@
     font-size: 0.85rem;
   }
   .pc-modal-content {
-  max-width: 50vh;
-  max-height: 50vh;
+  max-width: 80%;
+  max-height: 80%;
 }
 .pc-modal-close-btn {
     position: absolute;
@@ -506,4 +506,15 @@
   border-radius: 50px;
   max-width: 500px;
   flex: 1;
+}
+
+.product-filter-checkbox-row input[type="checkbox"] {
+  /* garante estilo padrão do sistema / browser */
+  appearance: auto !important;
+  -webkit-appearance: checkbox !important;
+  width: auto;
+  height: auto;
+  margin-right: 0.5rem;
+  position: static;
+  opacity: 1;
 }

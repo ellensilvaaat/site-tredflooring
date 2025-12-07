@@ -272,24 +272,28 @@ const [activeFilters, setActiveFilters] = useState({
   const allGroups = Object.values(grouped);
 
   const filtered = allGroups.filter(group => {
-    const product = group[0];
-    const matchesSearch =
-      normalize(product.collectionName).includes(normalize(searchTerm)) ||
-      group.some(v =>
-        normalize(v.colorName || '').includes(normalize(searchTerm))
-      );
+  const product = group[0];
 
-    const matchesType = activeFilters.type
-      ? normalize(product.type).includes(normalize(activeFilters.type))
+  const matchesSearch =
+    normalize(product.collectionName).includes(normalize(searchTerm)) ||
+    group.some(v =>
+      normalize(v.colorName || '').includes(normalize(searchTerm))
+    );
+
+  const matchesType = activeFilters.type
+    ? normalize(product.type || '').includes(normalize(activeFilters.type))
+    : true;
+
+  const specs = product.specs || [];
+
+  const matchesSpecs =
+    activeFilters.specs.length > 0
+      ? activeFilters.specs.every(spec => specs.includes(spec))
       : true;
 
-    const matchesSpecs =
-      activeFilters.specs.length > 0
-        ? activeFilters.specs.every(spec => product.specs.includes(spec))
-        : true;
+  return matchesSearch && matchesType && matchesSpecs;
+});
 
-    return matchesSearch && matchesType && matchesSpecs;
-  });
 
   const pageCount = Math.max(
     1,
@@ -322,6 +326,21 @@ const [activeFilters, setActiveFilters] = useState({
     setActiveFilters({ type: '', specs: [] });
     setFiltersOpen(false);
   };
+
+  const [showScrollTop, setShowScrollTop] = useState(false);
+  const [loadMoreClicked, setLoadMoreClicked] = useState(false);
+
+useEffect(() => {
+  if (!loadMoreClicked) return;
+
+  const onScroll = () => {
+    setShowScrollTop(window.scrollY > 300);
+  };
+
+  window.addEventListener('scroll', onScroll);
+  return () => window.removeEventListener('scroll', onScroll);
+}, [loadMoreClicked]);
+
 
   return (
     <section className="pc-section">
@@ -408,7 +427,11 @@ const [activeFilters, setActiveFilters] = useState({
         {isMobile && visibleCount < filtered.length && (
           <button
             className="pc-load-more-button"
-            onClick={() => setVisibleCount(prev => prev + mobileItemsPerPage)}
+            onClick={() => {
+            setVisibleCount(prev => prev + mobileItemsPerPage);
+            setLoadMoreClicked(true); 
+            }}
+
           >
             Load more
           </button>
@@ -469,18 +492,17 @@ const [activeFilters, setActiveFilters] = useState({
         <label className="product-filter-gp">Specifications:</label>
 
         {[
-          'Indoor use',
-          'Brushed Matt',
           'AC4',
           'Oak Veneer',
           'UV Lacquered'
         ].map(spec => (
           <div key={spec} className="product-filter-checkbox-row">
             <input
-              type="checkbox"
-              id={`spec-${spec}`}
-              checked={activeFilters.specs.includes(spec)}
-              onChange={() => toggleFilterSpec(spec)}
+             type="checkbox"
+             id={`spec-${spec}`}
+             value={spec}
+             checked={activeFilters.specs.includes(spec)}
+             onChange={() => toggleFilterSpec(spec)}
             />
             <label htmlFor={`spec-${spec}`}>{spec}</label>
           </div>
@@ -500,17 +522,20 @@ const [activeFilters, setActiveFilters] = useState({
   </div>
 )}
 {/* Botão flutuante para topo */}
-{isMobile && visibleCount > mobileItemsPerPage && (
+{isMobile && showScrollTop && (
   <button
     className="scroll-to-top-button"
     onClick={() => {
-      const section = document.querySelector('.pc-section');
-      if (section) section.scrollIntoView({ behavior: 'smooth' });
-    }}
+  const section = document.querySelector('.pc-section');
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}}
   >
     ↑ Top
   </button>
 )}
+
     </section>
   );
 }

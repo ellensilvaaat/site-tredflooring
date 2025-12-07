@@ -1,6 +1,6 @@
 import SampleRequest from '../models/SampleRequest.js';
 import fetch from 'node-fetch';
-
+//import { sendLeadEmail } from '../utils/sendEmail.js';
 export const submitSampleRequest = async (req, res) => {
   try {
     // 1. Salvar no MongoDB
@@ -9,6 +9,8 @@ export const submitSampleRequest = async (req, res) => {
 
     // 2. Responder imediatamente (sem payload, sem atrasar o usuário)
     res.status(201).end();
+    // 3. Send email in background ✅ (commented for now)
+    // sendLeadEmail(req.body);
 
     // 3. Processar envio ao HubSpot em background
     processSampleRequestInBackground(req.body);
@@ -141,4 +143,3 @@ const processSampleRequestInBackground = async (data) => {
     console.error("❌ Erro inesperado ao processar HubSpot em background:", err);
   }
 };
-

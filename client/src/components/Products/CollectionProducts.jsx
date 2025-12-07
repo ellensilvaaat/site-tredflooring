@@ -25,6 +25,22 @@ export default function CollectionProducts() {
     setPage(1); // reset na troca de coleção
   }, [slug]);
 
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+useEffect(() => {
+  const handleScroll = () => {
+    const section = document.querySelector('.product-collections-section');
+    if (!section) return;
+
+    const sectionTop = section.getBoundingClientRect().top;
+    const scrolledPastSectionTop = sectionTop < -200; // Ajuste o offset como preferir
+    setShowScrollTop(scrolledPastSectionTop);
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
+
   return (
     <section className="product-collections-section">
       <div className="product-collections-container">
@@ -91,6 +107,17 @@ export default function CollectionProducts() {
           </button>
         </div>
       </div>
+      {showScrollTop && (
+  <button
+    className="scroll-to-top-button"
+    onClick={() => {
+      const section = document.querySelector('.product-collections-section');
+      if (section) section.scrollIntoView({ behavior: 'smooth' });
+    }}
+  >
+    ↑ Top
+  </button>
+)}
     </section>
   );
 }
