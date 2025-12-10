@@ -662,47 +662,47 @@ export const chevronCollection = {
     },
     {
       colorName: "Cognac Chevron",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/CognacChevron.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/chevron/CognacChevron.jpg"
     },
     {
       colorName: "Colonial Grey",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/ColonialGrey.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/chevron/ColonialGrey.jpg"
     },
     {
       colorName: "Dark Brown",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/DarkBrown.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/chevron/DarkBrown.jpg"
     },
     {
       colorName: "Latte",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/Latte.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/chevron/Latte.jpg"
     },
     {
       colorName: "Parana",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/Parana.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/chevron/Parana.jpg"
     },
     {
       colorName: "Pure Natural",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/PureNatural.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/chevron/PureNatural.jpg"
     },
     {
       colorName: "RAW",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/RAW.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/chevron/RAW.jpg"
     },
     {
       colorName: "Riesling",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/Riesling.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/chevron/Riesling.jpg"
     },
     {
       colorName: "Sauvignon",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/Sauvignon.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/chevron/Sauvignon.jpg"
     },
     {
       colorName: "Storm",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/Storm.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/chevron/Storm.jpg"
     },
     {
       colorName: "Vintage",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/chevron/Vintage.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/chevron/Vintage.jpg"
     }
   ]
 };
