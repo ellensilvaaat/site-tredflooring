@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext, memo, useRef } from 'react';
+import React, { useState, useEffect, useContext, memo, useRef, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ProductCollectionsClean.css';
 
@@ -137,6 +137,18 @@ const allProducts = [
   }))
 ];
 
+const Thumb = React.memo(({ src, alt, isActive, onClick }) => (
+  <img
+    src={src}
+    alt={alt}
+    className={`pc-thumb ${isActive ? 'active' : ''}`}
+    width={80}
+    height={80}
+    loading="lazy"
+    onClick={onClick}
+  />
+));
+
 const THUMBS_LIMIT = 5;
 
 const ProductCard = memo(({ group, onImageClick }) => {
@@ -147,7 +159,10 @@ const ProductCard = memo(({ group, onImageClick }) => {
   const navigate = useNavigate();
 
   const hasMoreThumbs = group.length > THUMBS_LIMIT;
-  const thumbsToShow = thumbsExpanded ? group : group.slice(0, THUMBS_LIMIT);
+  const thumbsToShow = useMemo(() => {
+  return thumbsExpanded ? group : group.slice(0, THUMBS_LIMIT);
+}, [thumbsExpanded, group]);
+
 
   return (
     <div className="pc-card">
@@ -170,17 +185,15 @@ const ProductCard = memo(({ group, onImageClick }) => {
           </p>
           <div className="pc-color-thumbs">
             {thumbsToShow.map((variant, vIdx) => (
-              <img
-                key={vIdx}
-                src={variant.image}
-                alt={variant.colorName}
-                className={`pc-thumb ${
-                  vIdx === selectedIndex ? 'active' : ''
-                }`}
-                loading="lazy"
-                onClick={() => setSelectedIndex(vIdx)}
-              />
-            ))}
+  <Thumb
+    key={variant.colorName}
+    src={variant.image}
+    alt={variant.colorName}
+    isActive={vIdx === selectedIndex}
+    onClick={() => setSelectedIndex(vIdx)}
+  />
+))}
+
 
             {hasMoreThumbs && (
               <button
