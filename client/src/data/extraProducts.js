@@ -6,27 +6,27 @@ export const deMarqueOakWidePlank2200 = {
   variants: [
     {
       colorName: "Alfredo",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/Alfredo.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/de-marque-oak-wide-plank/Alfredo.jpg"
     },
     {
       colorName: "Ash Grey",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/AshGrey.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/de-marque-oak-wide-plank/AshGrey.jpg"
     },
     {
       colorName: "Glaucous",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/Glaucous.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/de-marque-oak-wide-plank/Glaucous.jpg"
     },
     {
       colorName: "Latte",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/Latte.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/de-marque-oak-wide-plank/Latte.jpg"
     },
     {
       colorName: "Muscat",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/Muscat.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/de-marque-oak-wide-plank/Muscat.jpg"
     },
     {
       colorName: "Parana",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/Parana.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/de-marque-oak-wide-plank/Parana.jpg"
     }
   ]
 };
@@ -39,23 +39,23 @@ export const deMarqueOakWidePlank2400 = {
   variants: [
     {
       colorName: "Copper Brown",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/OD-CopperBrown.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/de-marque-oak-wide-plank/OD-CopperBrown.jpg"
     },
     {
       colorName: "Dusk Grey",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/OD-DuskGrey.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/de-marque-oak-wide-plank/OD-DuskGrey.jpg"
     },
     {
       colorName: "French Lace",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/OD-FrenchLace.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/de-marque-oak-wide-plank/OD-FrenchLace.jpg"
     },
     {
       colorName: "Matterhorn",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/OD-Matterhorn.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/de-marque-oak-wide-plank/OD-Matterhorn.jpg"
     },
     {
       colorName: "Polar Ice",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/de-marque-oak-wide-plank/OD-PolarIce.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/de-marque-oak-wide-plank/OD-PolarIce.jpg"
     },
   ]
 };
@@ -68,91 +68,91 @@ export const villageOak = {
   variants: [
     {
       colorName: "Ancient Stone",
-      image: "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/products/village-oak/AncientStone.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/AncientStone.jpg"
     },
     {
       colorName: "Black Magic",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/BlackMagic.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/BlackMagic.jpg"
     },
     {
-      colorName: "Bottlebrush",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Bottlebrush.jpg"
+      colorName: "Bottle brush",
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/Bottlebrush.jpg"
     },
     {
       colorName: "Brown Sugar",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/BrownSugar.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/BrownSugar.jpg"
     },
     {
       colorName: "Double Black",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/DoubleBlack.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/DoubleBlack.jpg"
     },
     {
       colorName: "Earl Grey",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/EarlGrey.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/EarlGrey.jpg"
     },
     {
       colorName: "First Snow",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/FirstSnow.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/FirstSnow.jpg"
     },
     {
       colorName: "Forest",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Forest.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/Forest.jpg"
     },
     {
       colorName: "Honey Myrtle",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/HoneyMyrtle.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/HoneyMyrtle.jpg"
     },
     {
       colorName: "Lily White",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/LilyWhite.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/LilyWhite.jpg"
     },
     {
       colorName: "Loft",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Loft.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/Loft.jpg"
     },
     {
       colorName: "Midlands",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Midlands.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/Midlands.jpg"
     },
     {
       colorName: "Moon Dust",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/MoonDust.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/MoonDust.jpg"
     },
     {
       colorName: "New Dawn",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/NewDawn.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/NewDawn.jpg"
     },
     {
       colorName: "Oyster Grey",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/OysterGrey.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/OysterGrey.jpg"
     },
     {
       colorName: "Pearly Shore",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/PearlyShore.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/PearlyShore.jpg"
     },
     {
       colorName: "Raffia",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Raffia.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/Raffia.jpg"
     },
     {
       colorName: "Ranchwood",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Ranchwood.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/Ranchwood.jpg"
     },
     {
       colorName: "Saltbush",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Saltbush.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/Saltbush.jpg"
     },
     {
       colorName: "Silver Holly",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/SilverHolly.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/SilverHolly.jpg"
     },
     {
       colorName: "Swissbrown",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Swissbrown.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/Swissbrown.jpg"
     },
     {
       colorName: "Trinity",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/village-oak/Trinity.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/village-oak/Trinity.jpg"
     }
   ]
 };
@@ -165,67 +165,67 @@ export const easiPlank = {
   variants: [
     {
       colorName: "Antique",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Antique.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/easi-plank/Antique.jpg"
     },
     {
       colorName: "Barnside",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Barnside.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/easi-plank/Barnside.jpg"
     },
     {
       colorName: "Deep Brown",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/DeepBrown.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/easi-plank/DeepBrown.jpg"
     },
     {
       colorName: "Doeskin",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Doeskin.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/easi-plank/Doeskin.jpg"
     },
     {
       colorName: "Flint Grey",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/FlintGrey.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/easi-plank/FlintGrey.jpg"
     },
     {
       colorName: "Grey Stone",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/GreyStone.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/easi-plank/GreyStone.jpg"
     },
     {
       colorName: "Linen",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Linen.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/easi-plank/Linen.jpg"
     },
     {
       colorName: "Magnolia",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Magnolia.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/easi-plank/Magnolia.jpg"
     },
     {
       colorName: "Maize",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Maize.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/easi-plank/Maize.jpg"
     },
     {
       colorName: "Oak Natural",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/OakNatural.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/easi-plank/OakNatural.jpg"
     },
     {
       colorName: "Pewter",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Pewter.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/easi-plank/Pewter.jpg"
     },
     {
       colorName: "Porcelain",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Porcelain.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/easi-plank/Porcelain.jpg"
     },
     {
       colorName: "Red Stone",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/RedStone.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/easi-plank/RedStone.jpg"
     },
     {
       colorName: "Silver Grey",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/SilverGrey.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/easi-plank/SilverGrey.jpg"
     },
     {
       colorName: "Washed Coral",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/WashedCoral.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/easi-plank/WashedCoral.jpg"
     },
     {
       colorName: "Wheat",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/easi-plank/Wheat.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/easi-plank/Wheat.jpg"
     }
   ]
 };
@@ -238,59 +238,59 @@ export const aspire = {
   variants: [
     {
       colorName: "Chicory",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/ChicoryAspire.jpeg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/aspire/ChicoryAspire.jpeg"
     },
     {
       colorName: "Coastal Blackbutt",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/CoastalBlackbutt.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/aspire/CoastalBlackbutt.jpg"
     },
     {
       colorName: "Crystal Lake",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/CrystalLake.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/aspire/CrystalLake.jpg"
     },
     {
       colorName: "Dolomite",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/DolomiteAspire.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/aspire/DolomiteAspire.jpg"
     },
     {
       colorName: "Homestead",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/Homestead.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/aspire/Homestead.jpg"
     },
     {
       colorName: "Iron Ridge",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/IronRidge.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/aspire/IronRidge.jpg"
     },
     {
       colorName: "Mountain Oak",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/MountainOakAspire.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/aspire/SilverMoon.jpg"
     },
     {
       colorName: "New England Blackbutt",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/NewEnglandBlackbutt.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/aspire/NewEnglandBlackbutt.jpg"
     },
     {
       colorName: "NSW Spotted Gum",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/NSWSpottedGum.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/aspire/NSWSpottedGum.jpg"
     },
     {
       colorName: "Pebble Beach",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/PebbleBeachAspire.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/aspire/PebbleBeachAspire.jpg"
     },
     {
       colorName: "QLD Spotted Gum",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/QLDSpottedGum.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/aspire/QLDSpottedGum.jpg"
     },
     {
       colorName: "Sandy Bluff",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/SandyBluffAspire.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/aspire/SandyBluffAspire.jpg"
     },
     {
       colorName: "Silver Moon",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/SilverMoon.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/aspire/SilverMoon.jpg"
     },
     {
       colorName: "Warm Springs",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/aspire/WarmSprings.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/aspire/WarmSprings.jpg"
     }
   ]
 };
@@ -303,55 +303,55 @@ export const oakleaf = {
   variants: [
     {
       colorName: "Aged Natural Oakleaf",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/AgedNaturalOakleafHD.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/oakleaf/AgedNaturalOakleafHD.jpg"
     },
     {
       colorName: "Alpine Mist",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/AlpineMist.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/oakleaf/AlpineMist.jpg"
     },
     {
       colorName: "Arctic Fox",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/ArcticFox.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/oakleaf/ArcticFox.jpg"
     },
     {
       colorName: "Bedrock",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/Bedrock.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/oakleaf/Bedrock.jpg"
     },
     {
       colorName: "Blackbutt",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/Blackbutt.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/oakleaf/Bedrock.jpg"
     },
     {
       colorName: "Clove",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/Clove.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/oakleaf/Clove.jpg"
     },
     {
       colorName: "Delta Sand",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/DeltaSand.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/oakleaf/DeltaSand.jpg"
     },
     {
       colorName: "Hickory",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/Hickory.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/oakleaf/Hickory.jpg"
     },
     {
       colorName: "Natural",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/Natural.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/oakleaf/Natural.jpg"
     },
     {
       colorName: "Sierra Oak",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/SierraOak.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/oakleaf/SierraOak.jpg"
     },
     {
       colorName: "Silk Grey",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/SilkGrey.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/oakleaf/SilkGrey.jpg"
     },
     {
       colorName: "Spotted Gum",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/SpottedGum.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/oakleaf/SpottedGum.jpg"
     },
     {
       colorName: "Wolf Grey",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/oakleaf/WolfGrey.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/oakleaf/WolfGrey.jpg"
     }
   ]
 };
@@ -364,22 +364,22 @@ export const kulak60 = {
     {
       colorName: "Clay",
       specs: ["305 × 305 mm", "Textured stone finish", "Indoor use"],
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakClay60.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/kulak/KulakClay60.jpg"
     },
     {
       colorName: "Pearl",
       specs: ["305 × 305 mm", "Textured stone finish", "Indoor use"],
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakPearl60.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/kulak/KulakPearl60.jpg"
     },
     {
       colorName: "Sand",
       specs: ["305 × 305 mm", "Textured stone finish", "Indoor use"],
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakSand60.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/kulak/KulakSand60.jpg"
     },
     {
       colorName: "Smoke",
       specs: ["305 × 305 mm", "Textured stone finish", "Indoor use"],
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakSmoke60.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/kulak/KulakSmoke60.jpg"
     }
   ]
 };
@@ -392,22 +392,22 @@ export const kulak120 = {
     {
       colorName: "Clay",
       specs: ["305 × 610 mm", "Textured stone finish", "Indoor use"],
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakClay120.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/kulak/KulakClay120.jpg"
     },
     {
       colorName: "Pearl",
       specs: ["305 × 610 mm", "Textured stone finish", "Indoor use"],
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakPearl120.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/kulak/KulakPearl120.jpg"
     },
     {
       colorName: "Sand",
       specs: ["305 × 610 mm", "Textured stone finish", "Indoor use"],
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakSand120.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/kulak/KulakSand120.jpg"
     },
     {
       colorName: "Smoke",
       specs: ["305 × 610 mm", "Textured stone finish", "Indoor use"],
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/kulak/KulakSmoke120.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/kulak/KulakSmoke120.jpg"
     }
   ]
 };
@@ -420,12 +420,12 @@ export const mayastone = {
     {
       colorName: "Pearl",
       specs: ["Matte stone look", "Indoor use"],
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/mayastone/MayaStonePearl.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/mayastone/MayaStonePearl.jpg"
     },
     {
       colorName: "White",
       specs: ["Matte stone look", "Indoor use"],
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/mayastone/MayaStoneSilk.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/mayastone/MayaStoneSilk.jpg"
     }
   ]
 };
@@ -716,27 +716,27 @@ export const australianTimberCollection = {
     {
       colorName: "Classic Spotted Gum",
       specs: ['Durable', 'Low‑VOC', 'Textured Finish'],
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/australian-timber/ClassicSpottedGumSwatch.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/australian-timber/ClassicSpottedGumSwatch.jpg"
     },
     {
       colorName: "Jarrah",
       specs: ['Scratch Resistant', 'Acoustic', 'Low‑VOC'],
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/australian-timber/Jarrah.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/australian-timber/Jarrah.jpg"
     },
     {
       colorName: "Natural Blackbutt",
       specs: ['Water Resistant', 'Low‑VOC', 'Acoustic'],
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/australian-timber/NaturalBlackbutt.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/australian-timber/NaturalBlackbutt.jpg"
     },
     {
       colorName: "Natural Spotted Gum",
       specs: ['Durable', 'Low‑VOC', 'Textured Finish'],
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/australian-timber/NaturalSpottedGum.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/australian-timber/NaturalSpottedGum.jpg"
     },
     {
       colorName: "Smoked Spotted Gum",
       specs: ['Scratch Resistant', 'Low‑VOC', 'Matte Finish'],
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/products/australian-timber/SmokedSpottedGum.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/australian-timber/SmokedSpottedGum.jpg"
     }
   ]
 };
@@ -750,15 +750,15 @@ export const everstone = {
   variants: [
     {
       colorName: "Everest Clay",
-      image: "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/products/everstone/EverestClay.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/everstone/EverestClay.jpg"
     },
     {
       colorName: "Everest Cloud",
-      image: "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/products/everstone/EverestCould.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/everstone/EverestCould.jpg"
     },
     {
       colorName: "Everest Ice",
-      image: "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/products/everstone/EverestIce.jpg"
+      image: "https://ik.imagekit.io/ijsd2xvnc/everstone/EverestIce.jpg"
     }
   ]
 };
