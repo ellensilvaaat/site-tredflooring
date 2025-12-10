@@ -220,15 +220,9 @@ const ProductCard = memo(({ group, onImageClick }) => {
 export default function ProductCollections() {
   const [searchTerm, setSearchTerm] = useState('');
   const [filtersOpen, setFiltersOpen] = useState(false);
-
-const [activeFilters, setActiveFilters] = useState({ 
-  type: '', 
-  specs: [] 
-});
-
+  const [activeFilters, setActiveFilters] = useState({ type: '', specs: [] });
 
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
-
   const desktopItemsPerPage = 8;
   const mobileItemsPerPage = 3;
 
@@ -237,26 +231,40 @@ const [activeFilters, setActiveFilters] = useState({
     isMobile ? mobileItemsPerPage : desktopItemsPerPage
   );
 
+  const [loadMoreClicked, setLoadMoreClicked] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
   const [modalImage, setModalImage] = useState(null);
 
   const navigate = useNavigate();
   const { addSample } = useContext(SampleCartContext);
 
+  // 👇 Atualiza isMobile, mas não reseta visibleCount se "load more" já foi clicado
   useEffect(() => {
     const onResize = () => {
       const mobile = window.innerWidth <= 900;
       setIsMobile(mobile);
-      setPage(1);
-      setVisibleCount(mobile ? mobileItemsPerPage : desktopItemsPerPage);
     };
     window.addEventListener('resize', onResize);
     return () => window.removeEventListener('resize', onResize);
   }, []);
 
+  // 👇 Só reseta visibleCount se "load more" ainda não foi clicado
   useEffect(() => {
     setPage(1);
-    setVisibleCount(isMobile ? mobileItemsPerPage : desktopItemsPerPage);
+    if (!loadMoreClicked) {
+      setVisibleCount(isMobile ? mobileItemsPerPage : desktopItemsPerPage);
+    }
   }, [searchTerm, activeFilters.type, activeFilters.specs.length, isMobile]);
+
+  // 👇 Botão "ir pro topo" visível apenas após scroll e se já clicou no Load More
+  useEffect(() => {
+    if (!loadMoreClicked) return;
+    const onScroll = () => {
+      setShowScrollTop(window.scrollY > 300);
+    };
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [loadMoreClicked]);
 
   const normalize = (str = '') => str.toLowerCase().trim();
 
@@ -268,32 +276,30 @@ const [activeFilters, setActiveFilters] = useState({
     acc[key].push(product);
     return acc;
   }, {});
-
   const allGroups = Object.values(grouped);
 
   const filtered = allGroups.filter(group => {
-  const product = group[0];
+    const product = group[0];
 
-  const matchesSearch =
-    normalize(product.collectionName).includes(normalize(searchTerm)) ||
-    group.some(v =>
-      normalize(v.colorName || '').includes(normalize(searchTerm))
-    );
+    const matchesSearch =
+      normalize(product.collectionName).includes(normalize(searchTerm)) ||
+      group.some(v =>
+        normalize(v.colorName || '').includes(normalize(searchTerm))
+      );
 
-  const matchesType = activeFilters.type
-    ? normalize(product.type || '').includes(normalize(activeFilters.type))
-    : true;
-
-  const specs = product.specs || [];
-
-  const matchesSpecs =
-    activeFilters.specs.length > 0
-      ? activeFilters.specs.every(spec => specs.includes(spec))
+    const matchesType = activeFilters.type
+      ? normalize(product.type || '').includes(normalize(activeFilters.type))
       : true;
 
-  return matchesSearch && matchesType && matchesSpecs;
-});
+    const specs = product.specs || [];
 
+    const matchesSpecs =
+      activeFilters.specs.length > 0
+        ? activeFilters.specs.every(spec => specs.includes(spec))
+        : true;
+
+    return matchesSearch && matchesType && matchesSpecs;
+  });
 
   const pageCount = Math.max(
     1,
@@ -325,21 +331,9 @@ const [activeFilters, setActiveFilters] = useState({
     setSearchTerm('');
     setActiveFilters({ type: '', specs: [] });
     setFiltersOpen(false);
+    setLoadMoreClicked(false); // reset se limpar
   };
 
-  const [showScrollTop, setShowScrollTop] = useState(false);
-  const [loadMoreClicked, setLoadMoreClicked] = useState(false);
-
-useEffect(() => {
-  if (!loadMoreClicked) return;
-
-  const onScroll = () => {
-    setShowScrollTop(window.scrollY > 300);
-  };
-
-  window.addEventListener('scroll', onScroll);
-  return () => window.removeEventListener('scroll', onScroll);
-}, [loadMoreClicked]);
 
 
   return (
@@ -426,17 +420,16 @@ useEffect(() => {
         )}
 
         {isMobile && visibleCount < filtered.length && (
-          <button
-            className="pc-load-more-button"
-            onClick={() => {
+        <button
+          className="pc-load-more-button"
+          onClick={() => {
             setVisibleCount(prev => prev + mobileItemsPerPage);
-            setLoadMoreClicked(true); 
-            }}
-
-          >
-            Load more
-          </button>
-        )}
+            setLoadMoreClicked(true);
+          }}
+        >
+          Load more
+        </button>
+      )}
 
       </div>
 
@@ -522,20 +515,17 @@ useEffect(() => {
     </div>
   </div>
 )}
-{/* Botão flutuante para topo */}
 {isMobile && showScrollTop && (
-  <button
-    className="scroll-to-top-button"
-    onClick={() => {
-  const section = document.querySelector('.pc-section');
-  if (section) {
-    section.scrollIntoView({ behavior: 'smooth' });
-  }
-}}
-  >
-    ↑ Top
-  </button>
-)}
+        <button
+          className="scroll-to-top-button"
+          onClick={() => {
+            const section = document.querySelector('.pc-section');
+            if (section) section.scrollIntoView({ behavior: 'smooth' });
+          }}
+        >
+          ↑ Top
+        </button>
+      )}
 
     </section>
   );
