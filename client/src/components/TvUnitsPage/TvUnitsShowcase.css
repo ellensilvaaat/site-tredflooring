@@ -472,7 +472,7 @@ body.no-scroll {
   }
 
   .tvunit-card-img {
-    height: 500px;
+    height: 430px;
   }
 
   .tvunits-textsh1 {
@@ -482,11 +482,18 @@ body.no-scroll {
   .tvunits-textsp {
     font-size: 1rem;
   }
+  
+  .tvunit-modal {
+  height: auto;
+  }
 
   .modal-main-img {
     max-height: 70vh;
   }
 
+  .image-zoom-overl {
+    max-height: 80%;
+  }
   .modal-info {
     padding: 40px;
   }

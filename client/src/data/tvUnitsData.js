@@ -208,45 +208,45 @@ const tvUnits = [
     {
       color: "Black Pearl",
       size: "2m",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/2m.jpg",
+      image: "https://ik.imagekit.io/ijsd2xvnc/theastor/BlackPearl/2m.jpg",
       gallery: [
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/2m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/3m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/4m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/5m.jpg"
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/BlackPearl/2m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/BlackPearl/3m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/4m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/BlackPearl/5m.jpg"
       ]
     },
     {
       color: "Black Pearl",
       size: "3m",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/3m.jpg",
+      image: "https://ik.imagekit.io/ijsd2xvnc/theastor/BlackPearl/3m.jpg",
       gallery: [
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/2m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/3m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/4m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/5m.jpg"
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/BlackPearl/2m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/BlackPearl/3m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/4m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/BlackPearl/5m.jpg"
       ]
     },
     {
       color: "Black Pearl",
       size: "4m",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/4m.jpg",
+      image: "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/4m.jpg",
       gallery: [
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/2m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/3m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/4m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/5m.jpg"
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/BlackPearl/2m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/BlackPearl/3m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/4m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/BlackPearl/5m.jpg"
       ]
     },
     {
       color: "Black Pearl",
       size: "5m",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/5m.jpg",
+      image: "https://ik.imagekit.io/ijsd2xvnc/theastor/BlackPearl/5m.jpg",
       gallery: [
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/2m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/3m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/4m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/BlackPearl/5m.jpg"
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/BlackPearl/2m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/BlackPearl/3m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/4m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/BlackPearl/5m.jpg"
       ]
     },
 
@@ -254,45 +254,45 @@ const tvUnits = [
     {
       color: "Dark Crown",
       size: "2m",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/2m.jpg",
+      image: "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/2m.jpg",
       gallery: [
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/2m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/3m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/4m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/5m.jpg"
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/2m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/3m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/4m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/5m.jpg"
       ]
     },
     {
       color: "Dark Crown",
       size: "3m",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/3m.jpg",
+      image: "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/3m.jpg",
       gallery: [
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/2m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/3m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/4m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/5m.jpg"
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/2m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/3m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/4m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/5m.jpg"
       ]
     },
     {
       color: "Dark Crown",
       size: "4m",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/4m.jpg",
+      image: "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/4m.jpg",
       gallery: [
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/2m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/3m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/4m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/5m.jpg"
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/2m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/3m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/4m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/5m.jpg"
       ]
     },
     {
       color: "Dark Crown",
       size: "5m",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/5m.jpg",
+      image: "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/5m.jpg",
       gallery: [
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/2m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/3m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/4m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/DarkCrown/5m.jpg"
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/2m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/3m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/4m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/DarkCrown/5m.jpg"
       ]
     },
 
@@ -300,45 +300,45 @@ const tvUnits = [
     {
       color: "Pearl White",
       size: "2m",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/2m.jpg",
+      image: "https://ik.imagekit.io/ijsd2xvnc/theastor/PearlWhite/2m.jpg",
       gallery: [
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/2m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/3m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/4m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/5m.jpg"
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/PearlWhite/2m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/PearlWhite/3m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/PearlWhite/4m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/PearlWhite/5m.jpg"
       ]
     },
     {
       color: "Pearl White",
       size: "3m",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/3m.jpg",
+      image: "https://ik.imagekit.io/ijsd2xvnc/theastor/PearlWhite/3m.jpg",
       gallery: [
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/2m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/3m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/4m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/5m.jpg"
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/PearlWhite/2m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/PearlWhite/3m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/PearlWhite/4m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/PearlWhite/5m.jpg"
       ]
     },
     {
       color: "Pearl White",
       size: "4m",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/4m.jpg",
+      image: "https://ik.imagekit.io/ijsd2xvnc/theastor/PearlWhite/4m.jpg",
       gallery: [
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/2m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/3m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/4m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/5m.jpg"
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/PearlWhite/2m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/PearlWhite/3m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/PearlWhite/4m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/PearlWhite/5m.jpg"
       ]
     },
     {
       color: "Pearl White",
       size: "5m",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/5m.jpg",
+      image: "https://ik.imagekit.io/ijsd2xvnc/theastor/PearlWhite/5m.jpg",
       gallery: [
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/2m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/3m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/4m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/PearlWhite/5m.jpg"
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/PearlWhite/2m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/PearlWhite/3m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/PearlWhite/4m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/PearlWhite/5m.jpg"
       ]
     },
 
@@ -346,45 +346,45 @@ const tvUnits = [
     {
       color: "Platinum",
       size: "2m",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/2m.jpg",
+      image: "https://ik.imagekit.io/ijsd2xvnc/theastor/Platinum/2m.jpg",
       gallery: [
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/2m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/3m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/4m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/5m.jpg"
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/Platinum/2m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/Platinum/3m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/Platinum/4m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/Platinum/5m.jpg"
       ]
     },
     {
       color: "Platinum",
       size: "3m",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/3m.jpg",
+      image: "https://ik.imagekit.io/ijsd2xvnc/theastor/Platinum/3m.jpg",
       gallery: [
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/2m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/3m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/4m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/5m.jpg"
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/Platinum/2m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/Platinum/3m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/Platinum/4m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/Platinum/5m.jpg"
       ]
     },
     {
       color: "Platinum",
       size: "4m",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/4m.jpg",
+      image: "https://ik.imagekit.io/ijsd2xvnc/theastor/Platinum/4m.jpg",
       gallery: [
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/2m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/3m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/4m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/5m.jpg"
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/Platinum/2m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/Platinum/3m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/Platinum/4m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/Platinum/5m.jpg"
       ]
     },
     {
       color: "Platinum",
       size: "5m",
-      image: "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/5m.jpg",
+      image: "https://ik.imagekit.io/ijsd2xvnc/theastor/Platinum/5m.jpg",
       gallery: [
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/2m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/3m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/4m.jpg",
-        "https://site-tredflooring-assets.s3.amazonaws.com/tvunits/theastor/Platinum/5m.jpg"
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/Platinum/2m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/Platinum/3m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/Platinum/4m.jpg",
+        "https://ik.imagekit.io/ijsd2xvnc/theastor/Platinum/5m.jpg"
       ]
     }
   ],

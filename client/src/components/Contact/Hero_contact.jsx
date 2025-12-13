@@ -5,7 +5,7 @@ export default function Hero_contact() {
   return (
     <section className="booking-hero">
       <img
-        src="https://site-tredflooring-assets.s3.amazonaws.com/contact-hero.png"
+        src="https://ik.imagekit.io/ijsd2xvnc/contact-hero.png"
         alt="Contact Us Hero"
         className="hero-bg-img"
         loading="lazy"

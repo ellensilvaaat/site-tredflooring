@@ -5,7 +5,7 @@ export default function TvHero() {
   return (
     <section className="tv-hero">
       <img
-        src="https://site-tredflooring-assets.s3.amazonaws.com/5m.jpg"
+        src="https://ik.imagekit.io/ijsd2xvnc/5m.jpg"
         alt="TV Units Hero"
         className="hero-bg-img"
         loading="lazy"

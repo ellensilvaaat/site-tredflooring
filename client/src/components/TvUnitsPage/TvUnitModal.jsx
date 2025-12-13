@@ -18,6 +18,14 @@ export default function TvUnitModal({ unit, onClose }) {
     return () => document.body.classList.remove("no-scroll");
   }, []);
 
+  /* 🆕 PRÉ‑CARREGA TODAS AS IMAGENS */
+  useEffect(() => {
+    unit.variants.forEach(v => {
+      const img = new Image();
+      img.src = v.image;
+    });
+  }, [unit]);
+
   const currentVariant = unit.variants.find(
     v => v.color === currentColor && v.size === currentSize
   );
@@ -74,6 +82,7 @@ export default function TvUnitModal({ unit, onClose }) {
               src={currentVariant.image}
               alt={unit.name}
               className="modal-main-img"
+              decoding="async"
               onClick={handleImageClick}
               style={{ cursor: 'zoom-in' }}
             />
@@ -125,6 +134,7 @@ export default function TvUnitModal({ unit, onClose }) {
               src={currentVariant.image}
               alt={unit.name}
               className="image-zoomed"
+              decoding="async"
               onClick={e => e.stopPropagation()}
             />
           </div>
