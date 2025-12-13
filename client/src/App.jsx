@@ -19,15 +19,15 @@ import SandPolishPage from './pages/SandPolishPage';
 import Pavers from './pages/Pavers';
 import ScrollToTop from './pages/ScrollToTop.jsx';
 import UnderConstruction from './pages/UnderConstruction';
+import RugsPage from './pages/CustomRugs.jsx';
+import SkirtingPage from './pages/SkirtingBoards.jsx';
 
 function AppContent() {
   const location = useLocation();
 
   return (
     <>
-      {/* Só esconde o Navbar na página de Custom Rugs */}
-      {location.pathname !== '/services/custom-rugs' && <Navbar />}
-
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/collections/:slug" element={<CollectionProduct />} />
@@ -46,7 +46,8 @@ function AppContent() {
         <Route path="/services/wall-panels" element={<WallPanelsPage />} />
         <Route path="/services/sand-polish" element={<SandPolishPage />} />
         <Route path="/services/pavers" element={<Pavers />} />
-        <Route path="/services/custom-rugs" element={<UnderConstruction />} />
+        <Route path="/services/custom-rugs" element={<RugsPage />} />
+        <Route path="/services/skirting-boards" element={<SkirtingPage />} />
       </Routes>
     </>
   );

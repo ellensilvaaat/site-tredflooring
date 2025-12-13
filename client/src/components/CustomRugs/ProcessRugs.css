@@ -1,0 +1,185 @@
+.wp-process {
+  padding: 4rem 1rem;
+  background-color: #f5f5f5;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+.wp-process-title {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-dark);
+}
+
+.wp-process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.wp-process-step {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* Ímpares: imagem à esquerda, texto à direita */
+.wp-process-step.left {
+  flex-direction: row;
+}
+
+/* Pares: imagem à direita, texto à esquerda */
+.wp-process-step.right {
+  flex-direction: row-reverse;
+}
+
+/* Imagem */
+.wp-process-image img {
+  object-fit: cover;
+  width: 500px;
+  height: 350px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto */
+.wp-process-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+}
+
+/* Alinhamento para pares */
+.wp-process-step.right .wp-process-text {
+  text-align: right;
+}
+.wp-process-step.right .wp-process-text h3 {
+  justify-content: flex-end;
+}
+
+.wp-process-text h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.step-numberr {
+  color: var(--primary-green);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.wp-process-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ================= RESPONSIVO — BREAKPOINTS ================= */
+
+@media (max-width: 500px) {
+  .wp-process-steps {
+    gap: 3rem;
+  }
+
+  .wp-process-step {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+  }
+
+  .wp-process-text {
+    max-width: 100%;
+    text-align: center !important;
+  }
+
+  .wp-process-text h3 {
+    justify-content: center !important;
+    font-size: 1.3rem;
+  }
+
+  .wp-process-text p {
+    font-size: 0.95rem;
+  }
+
+  .wp-process-image img {
+    height: 220px;               
+    object-fit: cover;    
+    object-position: center 20%;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 767px) {
+  .wp-process-step {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .wp-process-text {
+    max-width: 100%;
+    text-align: center !important;
+  }
+
+  .wp-process-text h3 {
+    justify-content: center !important;
+    font-size: 1.35rem;
+  }
+
+  .wp-process-text p {
+    font-size: 1rem;
+  }
+
+  .wp-process-image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .wp-process-step {
+    gap: 2.5rem;
+  }
+
+  .wp-process-image img {
+    width: 450px;
+    height: 320px;
+  }
+
+  .wp-process-text h3 {
+    font-size: 1.45rem;
+  }
+
+  .wp-process-text p {
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .wp-process-steps {
+    max-width: 1300px;
+    gap: 6rem;
+  }
+
+  .wp-process-image img {
+    width: 650px;
+    height: 450px;
+  }
+
+  .wp-process-text h3 {
+    font-size: 1.8rem;
+  }
+
+  .wp-process-text p {
+    font-size: 1.25rem;
+  }
+}

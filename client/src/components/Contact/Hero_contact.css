@@ -1,12 +1,34 @@
 .booking-hero {
-  background-image: url("https://site-tredflooring-assets.s3.amazonaws.com/contact-hero.png");
-  background-size: cover;
-  background-position: center;
-  height: 60vh;
   position: relative;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+.hero-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.booking-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* overlay escuro */
+  z-index: 1;
+}
+
+.booking-overlay {
+  position: relative;
+  z-index: 2;
 }
 
 .booking-overlay h1 {
@@ -14,10 +36,11 @@
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
+  font-family: var(--font-heading);
 }
 
 @media (max-width: 500px){
-  .booking-overlay h1{
+  .booking-overlay h1 {
     font-size: 2rem;
   }
 }

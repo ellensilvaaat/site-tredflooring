@@ -1,0 +1,96 @@
+.skirting-benefits-section {
+  padding: 5rem 1rem 6rem;
+  background-color: #fff;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.skirting-benefits-title {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 6rem;
+}
+
+.skirting-benefits-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.skirting-benefit-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.skirting-benefit-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skirting-benefit-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+
+.skirting-benefit-card p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* ======= RESPONSIVO ======= */
+
+/* até 500px */
+@media (max-width: 500px) {
+  .skirting-benefit-card {
+    width: 90%;
+    padding: 1.2rem;
+  }
+
+  .skirting-benefit-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* entre 501px e 767px */
+@media (min-width: 501px) and (max-width: 767px) {
+  .skirting-benefit-card {
+    width: 90%;
+    padding: 1.3rem;
+  }
+}
+
+/* entre 768px e 900px */
+@media (min-width: 768px) and (max-width: 900px) {
+  .skirting-benefit-card {
+    width: 230px;
+    padding: 1.4rem;
+  }
+}
+
+/* acima de 1800px */
+@media (min-width: 1800px) {
+  .skirting-benefit-card {
+    width: 280px;
+    padding: 1.8rem;
+  }
+
+  .skirting-benefit-card p {
+    font-size: 1.05rem;
+  }
+
+  .skirting-benefit-icon {
+    width: 56px;
+    height: 56px;
+  }
+}

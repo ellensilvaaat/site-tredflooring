@@ -4,6 +4,13 @@ import './Hero_product.css';
 export default function Hero_product() {
   return (
     <section className="product-hero">
+      <img
+        src="https://site-tredflooring-assets.s3.amazonaws.com/products-hero.png"
+        alt="Products Hero"
+        className="hero-bg-img"
+        loading="lazy"
+      />
+
       <div className="product-overlay">
         <h1>Products</h1>
       </div>
