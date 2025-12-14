@@ -225,7 +225,7 @@
 }
 
 .thank-you-messagep{
-  font-size: 1rem;
+  font-size: 1rem !important;
   color: #444;
-  margin: 1rem 0;
+  margin: 1rem 0 !important;
 }
