@@ -9,21 +9,19 @@ export default function EmailCapturePopup() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
 
-  // ✅ Mostrar apenas uma vez por sessão e apenas na home
   useEffect(() => {
     const hasShown = sessionStorage.getItem('emailPopupShown');
     if (!hasShown && window.location.pathname === '/') {
       const timer = setTimeout(() => {
         setShowPopup(true);
         sessionStorage.setItem('emailPopupShown', 'true');
-      }, 10000); // 10 segundos após entrar na home
+      }, 10000);
       return () => clearTimeout(timer);
     }
   }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
       await axios.post(`${import.meta.env.VITE_API_URL}/api/subscribe`, { name, email });
       setShowPopup(false);
@@ -34,7 +32,6 @@ export default function EmailCapturePopup() {
     }
   };
 
-  // 🔁 Oculta tudo se nenhum popup deve aparecer
   if (!showPopup && !showThankYou) return null;
 
   return (
@@ -42,7 +39,10 @@ export default function EmailCapturePopup() {
       setShowPopup(false);
       setShowThankYou(false);
     }}>
-      <div className="popup-wrapper" onClick={e => e.stopPropagation()}>
+      <div
+        className={showThankYou ? 'thank-you-wrapper' : 'popup-wrapper'}
+        onClick={e => e.stopPropagation()}
+      >
         <button className="popup-close" onClick={() => {
           setShowPopup(false);
           setShowThankYou(false);
@@ -101,4 +101,5 @@ export default function EmailCapturePopup() {
     </div>
   );
 }
+
 
