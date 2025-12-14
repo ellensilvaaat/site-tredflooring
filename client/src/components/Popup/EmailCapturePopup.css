@@ -1,0 +1,211 @@
+/* Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.6);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Popup container */
+.popup-wrapper {
+  background: #f9f9f9;
+  border-radius: 20px;
+  max-width: 900px;
+  width: 70%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease-out;
+}
+
+/* Close button */
+.popup-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 26px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Content */
+.popup-content {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.popup-left {
+  flex: 1 1 40%;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.popup-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Optional: decorative circles could go here via ::before/::after or extra <div> if needed */
+
+.popup-right {
+  flex: 1 1 60%;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f9f9f9;
+}
+
+/* Typography */
+.popup-right h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.popup-right .highlight {
+  color: #6ca884;
+}
+
+.popup-right p {
+  font-size: 0.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+/* Form */
+.popup-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.popup-form input {
+  flex: 1 1 45%;
+  padding: 10px 12px;
+  border: 2px solid #6ca884;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.popup-form input:focus {
+  border-color: #4e8c6d;
+}
+
+.popup-form button {
+  flex: 1 1 100%;
+  padding: 12px;
+  background: #6ca884;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 5px 12px rgba(108, 168, 132, 0.3);
+  transition: background 0.2s ease;
+}
+
+.popup-form button:hover {
+  background: #5d9776;
+}
+
+/* Disclaimer */
+.popup-disclaimer {
+  font-size: 0.5rem !important;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .popup-wrapper {
+    flex-direction: column;
+    border-radius: 16px;
+  }
+
+  .popup-left,
+  .popup-right {
+    flex: 1 1 100%;
+  }
+
+  .popup-right {
+    padding: 25px 20px;
+  }
+
+  .popup-form input {
+    flex: 1 1 100%;
+  }
+
+  .popup-form button {
+    flex: 1 1 100%;
+  }
+}
+
+.thank-you-message {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.thank-you-message h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.thank-you-message p {
+  font-size: 1rem;
+  color: #444;
+  margin: 0.5rem 0;
+}
+
+.thank-you-message .small-text {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 1rem;
+}
+
+@media (max-width: 480px) {
+  .thank-you-message {
+    padding: 1.5rem 1rem;
+  }
+
+  .thank-you-message h2 {
+    font-size: 1.2rem;
+  }
+
+  .thank-you-message p {
+    font-size: 0.8rem;
+  }
+
+  .thank-you-message .small-text {
+    font-size: 0.5rem;
+  }
+}

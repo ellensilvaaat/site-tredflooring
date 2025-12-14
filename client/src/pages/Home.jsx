@@ -7,6 +7,7 @@ import ProjectsCarousel from '../components/Home/ProjectsCarousel';
 //import UploadRoom from '../components/Home/UploadRoom';
 import CallToAction from '../components/Home/CallToAction';
 import Footer from '../components/Home/Footer';
+import EmailCapturePopup from '../components/Popup/EmailCapturePopup';
 
 
 
@@ -18,6 +19,7 @@ export default function Home() {
       <ServicesShowcase />
       <Difference />
       <ProjectsCarousel/>
+      <EmailCapturePopup />
       {/* <Testimonials /> */}
       {/* <UploadRoom /> */}
       <CallToAction />
