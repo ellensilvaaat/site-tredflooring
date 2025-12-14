@@ -52,7 +52,7 @@ export default function EmailCapturePopup() {
           <div className="thank-you-message">
             <h2>You're in the club!</h2>
             <p>Thanks for joining the Tred team.</p>
-            <p>We’ll send you exclusive offers and expert flooring tips right to your inbox.</p>
+            <p className="thank-you-messagep">We’ll send you exclusive offers and expert flooring tips right to your inbox.</p>
             <p className="small-text">You can unsubscribe at any time.</p>
           </div>
         ) : (

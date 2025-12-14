@@ -177,19 +177,18 @@
 .thank-you-message h2 {
   font-size: 2rem;
   color: #1a1a1a;
-  margin-bottom: 0.5rem;
 }
 
 .thank-you-message p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #444;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
 }
 
 .thank-you-message .small-text {
   font-size: 0.8rem;
   color: #999;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 @media (max-width: 480px) {
@@ -208,6 +207,9 @@
   .thank-you-message .small-text {
     font-size: 0.5rem;
   }
+  .thank-you-messagep{
+  font-size: 0.8rem;
+}
 }
 
 .thank-you-wrapper {
@@ -220,4 +222,10 @@
   text-align: center;
   animation: slideUp 0.3s ease-out;
   position: relative;
+}
+
+.thank-you-messagep{
+  font-size: 1rem;
+  color: #444;
+  margin: 1rem 0;
 }
