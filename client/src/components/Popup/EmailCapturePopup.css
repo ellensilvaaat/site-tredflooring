@@ -144,11 +144,14 @@
   to { transform: translateY(0); opacity: 1; }
 }
 
-/* Responsive */
+/* Medium screens (<= 768px) */
 @media (max-width: 768px) {
   .popup-wrapper {
     flex-direction: column;
-    border-radius: 16px;
+    width: 85%;
+    max-width: 600px;
+    max-height: 80vh;
+    border-radius: 14px;
   }
 
   .popup-left,
@@ -156,16 +159,107 @@
     flex: 1 1 100%;
   }
 
+  .popup-left {
+    max-height: 200px;
+  }
+
+  .popup-image {
+    height: 100%;
+    object-fit: cover;
+  }
+
   .popup-right {
-    padding: 25px 20px;
+    padding: 20px 16px;
+    overflow-y: auto;
   }
 
-  .popup-form input {
-    flex: 1 1 100%;
+  .popup-form {
+    gap: 8px;
   }
 
+  .popup-form input,
   .popup-form button {
     flex: 1 1 100%;
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .popup-disclaimer {
+    font-size: 0.65rem;
+    margin-top: 6px;
+  }
+}
+
+/* Small screens (<= 480px) */
+@media (max-width: 480px) {
+  .popup-wrapper {
+    width: 90%;
+    max-height: 85vh;
+    height: auto;
+    flex-direction: column;
+    border-radius: 14px;
+    overflow-y: auto;
+  }
+
+  .popup-left {
+    max-height: 180px;
+  }
+
+  .popup-image {
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom; /* Foca no rodapé da imagem */
+  }
+
+  .popup-right {
+    padding: 20px 16px;
+  }
+
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    z-index: 10;
+    color: #444;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+  }
+
+  .popup-right h2 {
+    font-size: 1.3rem;
+  }
+
+  .popup-right p {
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+  }
+
+  .popup-form input,
+  .popup-form button {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .popup-disclaimer {
+    font-size: 0.6rem;
+  }
+}
+
+/* Thank You State - Mobile */
+@media (max-width: 480px) {
+  .thank-you-message h2 {
+    font-size: 1.4rem;
+  }
+
+  .thank-you-message p {
+    font-size: 0.75rem;
+  }
+
+  .thank-you-message .small-text {
+    font-size: 0.6rem;
   }
 }
 
@@ -189,27 +283,6 @@
   font-size: 0.8rem;
   color: #999;
   margin-top: 2rem;
-}
-
-@media (max-width: 480px) {
-  .thank-you-message {
-    padding: 1.5rem 1rem;
-  }
-
-  .thank-you-message h2 {
-    font-size: 1.2rem;
-  }
-
-  .thank-you-message p {
-    font-size: 0.8rem;
-  }
-
-  .thank-you-message .small-text {
-    font-size: 0.5rem;
-  }
-  .thank-you-messagep{
-  font-size: 0.8rem;
-}
 }
 
 .thank-you-wrapper {

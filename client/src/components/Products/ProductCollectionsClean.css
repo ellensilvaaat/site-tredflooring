@@ -265,7 +265,11 @@
   justify-content: center;
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
-
+@media (max-width: 500px) {
+.pc-intro {
+  font-size: 0.9rem !important;
+}
+}
 /* Responsividade mobile / tablet */
 @media (max-width: 900px) {
   .pc-container{
