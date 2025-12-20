@@ -1,6 +1,6 @@
 .difference-section {
   position: relative;
-  background-image: url("https://site-tredflooring-assets.s3.amazonaws.com/bg-mobile.jpg");
+  /* background-image removed */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

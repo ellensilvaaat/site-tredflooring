@@ -14,14 +14,14 @@ const steps = [
     title: 'Define Your Dimensions',
     description:
       'Consider the layout of your room and how you’d like your furniture positioned to determine the ideal rug size. Our spacing guide helps you visualise balanced proportions, ensuring your custom rug feels intentional and perfectly integrated.',
-    img: "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/spacejoy-IH7wPsjwomc-unsplash.jpg",
+    img: "https://ik.imagekit.io/ijsd2xvnc/Frame%2026.png",
   },
   {
     id: 3,
     title: 'Select Your Finishes',
     description:
       'Choose between overlocking for a timeless stitched edge or fabric binding for a sleek, minimal finish. Depending on your rug’s material and pile height, each option delivers a beautifully refined border tailored to your design vision.',
-    img: "https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/mahabis-footwear-eYE5Sj-eDsE-unsplash.jpg",
+    img: "https://ik.imagekit.io/ijsd2xvnc/Frame%2027.png",
   },
 ];
 

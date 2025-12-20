@@ -8,7 +8,7 @@ export default function CallToAction() {
     <section className="call-to-action">
       <div className="cta-wrapper">
         <img
-          src="https://site-tredflooring-assets.s3.amazonaws.com/cta-background.jpg"
+          src="https://ik.imagekit.io/ijsd2xvnc/cta-background.jpg"
           alt="Room"
           className="cta-image"
         />

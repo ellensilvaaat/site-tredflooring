@@ -5,7 +5,7 @@ export default function HeroRugs() {
   return (
     <section className="about-heroRugs">
       <img
-        src="https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/julien-lanoy-rSGdLWXpKzk-unsplash_11zon.webp"
+        src="https://ik.imagekit.io/ijsd2xvnc/Hero%20(1).png"
         alt="Custom Rug Hero"
         className="hero-bg-img"
         loading="lazy"

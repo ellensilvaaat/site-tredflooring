@@ -6,7 +6,7 @@ const CustomRugsIntro = () => {
     <section className="custom-rugs-intro">
       <div className="intro-imageee">
         <img
-          src="https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/dmitrii-shirnin-wpWggb9r1Nw-unsplash.jpg"
+          src="https://ik.imagekit.io/ijsd2xvnc/Frame%2025.png"
           alt="Custom Rug Example"
         />
       </div>

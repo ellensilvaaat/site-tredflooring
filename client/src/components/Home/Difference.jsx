@@ -6,7 +6,15 @@ export default function Difference() {
   const navigate = useNavigate();
 
   return (
-    <section className="difference-section">
+    <section
+      className="difference-section"
+      style={{
+        backgroundImage: `url("https://ik.imagekit.io/ijsd2xvnc/Hero%20(2).png")`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       <div className="difference-overlay" />
       <div className="difference-inner">
         <h2 className="difference-title">
@@ -71,5 +79,6 @@ export default function Difference() {
     </section>
   );
 }
+
 
 
