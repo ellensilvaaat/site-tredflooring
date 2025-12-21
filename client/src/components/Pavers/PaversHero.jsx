@@ -5,7 +5,7 @@ export default function Hero_pv() {
   return (
     <section className="pv-hero">
       <img
-        src="https://site-tredflooring-assets.s3.amazonaws.com/pavers/hero.jpg"
+        src="https://ik.imagekit.io/ijsd2xvnc/hero.jpg"
         alt="Pavers Hero"
         className="hero-bg-img"
         loading="lazy"

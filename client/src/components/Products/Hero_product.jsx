@@ -5,7 +5,7 @@ export default function Hero_product() {
   return (
     <section className="product-hero">
       <img
-        src="https://site-tredflooring-assets.s3.amazonaws.com/products-hero.png"
+        src="https://ik.imagekit.io/ijsd2xvnc/products-hero.png"
         alt="Products Hero"
         className="hero-bg-img"
         loading="lazy"

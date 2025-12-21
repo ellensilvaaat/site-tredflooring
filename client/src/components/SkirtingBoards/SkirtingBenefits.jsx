@@ -27,7 +27,14 @@ export default function SkirtingBenefits() {
       <div className="skirting-benefits-cards">
         {benefits.map((item, idx) => (
           <div key={idx} className="skirting-benefit-card">
-            <img src={item.icon} alt="icon" className="skirting-benefit-icon" />
+            <img
+              src={item.icon}
+              alt="icon"
+              className="skirting-benefit-icon"
+              loading="lazy"
+              width="48"
+              height="48"
+            />
             <p>{item.text}</p>
           </div>
         ))}
@@ -35,3 +42,4 @@ export default function SkirtingBenefits() {
     </section>
   );
 }
+

@@ -65,6 +65,33 @@ const allProjects = [
     "https://site-tredflooring-assets.s3.amazonaws.com/projectspage/libertygrove/kitchen.jpg"
   ],
   description: 'Warm timber floors extend seamlessly across open-plan living and kitchen areas.'
+},
+{
+  id: 7,
+  title: 'Bondi Beach',
+  category: 'Living',
+  images: [
+    "https://ik.imagekit.io/ijsd2xvnc/c3e94cd3-564d-491c-92d8-add202f9b35d.jpg"
+  ],
+  description: 'Warm timber flooring bringing natural texture and continuity to the living space.'
+},
+{
+  id: 8,
+  title: 'Rosebery',
+  category: 'Living',
+  images: [
+    "https://ik.imagekit.io/ijsd2xvnc/d1a9c42d-e269-4271-8773-461ca801727d.jpg"
+  ],
+  description: 'Soft-toned flooring creating a calm and modern atmosphere.'
+},
+{
+  id: 9,
+  title: 'Randwick',
+  category: 'Bedroom',
+  images: [
+    "https://ik.imagekit.io/ijsd2xvnc/ff3676a4-6b98-4f28-b655-2777320b0333.jpg"
+  ],
+  description: 'Classic timber floors adding warmth and character to a timeless interior.'
 }
 ];
 

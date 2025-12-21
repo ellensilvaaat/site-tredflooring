@@ -7,28 +7,28 @@ const steps = [
     title: 'Choose your finish',
     description:
       'Select the texture and look that matches your space, slatted, grooved, smooth or textured panels.',
-    img: "https://site-tredflooring-assets.s3.amazonaws.com/wallpanels/examples/process-step1.jpg",
+    img: "https://ik.imagekit.io/ijsd2xvnc/process-step1.jpg",
   },
   {
     id: 2,
     title: 'Measure & plan',
     description:
       'Accurate measurements and layout planning guarantee a seamless and proper installation.',
-    img: "https://site-tredflooring-assets.s3.amazonaws.com/wallpanels/examples/process-step2.jpg",
+    img: "https://ik.imagekit.io/ijsd2xvnc/process-step2.jpg",
   },
   {
     id: 3,
     title: 'Install panels',
     description:
       'Fix and align the wall panels precisely for flawless surfaces and hidden joins.',
-    img: "https://site-tredflooring-assets.s3.amazonaws.com/wallpanels/examples/process-step3.jpg",
+    img: "https://ik.imagekit.io/ijsd2xvnc/process-step3.jpg",
   },
   {
     id: 4,
     title: 'Final touches',
     description:
       'Finish with trims, lighting or decorative elements to complete the look.',
-    img: "https://site-tredflooring-assets.s3.amazonaws.com/wallpanels/examples/process-step4.jpg",
+    img: "https://ik.imagekit.io/ijsd2xvnc/Frame%2037.png",
   },
 ];
 

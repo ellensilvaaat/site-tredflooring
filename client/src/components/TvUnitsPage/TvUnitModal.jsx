@@ -1,4 +1,5 @@
 // src/components/TvUnitsPage/TvUnitModal.jsx
+
 import React, { useState, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { SampleCartContext } from '../../contexts/SampleCartContext';
@@ -12,19 +13,11 @@ export default function TvUnitModal({ unit, onClose }) {
   const [currentSize, setCurrentSize] = useState(unit.defaultSize);
   const [isZoomed, setIsZoomed] = useState(false);
 
-  /* 🆕 IMPEDIR SCROLL DA PÁGINA */
+  // Impedir scroll ao fundo
   useEffect(() => {
     document.body.classList.add("no-scroll");
     return () => document.body.classList.remove("no-scroll");
   }, []);
-
-  /* 🆕 PRÉ‑CARREGA TODAS AS IMAGENS */
-  useEffect(() => {
-    unit.variants.forEach(v => {
-      const img = new Image();
-      img.src = v.image;
-    });
-  }, [unit]);
 
   const currentVariant = unit.variants.find(
     v => v.color === currentColor && v.size === currentSize
@@ -42,7 +35,6 @@ export default function TvUnitModal({ unit, onClose }) {
     const sizesForColor = unit.variants
       .filter(v => v.color === newColor)
       .map(v => v.size);
-
     if (!sizesForColor.includes(currentSize)) {
       setCurrentSize(sizesForColor[0]);
     }
@@ -55,21 +47,22 @@ export default function TvUnitModal({ unit, onClose }) {
   const handleGetQuote = () => {
     if (!currentVariant) return;
 
-    const quoteItem = {
+    addQuote({
       id: `${unit.id}-${currentColor}-${currentSize}`,
       name: unit.name,
       color: currentColor,
       size: currentSize,
       variant: currentVariant
-    };
-
-    addQuote(quoteItem);
+    });
     onClose();
     navigate('/request-samples');
   };
 
   const handleImageClick = () => setIsZoomed(true);
   const handleZoomClose = () => setIsZoomed(false);
+
+  // Helper pra CDN ImageKit — reduz pra ~600px e webp
+  const imageUrl = (src, w = 800) => `${src}?tr=w-${w},q-75,fo-auto,f-webp`;
 
   return (
     <>
@@ -79,9 +72,10 @@ export default function TvUnitModal({ unit, onClose }) {
 
           <div className="modal-image-wrapper">
             <img
-              src={currentVariant.image}
+              src={imageUrl(currentVariant.image, 900)}
               alt={unit.name}
               className="modal-main-img"
+              loading="lazy"
               decoding="async"
               onClick={handleImageClick}
               style={{ cursor: 'zoom-in' }}
@@ -129,13 +123,13 @@ export default function TvUnitModal({ unit, onClose }) {
 
       {isZoomed && (
         <div className="image-zoom-overlay" onClick={handleZoomClose}>
-          <div className="image-zoom-overl">
+          <div className="image-zoom-overl" onClick={e => e.stopPropagation()}>
             <img
-              src={currentVariant.image}
+              src={imageUrl(currentVariant.image, 1600)}
               alt={unit.name}
               className="image-zoomed"
+              loading="lazy"
               decoding="async"
-              onClick={e => e.stopPropagation()}
             />
           </div>
         </div>
@@ -143,4 +137,6 @@ export default function TvUnitModal({ unit, onClose }) {
     </>
   );
 }
+
+
 

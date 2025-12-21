@@ -23,53 +23,36 @@ export default function Difference() {
         </h2>
 
         <div className="steps">
-          <div className="step">
-            <div className="step-number">01</div>
-            <div className="step-content">
-              <div className="step-heading">
-                Customised <br /><span>Flooring Solutions</span>
-              </div>
-              <div className="step-text">
-                We offer tailored timber flooring and finishes to suit every aesthetic and lifestyle.
-              </div>
-            </div>
-          </div>
-
-          <div className="step">
-            <div className="step-number">02</div>
-            <div className="step-content">
-              <div className="step-heading">
-                Design & <br /><span>Installation</span>
-              </div>
-              <div className="step-text">
-                From design consultation to flawless installation, everything is handled by our team.
-              </div>
-            </div>
-          </div>
-
-          <div className="step">
-            <div className="step-number">03</div>
-            <div className="step-content">
-              <div className="step-heading">
-                Beyond Floors: <br /><span>Complete Interiors</span>
-              </div>
-              <div className="step-text">
-                TV units, custom rugs, wall panels, pavers & more. All in one curated space.
+          {[
+            {
+              number: '01',
+              heading: <>Customised <br /><span>Flooring Solutions</span></>,
+              text: 'We offer tailored timber flooring and finishes to suit every aesthetic and lifestyle.',
+            },
+            {
+              number: '02',
+              heading: <>Design & <br /><span>Installation</span></>,
+              text: 'From design consultation to flawless installation, everything is handled by our team.',
+            },
+            {
+              number: '03',
+              heading: <>Beyond Floors: <br /><span>Complete Interiors</span></>,
+              text: 'TV units, custom rugs, wall panels, pavers & more. All in one curated space.',
+            },
+            {
+              number: '04',
+              heading: <>Sustainably <br /><span>Sourced</span></>,
+              text: 'We work with responsibly sourced materials for eco-conscious flooring solutions.',
+            },
+          ].map((step, index) => (
+            <div className="step" key={index}>
+              <div className="step-number">{step.number}</div>
+              <div className="step-content">
+                <div className="step-heading">{step.heading}</div>
+                <div className="step-text">{step.text}</div>
               </div>
             </div>
-          </div>
-
-          <div className="step">
-            <div className="step-number">04</div>
-            <div className="step-content">
-              <div className="step-heading">
-                Sustainably <br /><span>Sourced</span>
-              </div>
-              <div className="step-text">
-                We work with responsibly sourced materials for eco-conscious flooring solutions.
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
 
         <button className="difference-cta" onClick={() => navigate('/contact')}>
@@ -79,6 +62,7 @@ export default function Difference() {
     </section>
   );
 }
+
 
 
 

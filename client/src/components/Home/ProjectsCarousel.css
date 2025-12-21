@@ -24,16 +24,13 @@
   gap: 1rem;
   overflow-x: auto;
   scroll-behavior: smooth;
-  height: auto;
   padding-left: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .project-carousel__container::-webkit-scrollbar {
   display: none;
-}
-.project-carousel__container {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 .project-card {
@@ -45,7 +42,6 @@
 }
 
 .project-card__image {
-  position: relative;
   width: 100%;
   height: 550px;
   background-size: cover;
@@ -54,6 +50,7 @@
   overflow: hidden;
   transition: transform 0.6s ease;
   box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 .project-card:hover .project-card__image {
@@ -90,44 +87,11 @@
   margin-bottom: 1rem;
 }
 
-.project-card__description {
-  font-family: var(--font-primary);
-  font-size: 1rem;
-  margin-bottom: 1.2rem;
-  max-width: 90%;
-  line-height: 1.5;
-}
-
-/* Título alternativo só para mobile/tablet */
 .project-card__title--mobile {
   display: none;
 }
 
-.projects__cta {
-  position: relative;
-  background: none;
-  border: none;
-  color: black;
-  font-size: 1.8rem;
-  padding: 1rem 2rem;
-  cursor: pointer;
-  transition: color 0.3s ease;
-  font-family: var(--font-primary);
-  display: inline-block;
-}
-
-.bnt {
-  margin: auto;
-  width: 18%;
-  padding-top: 50px;
-}
-
-.projects__cta:hover {
-  color: var(--color-accent);
-}
-
-/* -------- RESPONSIVO -------- */
-
+/* Responsivo até 900px */
 @media (max-width: 900px) {
   .project-carousel__title {
     padding-left: 20px;
@@ -170,4 +134,5 @@
     font-weight: 400;
   }
 }
+
 

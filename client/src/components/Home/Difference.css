@@ -1,6 +1,5 @@
 .difference-section {
   position: relative;
-  /* background-image removed */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,12 +9,9 @@
 }
 
 .difference-overlay {
-  content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
@@ -41,8 +37,8 @@
 .steps {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
   flex-wrap: wrap;
+  gap: 30px;
   margin-bottom: 40px;
   padding-left: 80px;
 }
@@ -98,7 +94,7 @@
   background-color: var(--green-hover);
 }
 
-/* ======= MOBILE STYLES ======= */
+/* MOBILE */
 @media (max-width: 500px) {
   .difference-title {
     font-size: 1.5rem;
@@ -130,7 +126,7 @@
   }
 }
 
-/* Tablet */
+/* TABLET */
 @media (min-width: 501px) and (max-width: 767px) {
   .difference-title {
     font-size: 1.7rem;
@@ -145,7 +141,6 @@
 
   .step {
     flex: 1 1 45%;
-    max-width: 100%;
   }
 
   .difference-cta {
@@ -153,7 +148,7 @@
   }
 }
 
-/* Small Desktop */
+/* SMALL DESKTOP */
 @media (min-width: 768px) and (max-width: 900px) {
   .difference-title {
     font-size: 1.9rem;
@@ -170,7 +165,6 @@
   }
 
   .step {
-    flex: 1 1 30%;
     text-align: center;
   }
 
@@ -178,4 +172,5 @@
     width: 30%;
   }
 }
+
 

@@ -244,7 +244,7 @@ export default function ProductCollections() {
 
           <button className="product-search-button" type="button">
             <img
-              src="https://site-tredflooring-assets.s3.amazonaws.com/search-icon.png"
+              src="https://ik.imagekit.io/ijsd2xvnc/search-icon.png"
               alt="Search"
               style={{ width: '20px', height: '20px' }}
             />

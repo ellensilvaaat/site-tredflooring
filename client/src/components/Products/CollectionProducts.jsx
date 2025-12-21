@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './CollectionProducts.css';
 import { SampleCartContext } from '../../contexts/SampleCartContext';
@@ -21,50 +21,54 @@ export default function CollectionProducts() {
     page * ITEMS_PER_PAGE
   );
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  const sectionRef = useRef(null);
+
   useEffect(() => {
     setPage(1); // reset na troca de coleção
   }, [slug]);
-const [isMobile, setIsMobile] = useState(false);
 
-useEffect(() => {
-  const handleResize = () => {
-    setIsMobile(window.innerWidth <= 900);
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 900);
+    };
 
-  handleResize(); // Chama na montagem
-  window.addEventListener('resize', handleResize);
-  return () => window.removeEventListener('resize', handleResize);
-}, []);
+    const handleScroll = () => {
+      const top = sectionRef.current?.getBoundingClientRect().top;
+      setShowScrollTop(top && top < -200);
+    };
 
-  const [showScrollTop, setShowScrollTop] = useState(false);
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('scroll', handleScroll);
 
-useEffect(() => {
-  const handleScroll = () => {
-    const section = document.querySelector('.product-collections-section');
-    if (!section) return;
-
-    const sectionTop = section.getBoundingClientRect().top;
-    const scrolledPastSectionTop = sectionTop < -200; // Ajuste o offset como preferir
-    setShowScrollTop(scrolledPastSectionTop);
-  };
-
-  window.addEventListener('scroll', handleScroll);
-  return () => window.removeEventListener('scroll', handleScroll);
-}, []);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <section className="product-collections-section">
+    <section className="product-collections-section" ref={sectionRef}>
       <div className="product-collections-container">
-        <h2 className="product-collections-title">{slug.replace(/-/g, ' ')}</h2>
+        <h2 className="product-collections-title">
+          {slug.replace(/-/g, ' ')}
+        </h2>
+
         <button className="return-home-btnn" onClick={() => navigate('/')}>
-        ← Return to Home
+          ← Return to Home
         </button>
 
         <div className="product-collections-grid">
           {paginated.map(col => (
             <div key={col.id} className="product-collection-card">
-              <img src={col.image} alt={col.name} />
-
+              <img
+                src={`${col.image}?tr=w-600,q=70`}
+                alt={col.name}
+                loading="lazy"
+              />
               <div className="product-collection-overlay">
                 <h3>{col.name}</h3>
                 <p>{col.type}</p>
@@ -118,17 +122,17 @@ useEffect(() => {
           </button>
         </div>
       </div>
+
       {isMobile && showScrollTop && (
-  <button
-    className="scroll-to-top-button"
-    onClick={() => {
-      const section = document.querySelector('.product-collections-section');
-      if (section) section.scrollIntoView({ behavior: 'smooth' });
-    }}
-  >
-    ↑ Top
-  </button>
-)}
+        <button
+          className="scroll-to-top-button"
+          onClick={() => {
+            sectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+          }}
+        >
+          ↑ Top
+        </button>
+      )}
     </section>
   );
 }

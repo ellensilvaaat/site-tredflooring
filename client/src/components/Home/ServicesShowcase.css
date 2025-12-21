@@ -8,37 +8,59 @@
   font-family: var(--font-heading);
   font-size: 1.8rem;
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .services-subtext {
   font-family: var(--font-body);
   font-size: 1rem;
   color: var(--text-dark);
-  margin-bottom: 60px;
+  margin: 0 auto 60px;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
   line-height: 1.6;
 }
 
+/* ===== GRID ===== */
 .services-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  gap: 30px;
+  gap: 10px;
   justify-content: center;
-  margin-bottom: 40px;
-  width: 96%;
-  margin: auto;
+  margin: 0 auto 40px;
+
+  /* 🔒 Evita reflow/repaint ao scroll */
+  contain: layout paint;
 }
 
 .services-card {
-  transition: transform 0.3s ease;
   cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease;
+  contain: layout paint;
 }
 
+/* ===== WRAPPER (resolve o corte no hover) ===== */
+.services-img-wrapper {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s ease;
+  will-change: transform;
+}
+
+.services-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.25s ease;
+  will-change: transform;
+}
+
+/* Hover seguro (sem corte) */
 .services-card:hover .services-img {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .services-card:hover .services-label {
@@ -46,17 +68,7 @@
   font-weight: 700;
 }
 
-.services-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-  object-fit: cover;
-}
-
+/* ===== LABEL ===== */
 .services-label {
   margin-top: 12px;
   font-family: var(--font-body);
@@ -65,25 +77,18 @@
   transition: transform 0.3s ease, font-weight 0.3s ease;
 }
 
-
-.services-btn:hover {
-  background-color: #699f7e;
-}
+/* ===== MOBILE ===== */
 @media (max-width: 480px) {
   .services-section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
   }
 
   .services-gallery {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    justify-items: center;
     width: 90%;
   }
 
-  .services-img {
+  .services-img-wrapper {
     width: 135px;
     height: 135px;
   }
@@ -91,26 +96,23 @@
   .services-label {
     font-size: 0.85rem;
     margin-top: 6px;
-    text-align: center;
   }
 
   .services-subtext {
     font-size: 0.9rem;
     padding: 0 15px;
-    line-height: 1.5;
     margin-bottom: 2rem;
   }
 }
+
+/* ===== TABLET ===== */
 @media (min-width: 481px) and (max-width: 768px) {
   .services-gallery {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    justify-items: center;
     width: 100%;
   }
 
-  .services-img {
+  .services-img-wrapper {
     width: 120px;
     height: 120px;
   }
@@ -125,3 +127,6 @@
     padding: 0 20px;
   }
 }
+
+
+

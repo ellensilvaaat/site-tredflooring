@@ -3,9 +3,9 @@ import { useNavigate } from 'react-router-dom'; // 👈 IMPORTANTE
 import './HeroSection.css';
 
 const images = [
-  "https://site-tredflooring-assets.s3.amazonaws.com/hero1.jpg",
-  "https://site-tredflooring-assets.s3.amazonaws.com/hero2.jpg",
-  "https://site-tredflooring-assets.s3.amazonaws.com/hero3.jpg"
+  "https://ik.imagekit.io/ijsd2xvnc/hero2.jpg",
+  "https://ik.imagekit.io/ijsd2xvnc/hero1.jpg",
+  "https://ik.imagekit.io/ijsd2xvnc/hero3.jpg"
 ];
 
 export default function HeroSection() {

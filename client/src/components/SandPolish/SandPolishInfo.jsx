@@ -12,19 +12,19 @@ export default function SandPolishInfo() {
 
         <div className="sp-benefits">
           <div className="sp-benefit-card">
-            <img src="https://site-tredflooring-assets.s3.amazonaws.com/sandpolish/icons/renew.png" alt="Renew floors" className="sp-icon" />
+            <img src="https://ik.imagekit.io/ijsd2xvnc/renew.png" alt="Renew floors" className="sp-icon" />
             <p>Restore worn or damaged floors to like‑new condition.</p>
           </div>
           <div className="sp-benefit-card">
-            <img src="https://site-tredflooring-assets.s3.amazonaws.com/sandpolish/icons/durability.png" alt="Durability" className="sp-icon" />
+            <img src="https://ik.imagekit.io/ijsd2xvnc/durability.png" alt="Durability" className="sp-icon" />
             <p>Long‑lasting finish that protects against scratches, stains and daily wear.</p>
           </div>
           <div className="sp-benefit-card">
-            <img src="https://site-tredflooring-assets.s3.amazonaws.com/sandpolish/icons/aesthetic.png" alt="Aesthetic" className="sp-icon" />
+            <img src="https://ik.imagekit.io/ijsd2xvnc/aesthetic.png" alt="Aesthetic" className="sp-icon" />
             <p>Enhance natural wood appearance, grain, texture, and colour come alive again.</p>
           </div>
           <div className="sp-benefit-card">
-            <img src="https://site-tredflooring-assets.s3.amazonaws.com/sandpolish/icons/value.png" alt="Cost effective" className="sp-icon" />
+            <img src="https://ik.imagekit.io/ijsd2xvnc/value.png" alt="Cost effective" className="sp-icon" />
             <p>Cost‑effective alternative to full floor replacement.</p>
           </div>
         </div>

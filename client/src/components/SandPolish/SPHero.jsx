@@ -5,7 +5,7 @@ export default function Hero_sp() {
   return (
     <section className="sp-hero">
       <img
-        src="https://site-tredflooring-assets.s3.amazonaws.com/sandpolish/steps/step4.jpg"
+        src="https://ik.imagekit.io/ijsd2xvnc/Hero%20(3).png"
         alt="Sand and Polish Hero"
         className="hero-bg-img"
         loading="lazy"

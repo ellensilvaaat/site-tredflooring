@@ -1,6 +1,12 @@
 // src/components/SkirtingBoards/SkirtingProducts.jsx
 
-import React, { useState, useEffect, useContext, memo, useMemo } from "react";
+import React, {
+  useState,
+  useEffect,
+  useContext,
+  memo,
+  useMemo
+} from "react";
 import { useNavigate } from "react-router-dom";
 import "./SkirtingProducts.css";
 
@@ -14,9 +20,11 @@ const Thumb = memo(({ src, alt, isActive, onClick }) => (
     src={src}
     alt={alt}
     className={`sk-thumb ${isActive ? "active" : ""}`}
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
     width={50}
     height={50}
-    loading="lazy"
     onClick={onClick}
   />
 ));
@@ -27,21 +35,29 @@ const ProductCard = memo(({ group, onImageClick }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [thumbsExpanded, setThumbsExpanded] = useState(false);
   const selected = group[selectedIndex];
+
   const { addQuote } = useContext(SampleCartContext);
   const navigate = useNavigate();
 
-  const hasMoreThumbs = group.length > THUMBS_LIMIT;
-  const thumbsToShow = useMemo(() => (
-    thumbsExpanded ? group : group.slice(0, THUMBS_LIMIT)
-  ), [thumbsExpanded, group]);
+  const thumbsToShow = useMemo(() => {
+    if (!thumbsExpanded) return group.slice(0, THUMBS_LIMIT);
+    return group;
+  }, [thumbsExpanded, group]);
 
   return (
     <div className="sk-card">
-      <div
-        className="sk-card-img"
-        style={{ backgroundImage: `url(${selected.image})` }}
-        onClick={() => onImageClick(selected.image)}
-      />
+      {/* IMAGEM PRINCIPAL — AGORA COM LAZY LOAD */}
+      <div className="sk-card-img">
+        <img
+          src={selected.image}
+          alt={selected.colorName}
+          loading="lazy"
+          decoding="async"
+          fetchpriority="low"
+          onClick={() => onImageClick(selected.image)}
+        />
+      </div>
+
       <div className="sk-card-info">
         <div className="sk-card-header">
           <h3 className="sk-collection-name">{selected.collectionName}</h3>
@@ -54,20 +70,22 @@ const ProductCard = memo(({ group, onImageClick }) => {
           <p className="sk-color-label">
             Color: <span className="sk-color-name">{selected.colorName}</span>
           </p>
+
           <div className="sk-color-thumbs">
-            {thumbsToShow.map((variant, vIdx) => (
+            {thumbsToShow.map((variant, idx) => (
               <Thumb
                 key={variant.colorName}
                 src={variant.image}
                 alt={variant.colorName}
-                isActive={vIdx === selectedIndex}
-                onClick={() => setSelectedIndex(vIdx)}
+                isActive={idx === selectedIndex}
+                onClick={() => setSelectedIndex(idx)}
               />
             ))}
-            {hasMoreThumbs && (
+
+            {group.length > THUMBS_LIMIT && (
               <button
                 className="sk-thumbs-toggle-btn"
-                onClick={() => setThumbsExpanded(prev => !prev)}
+                onClick={() => setThumbsExpanded(v => !v)}
               >
                 {thumbsExpanded ? "▲" : "▼"}
               </button>
@@ -75,23 +93,21 @@ const ProductCard = memo(({ group, onImageClick }) => {
           </div>
         </div>
 
-        <div className="sk-card-actions">
-          <button
-            className="sk-request-button"
-            onClick={() => {
-  addQuote({
-    id: selected.id ?? `${selected.collectionName}-${selected.colorName}`,
-    name: selected.collectionName,
-    color: selected.colorName,
-    size: selected.specs?.[0] ?? "N/A", // ← assume que o primeiro spec é o size
-    image: selected.image
-  });
-  navigate("/request-samples");
-}}
-          >
-            Get a quote
-          </button>
-        </div>
+        <button
+          className="sk-request-button"
+          onClick={() => {
+            addQuote({
+              id: selected.id ?? `${selected.collectionName}-${selected.colorName}`,
+              name: selected.collectionName,
+              color: selected.colorName,
+              size: selected.specs?.[0] ?? "N/A",
+              image: selected.image
+            });
+            navigate("/request-samples");
+          }}
+        >
+          Get a quote
+        </button>
       </div>
     </div>
   );
@@ -101,33 +117,18 @@ export default function SkirtingProducts() {
   const [modalImage, setModalImage] = useState(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
   const [visibleCount, setVisibleCount] = useState(isMobile ? 3 : 4);
-  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 900);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    const resize = () => setIsMobile(window.innerWidth <= 900);
+    window.addEventListener("resize", resize);
+    return () => window.removeEventListener("resize", resize);
   }, []);
 
   useEffect(() => {
     setVisibleCount(isMobile ? 3 : 4);
   }, [isMobile]);
 
-  const normalize = str => str.toLowerCase().trim();
-
-  const filtered = allSkirtingCollections.filter(col => {
-    const product = col.variants[0];
-    return (
-      normalize(col.collectionName).includes(normalize(searchTerm)) ||
-      col.variants.some(v =>
-        normalize(v.colorName || "").includes(normalize(searchTerm))
-      )
-    );
-  });
-
-  const displayGroups = filtered.slice(0, visibleCount);
+  const displayGroups = allSkirtingCollections.slice(0, visibleCount);
 
   return (
     <section className="sk-section">
@@ -137,41 +138,27 @@ export default function SkirtingProducts() {
         <div className="sk-grid">
           {displayGroups.map(col => (
             <ProductCard
-              key={`${col.collectionName}_${col.type}`}
+              key={col.collectionName}
               group={col.variants.map(v => ({
                 ...v,
                 collectionName: col.collectionName,
-                type: col.type,
                 specs: v.specs || col.specs || []
               }))}
               onImageClick={setModalImage}
             />
           ))}
         </div>
-
-        {filtered.length === 0 && (
-          <div className="sk-no-results">
-            <p>No skirting boards found.</p>
-          </div>
-        )}
-
-        {modalImage && (
-          <div className="sk-modal-overlay" onClick={() => setModalImage(null)}>
-            <div
-              className="sk-modal-content"
-              onClick={e => e.stopPropagation()}
-            >
-              <button
-                className="sk-modal-close-btn"
-                onClick={() => setModalImage(null)}
-              >
-                ×
-              </button>
-              <img src={modalImage} alt="Preview" className="sk-modal-image" />
-            </div>
-          </div>
-        )}
       </div>
+
+      {modalImage && (
+        <div className="sk-modal-overlay" onClick={() => setModalImage(null)}>
+          <div className="sk-modal-content">
+            <button className="sk-modal-close-btn">×</button>
+            <img src={modalImage} alt="Preview" className="sk-modal-image" />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
+

@@ -5,7 +5,7 @@ export default function Hero_wall() {
   return (
     <section className="wall-hero">
       <img
-        src="https://site-tredflooring-assets.s3.amazonaws.com/wallpanels/examples/process-step4.jpg"
+        src="https://ik.imagekit.io/ijsd2xvnc/Frame%2037.png"
         alt="Wall Panels Hero"
         className="hero-bg-img"
         loading="lazy"

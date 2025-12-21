@@ -9,7 +9,7 @@
   font-family: var(--font-heading);
   font-size: 1.6rem;
   font-weight: 700;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 
 .skirting-benefits-cards {
@@ -19,6 +19,7 @@
   gap: 2rem;
 }
 
+/* Card */
 .skirting-benefit-card {
   background: #f9f9f9;
   border-radius: 12px;
@@ -27,8 +28,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+
+  /* Performance boost */
+  content-visibility: auto;
+  contain-intrinsic-size: 300px;
 }
 
 .skirting-benefit-card:hover {
@@ -48,12 +54,10 @@
   line-height: 1.5;
 }
 
-/* ======= RESPONSIVO ======= */
-
-/* até 500px */
+/* RESPONSIVO */
 @media (max-width: 500px) {
   .skirting-benefit-card {
-    width: 90%;
+    width: 100%;
     padding: 1.2rem;
   }
 
@@ -62,15 +66,13 @@
   }
 }
 
-/* entre 501px e 767px */
 @media (min-width: 501px) and (max-width: 767px) {
   .skirting-benefit-card {
-    width: 90%;
+    width: 100%;
     padding: 1.3rem;
   }
 }
 
-/* entre 768px e 900px */
 @media (min-width: 768px) and (max-width: 900px) {
   .skirting-benefit-card {
     width: 230px;
@@ -78,7 +80,6 @@
   }
 }
 
-/* acima de 1800px */
 @media (min-width: 1800px) {
   .skirting-benefit-card {
     width: 280px;
@@ -94,3 +95,4 @@
     height: 56px;
   }
 }
+
