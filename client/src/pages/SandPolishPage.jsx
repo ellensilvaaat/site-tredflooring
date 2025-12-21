@@ -4,7 +4,8 @@ import SandPolishInfo from '../components/SandPolish/SandPolishInfo';
 import SandPolishProcess from '../components/SandPolish/SandPolishProcess';
 import SandPolishCTA from '../components/SandPolish/SandPolishCTA';
 import Footer from '../components/Home/Footer';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
+
 
 export default function SandPolishPage() {
   return (

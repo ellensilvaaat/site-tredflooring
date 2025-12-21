@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import Hero_wall from "../components/WallPanels/WallHero.jsx";
 import BenefitsSection from '../components/WallPanels/BenefitsSection';
 import ProcessSection from '../components/WallPanels/ProcessSection';

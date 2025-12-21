@@ -3,7 +3,7 @@ import SkirtingHero from "../components/SkirtingBoards/SkirtingHero.jsx";
 import SkirtingBenefits from '../components/SkirtingBoards/SkirtingBenefits.jsx';
 import SkirtingProducts from '../components/SkirtingBoards/SkirtingProducts.jsx';
 import Footer from '../components/Home/Footer';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 export default function SkirtingPage() {
   return (

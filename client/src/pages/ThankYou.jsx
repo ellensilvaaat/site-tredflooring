@@ -1,7 +1,8 @@
 import React from 'react';
 import './../components/Pages/ThankYou.css';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
+
 
 export default function ThankYou() {
   return (

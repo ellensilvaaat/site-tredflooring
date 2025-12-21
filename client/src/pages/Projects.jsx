@@ -2,7 +2,8 @@ import React from 'react';
 import Hero_Project from "../components/Projects/Hero_Projects.jsx";
 import Projects from '../components/Projects/Projects.jsx';
 import Footer from '../components/Home/Footer';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
+
 
 export default function ProjectsPage() {
   return (

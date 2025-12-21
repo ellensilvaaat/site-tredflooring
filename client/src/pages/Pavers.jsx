@@ -2,7 +2,8 @@ import React from 'react';
 import Hero_pv from "../components/Pavers/PaversHero.jsx";
 import Footer from '../components/Home/Footer';
 import PaversPage from '../components/Pavers/PaversPage.jsx';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
+
 
 export default function PaverPage() {
   return (

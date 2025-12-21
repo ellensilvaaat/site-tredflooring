@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import Booking from '../components/Contact/Booking';
 import Hero_contact from '../components/Contact/Hero_contact';
 import Footer from '../components/Home/Footer';

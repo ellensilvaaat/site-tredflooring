@@ -2,7 +2,8 @@ import React from 'react';
 import Hero_product from '../components/Products/Hero_product.jsx';
 import ProductCollections from '../components/Products/ProductCollections.jsx';
 import Footer from '../components/Home/Footer';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
+
 
 export default function Products() {
   return (
