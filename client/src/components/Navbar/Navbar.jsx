@@ -11,7 +11,12 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="logo">
-        <img src="https://site-tredflooring-assets.s3.amazonaws.com/logo.svg" alt="TRED logo" />
+        <img 
+  src="https://site-tredflooring-assets.s3.amazonaws.com/logo.svg" 
+  alt="TRED logo"
+  width="200" 
+  height="60"
+/>
       </div>
 
       {/* Agrupa menu + carrinho no desktop */}

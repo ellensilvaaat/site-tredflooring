@@ -1,27 +1,36 @@
-// src/components/TvUnitsPage/TvUnitModal.jsx
-
 import React, { useState, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { SampleCartContext } from '../../contexts/SampleCartContext';
 import './TvUnitsShowcase.css';
 
 export default function TvUnitModal({ unit, onClose }) {
+  if (!unit) return null; // 👈 Protege contra undefined
+
   const { addQuote } = useContext(SampleCartContext);
   const navigate = useNavigate();
 
   const [currentColor, setCurrentColor] = useState(unit.defaultColor);
   const [currentSize, setCurrentSize] = useState(unit.defaultSize);
   const [isZoomed, setIsZoomed] = useState(false);
+  const [imgLoaded, setImgLoaded] = useState(false);
 
-  // Impedir scroll ao fundo
   useEffect(() => {
     document.body.classList.add("no-scroll");
     return () => document.body.classList.remove("no-scroll");
   }, []);
 
+  useEffect(() => {
+    setImgLoaded(false);
+  }, [currentColor, currentSize]);
+
   const currentVariant = unit.variants.find(
     v => v.color === currentColor && v.size === currentSize
   );
+
+  if (!currentVariant) {
+    // se por algum motivo não existe variante, não tenta renderizar
+    return null;
+  }
 
   const availableColors = Array.from(new Set(unit.variants.map(v => v.color)));
   const availableSizes = Array.from(new Set(
@@ -35,18 +44,15 @@ export default function TvUnitModal({ unit, onClose }) {
     const sizesForColor = unit.variants
       .filter(v => v.color === newColor)
       .map(v => v.size);
+
     if (!sizesForColor.includes(currentSize)) {
       setCurrentSize(sizesForColor[0]);
     }
   };
 
-  const handleSizeChange = (e) => {
-    setCurrentSize(e.target.value);
-  };
+  const handleSizeChange = (e) => setCurrentSize(e.target.value);
 
   const handleGetQuote = () => {
-    if (!currentVariant) return;
-
     addQuote({
       id: `${unit.id}-${currentColor}-${currentSize}`,
       name: unit.name,
@@ -61,7 +67,6 @@ export default function TvUnitModal({ unit, onClose }) {
   const handleImageClick = () => setIsZoomed(true);
   const handleZoomClose = () => setIsZoomed(false);
 
-  // Helper pra CDN ImageKit — reduz pra ~600px e webp
   const imageUrl = (src, w = 800) => `${src}?tr=w-${w},q-75,fo-auto,f-webp`;
 
   return (
@@ -74,10 +79,11 @@ export default function TvUnitModal({ unit, onClose }) {
             <img
               src={imageUrl(currentVariant.image, 900)}
               alt={unit.name}
-              className="modal-main-img"
+              className={`modal-main-img ${imgLoaded ? 'fade-in' : 'fade-out'}`}
               loading="lazy"
               decoding="async"
               onClick={handleImageClick}
+              onLoad={() => setImgLoaded(true)}
               style={{ cursor: 'zoom-in' }}
             />
           </div>
@@ -137,6 +143,7 @@ export default function TvUnitModal({ unit, onClose }) {
     </>
   );
 }
+
 
 
 

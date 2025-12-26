@@ -10,6 +10,8 @@ import React, {
 } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { SampleCartContext } from '../../contexts/SampleCartContext';
+import { FaChevronUp, FaChevronDown } from 'react-icons/fa';
+
 
 /* ==============================
    THUMB LAZY + IMAGEKIT OPTIMIZED
@@ -124,13 +126,11 @@ export const ProductCard = memo(({ group, onImageClick }) => {
 
             {hasMoreThumbs && (
               <button
-                className="pc-thumbs-toggle-btn"
-                onClick={() =>
-                  setThumbsExpanded(prev => !prev)
-                }
+            className="pc-thumbs-toggle-btn"
+            onClick={() => setThumbsExpanded(prev => !prev)}
               >
-                {thumbsExpanded ? '▲' : '▼'}
-              </button>
+            {thumbsExpanded ? <FaChevronUp /> : <FaChevronDown />}
+             </button>
             )}
           </div>
         </div>

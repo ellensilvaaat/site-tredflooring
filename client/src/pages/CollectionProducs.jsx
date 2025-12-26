@@ -1,7 +1,10 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import CollectionProducts from "../components/Products/CollectionProducts.jsx";
-import Footer from '../components/Home/Footer';
+import React, { lazy, Suspense } from 'react';
+import { Helmet } from 'react-helmet-async';
+
+import CollectionProducts from '../components/Products/CollectionProducts.jsx';
+
+// Lazy load para componentes não críticos
+const Footer = lazy(() => import('../components/Home/Footer'));
 
 export default function CollectionProduct() {
   return (
@@ -21,7 +24,11 @@ export default function CollectionProduct() {
       </Helmet>
 
       <CollectionProducts />
-      <Footer />
+      
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
     </>
   );
 }
+

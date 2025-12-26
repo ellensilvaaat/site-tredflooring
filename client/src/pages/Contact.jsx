@@ -1,8 +1,12 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import Booking from '../components/Contact/Booking';
+import React, { lazy, Suspense } from 'react';
+import { Helmet } from 'react-helmet-async';
+
+// 🔹 Above the fold
 import Hero_contact from '../components/Contact/Hero_contact';
-import Footer from '../components/Home/Footer';
+import Booking from '../components/Contact/Booking';
+
+// 🔸 Below the fold
+const Footer = lazy(() => import('../components/Home/Footer'));
 
 export default function BookingPage() {
   return (
@@ -15,15 +19,23 @@ export default function BookingPage() {
         />
         <meta
           name="keywords"
-          content="contact Tred, book consultation, flooring appointments, custom flooring advice, Tred Flooring contact, schedule visit"
+          content="contact Tred Flooring, book consultation, flooring appointments, custom flooring advice, Australian flooring company"
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://tredflooring.com/contact" />
+        <link rel="canonical" href="https://www.tredflooring.com.au/contact" />
       </Helmet>
 
-      <Hero_contact />
-      <Booking />
-      <Footer />
+      <main>
+        {/* Above the fold */}
+        <Hero_contact />
+        <Booking />
+
+        {/* Below the fold */}
+        <Suspense fallback={null}>
+          <Footer />
+        </Suspense>
+      </main>
     </>
   );
 }
+

@@ -1,14 +1,17 @@
-import { Helmet } from 'react-helmet';
+import React, { lazy, Suspense } from 'react';
+import { Helmet } from 'react-helmet-async';
+
+// Acima da dobra (carregamento imediato)
 import HeroSection from '../components/Home/HeroSection';
 import Collections from '../components/Home/Collections';
-import ServicesShowcase from '../components/Home/ServicesShowcase';
-import Difference from '../components/Home/Difference';
-import ProjectsCarousel from '../components/Home/ProjectsCarousel';
-// import Testimonials from '../components/Home/Testimonials';
-// import UploadRoom from '../components/Home/UploadRoom';
-import CallToAction from '../components/Home/CallToAction';
-import Footer from '../components/Home/Footer';
-import EmailCapturePopup from '../components/Popup/EmailCapturePopup';
+
+// Abaixo da dobra (lazy loading)
+const ServicesShowcase = lazy(() => import('../components/Home/ServicesShowcase'));
+const Difference = lazy(() => import('../components/Home/Difference'));
+const ProjectsCarousel = lazy(() => import('../components/Home/ProjectsCarousel'));
+const CallToAction = lazy(() => import('../components/Home/CallToAction'));
+const Footer = lazy(() => import('../components/Home/Footer'));
+const EmailCapturePopup = lazy(() => import('../components/Popup/EmailCapturePopup'));
 
 export default function Home() {
   return (
@@ -28,17 +31,21 @@ export default function Home() {
       </Helmet>
 
       <main>
+        {/* Acima da dobra (prioritário) */}
         <HeroSection />
         <Collections />
-        <ServicesShowcase />
-        <Difference />
-        <ProjectsCarousel />
-        <EmailCapturePopup />
-        {/* <Testimonials /> */}
-        {/* <UploadRoom /> */}
-        <CallToAction />
-        <Footer />
+
+        {/* Abaixo da dobra (lazy load) */}
+        <Suspense fallback={null}>
+          <ServicesShowcase />
+          <Difference />
+          <ProjectsCarousel />
+          <EmailCapturePopup />
+          <CallToAction />
+          <Footer />
+        </Suspense>
       </main>
     </>
   );
 }
+

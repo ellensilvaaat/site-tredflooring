@@ -1,6 +1,3 @@
-/* ===== GLOBAL & LAYOUT ===== */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
 .pc-section {
   padding: 5rem 0 3rem;
   font-family: 'Inter', sans-serif;
@@ -90,6 +87,8 @@
   background-size: cover;
   background-position: center;
   cursor: pointer;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 /* CARD INFO */
@@ -101,14 +100,17 @@
 /* CARD HEADER */
 .pc-card-header .pc-collection-name {
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 900;
   margin: 0;
   color: #333;
+  font-family: var(--font-body);
+  margin-bottom: 0.2rem;
 }
 
 .pc-card-header .pc-collection-specs {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #555;
+  margin-bottom: 0.5rem;
 }
 
 /* COLOR THUMBS */
@@ -119,7 +121,7 @@
 }
 
 .pc-color-label {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #333;
 }
 
@@ -169,6 +171,7 @@
   cursor: pointer;
   transition: background 0.3s ease;
   text-align: center;
+  margin-top: 0.5rem;
 }
 
 .pc-card-actions .pc-request-button:hover {

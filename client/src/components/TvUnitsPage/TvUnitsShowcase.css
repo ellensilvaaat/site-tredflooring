@@ -109,10 +109,15 @@ body.no-scroll {
   max-height: 53vh;
   object-fit: contain;
   border-radius: 8px;
-  transition: transform 0.3s ease;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
   cursor: zoom-in;
   transform: scale(1.15);   
   object-position: center 20%;
+}
+
+.modal-main-img.fade-in {
+  opacity: 1;
 }
 
 /* ---------- ZOOM OVERLAY ---------- */
@@ -145,7 +150,7 @@ body.no-scroll {
   object-fit: contain;
   border-radius: 4px;
   box-shadow: 0 0 30px rgba(0,0,0,0.7);
-  transform: scale(1.01);
+  transform: scale(1.12);
 }
 
 /* ---------- INFO ---------- */

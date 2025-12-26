@@ -6,8 +6,6 @@ import React, {
   useCallback
 } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './ProductCollectionsClean.css';
-
 import { SampleCartContext } from '../../contexts/SampleCartContext';
 
 import {

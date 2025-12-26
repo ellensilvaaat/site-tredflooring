@@ -1,22 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YR2QXF9H6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-5YR2QXF9H6');
-  </script>
+    <!-- Meta Tags -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tred Flooring offers custom rugs, TV units, architectural panels, and flooring services tailored for Australian interiors."
+    />
+    <meta name="author" content="Tred Flooring" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Title and Favicon -->
     <title>Tred Flooring</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Preconnects (Performance) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://ik.imagekit.io" crossorigin />
+    <link rel="preconnect" href="https://site-tredflooring-assets.s3.amazonaws.com" crossorigin />
+
+    <!-- Google Fonts (async loading) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lora:wght@600;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lora:wght@600;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <!-- Global CSS (adiado para melhorar LCP/FCP) -->
+    <link rel="stylesheet" href="/src/assets/styles/variables.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="/src/assets/styles/global.css" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="/src/assets/styles/variables.css" />
+      <link rel="stylesheet" href="/src/assets/styles/global.css" />
+    </noscript>
   </head>
+
   <body>
     <div id="root"></div>
+
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- 🚀 Google Analytics adiado com requestIdleCallback -->
+    <script>
+      (function () {
+        const loadGA = () => {
+          const script = document.createElement('script');
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-5YR2QXF9H6';
+          script.async = true;
+          document.head.appendChild(script);
+
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-5YR2QXF9H6');
+        };
+
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(loadGA);
+        } else {
+          setTimeout(loadGA, 2000); // fallback para navegadores antigos
+        }
+      })();
+    </script>
   </body>
 </html>

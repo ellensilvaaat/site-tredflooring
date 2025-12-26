@@ -1,19 +1,18 @@
 .hero-section {
-  height: 100vh;
   position: relative;
+  height: 100vh;
   overflow: hidden;
 }
 
-.hero-background {
+.hero-img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: center / cover no-repeat;
-  transform: scale(1);
-  animation: subtleZoom 10s ease-in-out infinite;
+  object-fit: cover;
   z-index: 0;
+  animation: subtleZoom 10s ease-in-out infinite;
 }
 
 @keyframes subtleZoom {
@@ -26,11 +25,12 @@
 }
 
 .hero-overlay {
-  background-color: rgba(0, 0, 0, 0.4);
   position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
   height: 100%;
   z-index: 1;
 }
+
 
 .hero-content {
   position: absolute;

@@ -6,9 +6,10 @@ export default function Hero_product() {
     <section className="product-hero">
       <img
         src="https://ik.imagekit.io/ijsd2xvnc/products-hero.png"
-        alt="Products Hero"
+        alt="Wood floor products"
         className="hero-bg-img"
-        loading="lazy"
+        fetchpriority="high"
+        decoding="async"
       />
 
       <div className="product-overlay">
@@ -17,3 +18,4 @@ export default function Hero_product() {
     </section>
   );
 }
+

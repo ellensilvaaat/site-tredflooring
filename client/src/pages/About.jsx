@@ -1,11 +1,14 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
+import React, { lazy, Suspense } from 'react';
+import { Helmet } from 'react-helmet-async';
+
+// 🔹 Acima da dobra (não lazy)
 import Hero from '../components/About/Hero_temp.jsx';
 import WhyChoose from '../components/About/WhyTred.jsx';
-import Process from '../components/About/Process.jsx';
-// import Team from '../components/About/Team.jsx';
-import CallToAction from '../components/Home/CallToAction';
-import Footer from '../components/Home/Footer';
+
+// 🔸 Lazy loading (abaixo da dobra)
+const Process = lazy(() => import('../components/About/Process.jsx'));
+const CallToAction = lazy(() => import('../components/Home/CallToAction'));
+const Footer = lazy(() => import('../components/Home/Footer'));
 
 export default function About() {
   return (
@@ -18,18 +21,26 @@ export default function About() {
         />
         <meta
           name="keywords"
-          content="about tred, tred flooring, who we are, flooring company australia, interior solutions, design values, bespoke interiors, australian business"
+          content="about tred, tred flooring, australian flooring company, bespoke interiors, design values, interior solutions"
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://tredflooring.com/about" />
+        <link rel="canonical" href="https://www.tredflooring.com.au/about" />
       </Helmet>
 
-      <Hero />
-      <WhyChoose />
-      <Process />
-      {/* <Team /> */}
-      <CallToAction />
-      <Footer />
+      <main>
+        {/* Above the fold */}
+        <Hero />
+        <WhyChoose />
+
+        {/* Below the fold */}
+        <Suspense fallback={null}>
+          <Process />
+          <CallToAction />
+          <Footer />
+        </Suspense>
+      </main>
     </>
   );
 }
+
+

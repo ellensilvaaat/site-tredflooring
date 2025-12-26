@@ -18,15 +18,15 @@ export default function Footer() {
         <div className="footer-top">
           {/* Lado Esquerdo - Logo, frase, redes sociais */}
           <div className="footer-left">
-            <img src="https://site-tredflooring-assets.s3.amazonaws.com/logofooter.svg" alt="TRED Logo" className="footer-logo" />
+            <img src="https://site-tredflooring-assets.s3.ap-southeast-2.amazonaws.com/logo.png" alt="TRED Logo" className="footer-logo" />
             <p className="footer-quote">
               “Quality is remembered long after price is forgotten.”<br />– Aldo Gucci
             </p>
             <div className="footer-socials">
              {/* <a href="https://linkedin.com" target="_blank" rel="noreferrer"><FaLinkedin /></a>
               <a href="https://pinterest.com" target="_blank" rel="noreferrer"><FaPinterest /></a>*/}
-              <a href="https://instagram.com" target="_blank" rel="noreferrer"><FaInstagram /></a>
-              <a href="https://facebook.com" target="_blank" rel="noreferrer"><FaFacebook /></a>
+              <a href="https://www.instagram.com/tredflooring/" target="_blank" rel="noreferrer" aria-label="Instagram"><FaInstagram /></a>
+              <a href="https://www.facebook.com/tredflooring" target="_blank" rel="noreferrer" aria-label="Facebook"><FaFacebook /></a>
             </div>
           </div>
 

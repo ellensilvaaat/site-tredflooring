@@ -66,12 +66,11 @@
   transition: transform 0.3s ease;
 }
 
-.collection-card img {
+.collections-img {
   width: 100%;
-  display: block;
-  border-radius: 20px;
-  transition: transform 0.4s ease;
+  height: auto;
   object-fit: cover;
+  border-radius: 20px;
   aspect-ratio: 1 / 1;
 }
 
