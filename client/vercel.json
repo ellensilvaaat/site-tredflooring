@@ -3,6 +3,7 @@
     { "source": "/(.*)", "destination": "/" }
   ],
   "build": {
+    "installCommand": "npm install --legacy-peer-deps",
     "env": {
       "NPM_FLAGS": "--legacy-peer-deps"
     }
