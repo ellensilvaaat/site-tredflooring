@@ -21,7 +21,7 @@
 }
 
 .logo img {
-  height: 120px;
+  height: 40px;
   width: auto;
 }
 
@@ -148,19 +148,19 @@
   }
 
   .logo img {
-    height: 80px;
+    height: 30px;
   }
 }
 
 @media (max-width: 600px) {
   .logo img {
-    height: 70px;
+    height: 30px;
   }
 }
 
 @media (max-width: 320px) {
   .logo img {
-    height: 60px;
+    height: 20px;
   }
 }
 

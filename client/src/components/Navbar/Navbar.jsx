@@ -13,9 +13,9 @@ export default function Navbar() {
       {/* LOGO — ESQUERDA */}
       <div className="logo">
         <img
-          src="https://site-tredflooring-assets.s3.amazonaws.com/logo.svg"
+          src="https://ik.imagekit.io/ijsd2xvnc/logotred.png"
           alt="TRED logo"
-          width="200"
+          width="100"
           height="60"
           loading="eager"
         />
