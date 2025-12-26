@@ -34,7 +34,7 @@ export default function ServicesShowcase() {
                 height="200"
                 decoding="async"
                 loading="lazy"
-                fetchpriority={item.id === 1 ? "high" : "low"}
+                fetchPriority={item.id === 1 ? "high" : "low"}
               />
             </div>
 

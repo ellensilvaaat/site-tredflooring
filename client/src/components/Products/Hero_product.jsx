@@ -8,7 +8,7 @@ export default function Hero_product() {
         src="https://ik.imagekit.io/ijsd2xvnc/products-hero.png"
         alt="Wood floor products"
         className="hero-bg-img"
-        fetchpriority="high"
+        fetchPriority="high"
         decoding="async"
       />
 

@@ -315,10 +315,34 @@
   background: #7CAF8E;
   color: white;
   border: none;
-  padding: 0.75rem 1.25rem;
+  padding: 0.9rem 1.25rem;
   border-radius: 50px;
   cursor: pointer;
   z-index: 1000;
+  font-size: 0.8rem;
+}
+/* ===== LOAD MORE BUTTON (MOBILE) ===== */
+.pc-load-more-button {
+  display: block;
+  margin: 2rem auto 3rem;
+  background-color: #7CAF8E;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+}
+
+.pc-load-more-button:hover {
+  background-color: #699f7e;
+  transform: translateY(-2px);
+}
+
+.pc-load-more-button:active {
+  transform: scale(0.97);
 }
 
 /* ===== RESPONSIVE ADJUSTMENTS ===== */
@@ -329,7 +353,17 @@
 }
 
 @media (max-width: 500px) {
+  
  .pc-intro {
   font-size: 1rem !important;
  }
+ .pc-filter-barr,
+.pc-filter-bar input[type="text"] {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #7CAF8E;
+  border-radius: 50px;
+  max-width: 250px;
+  flex: 1;
+}
 }
