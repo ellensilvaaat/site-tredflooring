@@ -103,7 +103,7 @@ export default function Booking() {
 
           <div className="contact-block">
             <p>📧 <strong>Email Us</strong></p>
-            <p>info@tredflooring.com.au</p>
+            <p>sales@tredflooring.com.au</p>
           </div>
         </div>
 
